@@ -78,4 +78,11 @@ gulp.task('browser-sync', function() {
     gulp.watch('./source/js/**/*.js', ['babel']);
   });
 
+
+  gulp.task('deploy', function() {
+    return gulp.src('./public/**/*') //要發布的資料夾
+      .pipe($.ghPages());
+  });
+
+
   gulp.task('default',['jade','sass','babel','vendorJs','browser-sync','watch']);
