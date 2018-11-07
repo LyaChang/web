@@ -1,6 +1,7 @@
-public/
+.public
 .DS_Store
 node_modules
 .vscode
 vendors
-publish/
+.publish
+.tmp

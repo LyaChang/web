@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.js"],"names":["newFn"],"mappings":"aAAA,IAAIA,MAAQ,aAEXA","file":"all.js","sourcesContent":["let newFn = ()=> {\n    console.log('hello');\n}\n\nnewFn()"]}
