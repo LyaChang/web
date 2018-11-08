@@ -1,1 +1,1 @@
-{"version":3,"sources":["all.scss"],"names":[],"mappings":"AAEA,KACI,MAAA","file":"all.css","sourcesContent":["$aaa: red;\n\nbody{\n    color: $aaa;\n}"]}
+{"version":3,"sources":["all.scss"],"names":[],"mappings":"AAEA,KACI,MAAA","file":"all.css","sourcesContent":["$aaa: green;\n\nbody{\n    color: $aaa;\n}"]}
