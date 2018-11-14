@@ -12,7 +12,7 @@ gulp.task('jade', function() {
     gulp.src('./source/*.jade')
       .pipe($.plumber()) //程式發生錯誤不會停止
       .pipe($.jade({
-        // pretty: true  //輸出的 HTML會有原本的格式，不會被壓縮
+         pretty: true  //輸出的 HTML會有原本的格式，不會被壓縮
       }))
       .pipe(gulp.dest('./public/'))
       .pipe(browserSync.stream()); //輸出完html後自動做重新整理
@@ -42,10 +42,12 @@ gulp.task('jade', function() {
     return gulp.src('./source/scss/**/*.scss')
       .pipe($.plumber())
       .pipe($.sourcemaps.init())
-      .pipe($.sass().on('error', $.sass.logError))
+      .pipe($.sass({
+           includePaths:['./node_modules/bootstrap/scss']
+       }).on('error', $.sass.logError))
       //編譯css
       .pipe($.postcss(plugins))
-      .pipe($.cleanCss()) //壓縮css
+      //.pipe($.cleanCss()) //壓縮css
       .pipe($.sourcemaps.write('.'))
       .pipe(gulp.dest('./public/css'))
       .pipe(browserSync.stream()); //輸出完sass後自動做重新整理
@@ -86,3 +88,4 @@ gulp.task('browser-sync', function() {
 
 
   gulp.task('default',['jade','sass','babel','vendorJs','browser-sync','watch']);
+  // gulp.task('default',['jade','sass','babel']);
