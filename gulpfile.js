@@ -5,6 +5,7 @@ var mainBowerFiles = require('main-bower-files');
 var browserSync = require('browser-sync').create();
 var minimist = require('minimist'); // 用來讀取指令轉成變數
 
+
 var envOptions = {
   string: 'env',
   default: { env: 'develop' }
@@ -12,9 +13,13 @@ var envOptions = {
 
 var options = minimist(process.argv.slice(2), envOptions);
 
+// 刪掉上線後不要的資料夾
+gulp.task('clean', () => {
+  return gulp.src(['./public', './.tmp'], { read: false }) // 選項讀取：false阻止gulp讀取文件的內容，使此任務更快。
+    .pipe($.clean());
+});
 
 gulp.task('jade', function() {
-    // var YOUR_LOCALS = {};
    
     gulp.src('./source/*.jade')
       .pipe($.plumber()) //程式發生錯誤不會停止
@@ -46,7 +51,7 @@ gulp.task('jade', function() {
     var plugins = [
       autoprefixer({browsers: ['last 1 version','> 5%','ie 8']})
   ];
-    return gulp.src('./source/scss/**/*.scss')
+    return gulp.src(['./source/stylesheets/**/*.scss','./source/stylesheets/**/*.sass'])
       .pipe($.plumber())
       .pipe($.sourcemaps.init())
       .pipe($.sass({
@@ -88,8 +93,15 @@ gulp.task('browser-sync', function() {
   });
 });
 
+//輸出圖片
+gulp.task('image-min', () =>
+    gulp.src('./source/images/*')
+        .pipe($.if(options.env === 'production',$.imagemin())) // 壓縮圖片
+        .pipe(gulp.dest('./public/images'))
+);
+
   gulp.task('watch', function () {
-    gulp.watch('./source/scss/**/*.scss', ['sass']);
+    gulp.watch(['./source/stylesheets/**/*.scss','./source/stylesheets/**/*.sass'], ['sass']);
     gulp.watch('./source/**/*.jade', ['jade']);
     gulp.watch('./source/js/**/*.js', ['babel']);
   });
@@ -101,5 +113,4 @@ gulp.task('browser-sync', function() {
   });
 
 
-  gulp.task('default',['jade','sass','babel','vendorJs','browser-sync','watch']);
-  // gulp.task('default',['jade','sass','babel']);
+  gulp.task('default',['jade','sass','babel','vendorJs','image-min','browser-sync','watch']);
