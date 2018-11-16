@@ -1,0 +1,20 @@
+mixin navLink(name,url)
+    if(path === url)
+        li.nav-item.active
+            a.nav-link(href='#{url}')
+                | #{name} 
+    else
+        li.nav-item
+            a.nav-link(href='#{url}')
+                | #{name} 
+
+
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.navbar-brand(href='#') Navbar
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+            each item in menu.list
+                +navLink(item.name,item.url)

@@ -23,6 +23,13 @@ gulp.task('jade', function() {
    
     gulp.src('./source/*.jade')
       .pipe($.plumber()) //程式發生錯誤不會停止
+      .pipe($.data(function(){
+        var menu = require('./source/data/menu.json');
+        var source = {
+          'menu': menu
+        };
+        return source; 
+      }))
       .pipe($.jade({
          pretty: true  //輸出的 HTML會有原本的格式，不會被壓縮
       }))
