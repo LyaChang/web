@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="117px" viewBox="0 0 211 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>index_word_Banner</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="Northwell" font-size="120" font-weight="normal" letter-spacing="-0.9285712" fill="#325C2A">
+            <tspan x="672.411427" y="1079">Banner</tspan>
+        </text>
+        <filter x="-7.7%" y="-1.3%" width="110.0%" height="105.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="index" transform="translate(-661.000000, -1009.000000)" fill="#325C2A">
+            <g id="index_word_Banner" transform="translate(772.500000, 1076.000000) rotate(-6.000000) translate(-772.500000, -1076.000000) ">
+                <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                <use xlink:href="#text-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

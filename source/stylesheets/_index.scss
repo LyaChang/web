@@ -1,0 +1,6 @@
+$main: #f27298;
+
+html{
+    @include pageBorder($main);
+}
+

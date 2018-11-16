@@ -96,7 +96,8 @@ gulp.task('browser-sync', function() {
   browserSync.init({
       server: {
           baseDir: "./public" //指定輸出檔的資料夾位置
-      },reloadDebounce: 2000 //至少2秒內只更新一次，這樣他就不會一直重新整理吃資源
+      }
+      //,reloadDebounce: 2000 //至少2秒內只更新一次，這樣他就不會一直重新整理吃資源
   });
 });
 

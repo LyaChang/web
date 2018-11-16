@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="145px" height="163px" viewBox="0 0 145 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>index_word_App</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="Northwell" font-size="132" font-weight="normal" letter-spacing="-1.021428" fill="#325C2A">
+            <tspan x="1039.61228" y="988">App</tspan>
+        </text>
+        <filter x="-16.4%" y="-1.2%" width="118.3%" height="104.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="index" transform="translate(-1019.000000, -908.000000)" fill="#325C2A">
+            <g id="index_word_App" transform="translate(1104.500000, 984.500000) rotate(-6.000000) translate(-1104.500000, -984.500000) ">
+                <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                <use xlink:href="#text-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
