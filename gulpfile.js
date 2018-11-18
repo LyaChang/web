@@ -15,7 +15,7 @@ var options = minimist(process.argv.slice(2), envOptions);
 
 // 刪掉上線後不要的資料夾
 gulp.task('clean', () => {
-  return gulp.src(['./public', './.tmp'], { read: false }) // 選項讀取：false阻止gulp讀取文件的內容，使此任務更快。
+  return gulp.src(['./public', './.tmp','./.publish'], { read: false }) // 選項讀取：false阻止gulp讀取文件的內容，使此任務更快。
     .pipe($.clean());
 });
 
