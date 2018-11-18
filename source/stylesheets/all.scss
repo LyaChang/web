@@ -1,3 +1,19 @@
+//color
+$greyish-brown: #444444;
+$warm-grey: #8a8585;
+$brown-grey: #9b9b9b;
+$brown-grey-two: #838383;
+$very-light-pink: #d9d9d9;
+$black: #3b3939;
+$white: #f9f9f9;
+$main: #f27298;
+$faded-red: #d4535e;
+$light-naked: #fffaf7;
+$secondary: #325c2a;
+$naked: #ea6a24;
+$wolf: #cfa56b;
+$light-wolf: #fff9f0;
+
 // Required
 @import "functions";
 @import "./helpers/variables";
@@ -9,7 +25,7 @@
 @import "type";
 @import "images";
 @import "code";
-@import "grid";˜
+@import "grid";
 @import "tables";
 @import "forms";
 @import "buttons";
@@ -38,10 +54,34 @@
 @import "print";
 
 
-
 //all page mixin
-@import "./mixins/border.scss";
+@import "./mixins/border";
+@import "./mixins/font";
+
+
+
+// all pages css
+
+html,body{
+    background-color: #fff;
+    padding-bottom: 13px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.sec_title_block{
+    .sec_title{
+        @include hansFont(124px,900,$very-light-pink,center);
+    }
+}
+
+.svg_word,.bg_grass{
+    position: absolute;
+}
+
 
 
 //page css
-@import "index.scss";
+@import "index";

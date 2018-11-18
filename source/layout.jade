@@ -4,13 +4,15 @@ html(lang="en")
         include ./partials/head.jade
 
     body
+        block borders
+            .top_border
+            .bottom_border
+            .right_border
+            .left_border
 
         block navbar
 
-        
-
-        .container
-            block content
+        block content
             
         block fix
         

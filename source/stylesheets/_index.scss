@@ -1,6 +1,103 @@
-$main: #f27298;
+//border
+.top_border{
+    top: 0;
+    @include upDownBorder($main);
+}
 
-html{
-    @include pageBorder($main);
+.bottom_border{
+    bottom: 0;
+    @include upDownBorder($main);
+}
+
+.right_border{
+    right: 0;
+    @include leftRightBorder($main);
+}
+
+.left_border{
+    left: 0;
+    @include leftRightBorder($main);
+}
+
+//content
+
+.index_section1{ 
+
+    .bg_grass1{
+        width: 250px;
+        top: 0;
+        left: calc(50% - 100px);
+        z-index: 1039;
+    }
+
+    .bg_grass2{
+        height: 500px;
+        top: 400px;
+        left: 0;
+    }
+
+    .bg_grass3{
+        height: 400px;
+        top: 900px;
+        right: 0;
+    }
+
+    .content{
+        margin-top: 260px;
+        h1{
+            @include hansFont(84px,900,$greyish-brown,center);
+            letter-spacing: -0.6px;
+        }
+        h3{
+            @include xingFont(54px,300,$greyish-brown,center);
+        }
+        p{
+            margin-top: 35px;
+            @include xingFont(21px,300,$warm-grey,center);
+        }
+    }
+    .work_kind{
+        margin-top: 20px;
+        .pic{
+            width: 250px;
+            display: inline-block;
+
+            img{
+                width: 100%;
+            }
+            .web_word{
+                width: 132px;
+                left: -36px;
+                bottom: 30px;
+            }
+            .banner_word{
+                width: 201px;
+                left: 65px;
+                bottom: 30px;
+            }
+            .app_word{
+                width: 145px;
+                left: 130px;
+                bottom: 30px;
+            }
+            .pic_banner{
+                padding-top: 70px;
+            }
+        }
+       
+    }
+}
+
+.index_section2{
+    margin-top: 120px;
+
+    .sec_title_block{
+        .sec_title{
+            letter-spacing: -3.8px;
+        }
+    }
+    .works_word{
+        padding-top: 40px;
+    }
 }
 
