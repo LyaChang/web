@@ -4,37 +4,54 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>LyaChang</title>
+    <link rel="shortcut icon" href="./images/favicon.ico"/>
     <link rel="stylesheet" href="./css/all.css"/>
+    <script src="./js/vendors.js"></script>
+    <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-57130.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a href="#" class="navbar-brand">Navbar</a>
+    <div class="top_border"></div>
+    <div class="bottom_border"></div>
+    <div class="right_border"></div>
+    <div class="left_border"></div>
+    <!--nav.navbar.navbar-expand-lg.navbar-light.fixed-top.bg-allWhite-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top"><a href="index.html" class="navbar-brand"> <img src="./images/logo_pink.svg" width="150px"/></a>
       <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
-          <li class="nav-item dropdown"><a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
-            <div aria-labelledby="navbarDropdown" class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#" class="dropdown-item">Another action</a>
-              <div class="dropdown-divider"></div><a href="#" class="dropdown-item">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+        <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="index.html" class="nav-link">ABOUT </a></li>
+              <li class="nav-item"><a href="works.html" class="nav-link">WORKS </a></li>
+              <li class="nav-item"><a href="a.html" class="nav-link">RESUME </a></li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input type="search" placeholder="Search" aria-label="Search" class="form-control mr-sm-2"/>
-          <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
-        </form>
       </div>
     </nav>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-    <button type="button" class="btn btn-link">Link</button>
+    <div class="index_section1"><img src="./images/bg_grass1.png" alt="" srcset="" class="bg_grass bg_grass1"/><img src="./images/bg_grass2.png" alt="" srcset="" class="bg_grass bg_grass2"/><img src="./images/bg_grass3.png" alt="" srcset="" class="bg_grass bg_grass3"/>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="content col-8">
+            <h1>HELLO</h1>
+            <h3>我是一名 Web / UI 設計師        </h3>
+            <p>畢業於台北藝術大學新媒體藝術學系，目前有快 2 年相關的工作經驗，專長有 HTML5、CSS3、動畫、網頁設計規劃、App 設計、Banner 製作。</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="work_kind">
+            <div class="pic col"><img src="./images/index_word_web.svg" alt="" srcset="" class="svg_word web_word"/><img src="./images/work_kind_web.jpg" alt="" srcset="" class="pic_web"/></div>
+            <div class="pic col"><img src="./images/index_word_banner.svg" alt="" srcset="" class="svg_word banner_word"/><img src="./images/work_kind_banner.jpg" alt="" srcset="" class="pic_banner"/></div>
+            <div class="pic col"><img src="./images/index_word_app.svg" alt="" srcset="" class="svg_word app_word"/><img src="./images/work_kind_app.jpg" alt="" srcset="" class="pic_app"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index_section2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="sec_title_block">
+            <h1 class="sec_title">WHAT I DO</h1>
+          </div><img src="./images/index_word_Works.svg" alt="" srcset="" class="svg_word works_word"/>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,1 +1,1 @@
-{"version":3,"sources":["all.js"],"names":["newFn"],"mappings":"aAAA,IAAIA,MAAQ,aAEXA","file":"all.js","sourcesContent":["let newFn = ()=> {\n    console.log('hello');\n}\n\nnewFn()"]}
+{"version":3,"sources":["all.js"],"names":["newFn","console","log"],"mappings":";;AAAA,IAAIA,KAAK,GAAG,SAARA,KAAQ,GAAK;AACbC,EAAAA,OAAO,CAACC,GAAR,CAAY,OAAZ;AACH,CAFD;;AAIAF,KAAK","file":"all.js","sourcesContent":["let newFn = ()=> {\n    console.log('hello');\n}\n\nnewFn()"]}
