@@ -8,11 +8,28 @@ mixin navLink(name,url)
             a.nav-link(href='#{url}')
                 | #{name} 
 
+mixin logo()
+    if(logoColor === "pink")
+        img(src="./images/logo_pink.svg").logo
+    else
+        img(src="./images/logo_gray.svg").logo
+
 
 //nav.navbar.navbar-expand-lg.navbar-light.fixed-top.bg-allWhite
+    a.navbar-brand(href='index.html') 
+        +logo
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+            each item in menu.list
+                +navLink(item.name,item.url)
+
+
+
 nav.navbar.navbar-expand-lg.navbar-light.fixed-top
     a.navbar-brand(href='index.html') 
-        img(src="./images/logo_pink.svg" width="150px")
+        +logo
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse

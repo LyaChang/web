@@ -35,7 +35,7 @@ $light-wolf: #fff9f0;
 @import "input-group";
 @import "custom-forms";
 @import "./helpers/nav";
-@import "navbar";
+@import "./helpers/navbar";
 @import "card";
 @import "breadcrumb";
 @import "pagination";
@@ -57,6 +57,7 @@ $light-wolf: #fff9f0;
 //all page mixin
 @import "./mixins/border";
 @import "./mixins/font";
+@import "./mixins/grid_self";
 
 
 
@@ -64,7 +65,7 @@ $light-wolf: #fff9f0;
 
 html,body{
     background-color: #fff;
-    padding-bottom: 13px;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { 
@@ -74,6 +75,9 @@ html,body{
 .sec_title_block{
     .sec_title{
         @include hansFont(124px,900,$very-light-pink,center);
+        @include lg(){
+            font-size: 100px;
+        }
     }
 }
 
@@ -81,6 +85,25 @@ html,body{
     position: absolute;
 }
 
+//navbar
+.navbar{
+    padding-bottom: 10px; 
+    @include lg(){
+        padding-left: 40px;
+        padding-right: 35px; 
+        padding-bottom: 0px;
+    }
+}
+.logo{
+    width: 150px;
+    @include md(){
+        width: 140px;
+    }
+}
+
+button:focus{
+    outline: none;
+}
 
 
 //page css

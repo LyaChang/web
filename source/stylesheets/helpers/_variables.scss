@@ -170,7 +170,7 @@ $body-color:                $gray-900 !default;
 $link-color:                theme-color("primary") !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
-$link-hover-decoration:     underline !default;
+$link-hover-decoration:     none;//underline !default;
 
 // Paragraphs
 //
@@ -204,7 +204,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1200px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -670,8 +670,8 @@ $navbar-light-color:                rgba(#3b3939, .8);//rgba($black, .5) !defaul
 $navbar-light-hover-color:          #3b3939;//rgba($black, .7) !default;
 $navbar-light-active-color:         #3b3939;//rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
-$navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-light-toggler-border-color: rgba($black, .1) !default;
+$navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{white}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-light-toggler-border-color: none;//rgba($black, .1) !default;
 
 // Pagination
 
