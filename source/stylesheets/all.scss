@@ -78,6 +78,18 @@ html,body{
         @include lg(){
             font-size: 100px;
         }
+        @include md(){
+            font-size: 80px;
+        }
+        @include sm(){
+            font-size: 65px;
+        }
+        @include mobile480(){
+            font-size: 50px;
+        }
+        @include iphone5(){
+            font-size: 45px;
+        }
     }
 }
 
@@ -88,16 +100,32 @@ html,body{
 //navbar
 .navbar{
     padding-bottom: 10px; 
+    padding-top: 50px;
     @include lg(){
+        padding-top: 40px;
         padding-left: 40px;
         padding-right: 35px; 
         padding-bottom: 0px;
+    }
+    @include sm(){
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    @include mobile480(){
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 .logo{
     width: 150px;
     @include md(){
         width: 140px;
+    }
+    @include sm(){
+        width: 120px;
+    }
+    @include iphone5(){
+        width: 100px;
     }
 }
 

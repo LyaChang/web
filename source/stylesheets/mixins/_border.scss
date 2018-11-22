@@ -4,6 +4,9 @@
     height: 13px;
     background-color: $color;
     z-index: 1040;
+    @include md(){
+        height: 7px;
+    }
 }
 
 @mixin leftRightBorder($color) {
@@ -12,4 +15,7 @@
     height: 100vh;
     background-color: $color;
     z-index: 1040;
+    @include md(){
+        width: 7px;
+    }
 }

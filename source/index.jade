@@ -9,10 +9,10 @@ block content
     .index_section1
         img(src="./images/bg_grass1.png", alt="", srcset="").bg_grass.bg_grass1
         img(src="./images/bg_grass2.png", alt="", srcset="").bg_grass.bg_grass2
-        img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3
+        img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3.d-none.d-sm-block
         .container
             .row.justify-content-center
-                .content.col-8.col-md-10
+                .content.col-lg-8.col-md-10.col-sm-11
                     h1 HELLO
                     h3 我是一名 Web / UI 設計師        
                     p 畢業於台北藝術大學新媒體藝術學系，目前有快 2 年相關的工作經驗，專長有 HTML5、CSS3、動畫、網頁設計規劃、App 設計、Banner 製作。
@@ -28,9 +28,9 @@ block content
                         img(src="./images/index_word_App.svg", alt="", srcset="").svg_word.app_word
                         img(src="./images/work_kind_app.jpg", alt="", srcset="").pic_app
     .index_section2
-        img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4
-        img(src="./images/bg_grass5.png", alt="", srcset="").bg_grass.bg_grass5
-        img(src="./images/bg_grass6.png", alt="", srcset="").bg_grass.bg_grass6
+        img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4.d-none.d-sm-block
+        img(src="./images/bg_grass5.png", alt="", srcset="").bg_grass.bg_grass5.d-none.d-sm-block
+        img(src="./images/bg_grass6.png", alt="", srcset="").bg_grass.bg_grass6.d-none.d-sm-block
         .container
             .row.justify-content-center
                 .sec_title_block
@@ -38,63 +38,68 @@ block content
                 img(src="./images/index_word_Works.svg", alt="", srcset="").svg_word.works_word
         .container
             .row.justify-content-around.works_sec
-                .works_computer.col-6
+                img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3.d-block.d-sm-none
+                .works_computer.col-sm-6.col
                     .rec
                         img(src="./images/CV_top.png", alt="", srcset="").works_block_img_L
-                .works_word_block.col-5.align-self-center
+                .works_word_block.col-sm-5.align-self-center.offset-lg-0.offset-sm-1.col.offset-2
                     h5.kind RWD Web Design
                     h2.works_name 履歷健診
-                    a(href="#")
+                    a(href="./works_cv.html")
                         div.works_btn 
                             .works_btn_words  See More
                             img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
             .row.justify-content-around.works_sec
-                .works_word_block.col-4.align-self-center.offset-2
+                img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4.d-block.d-sm-none
+                .works_word_block.align-self-center.offset-xl-2.offset-lg-2.col-md-4.col-sm-5.offset-sm-1.col.offset-2.order-sm-1.order-2
                     h5.kind RWD Web Design
                     h2.works_name Wolf Blass
                         br  
                         | 活動頁 
-                    a(href="#")
+                    a(href="./works_wolf.html")
                         div.works_btn 
                             .works_btn_words  See More
                             img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-                .works_computer.col-6
+                .works_computer.col-sm-6.col.order-sm-2.order-1
                     .rec
                         img(src="./images/wolf_top.png", alt="", srcset="").works_block_img_R
             .row.justify-content-around.works_sec
-                .works_computer.col-6
+                img(src="./images/bg_grass5.png", alt="", srcset="").bg_grass.bg_grass5.d-block.d-sm-none
+                .works_computer.col-sm-6.col
                     .rec
                         img(src="./images/naked_top.png", alt="", srcset="").works_block_img_L
-                .works_word_block.col-5.align-self-center
+                .works_word_block.col-sm-5.align-self-center.offset-lg-0.offset-sm-1.col.offset-2
                     h5.kind RWD Web Design
                     h2.works_name 裸雀小酒館
                         br  
                         | 活動頁 
-                    a(href="#")
+                    a(href="./works_naked.html")
                         div.works_btn 
                             .works_btn_words  See More
                             img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
             .row.justify-content-around.works_sec
-                .works_word_block.col-4.align-self-center.offset-2
+                img(src="./images/bg_grass6.png", alt="", srcset="").bg_grass.bg_grass6.d-block.d-sm-none
+                .works_word_block.works_block_cell.align-self-center.offset-xl-2.offset-lg-2.col-md-4.col-sm-5.offset-sm-1.col.offset-2.order-sm-1.order-2
                     h5.kind App
                     h2.works_name 交通助理
-                    a(href="#")
+                    a(href="./works_reminder.html")
                         div.works_btn 
                             .works_btn_words  See More
                             img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-                .works_computer.col-6
+                .works_computer.col-sm-6.col-12.order-sm-2.order-1
                     .rec.cellphone_rec
                         img(src="./images/index_cell_reminder.png", alt="", srcset="").works_block_img_cell_R
             .row.justify-content-around.works_sec.works_sec5
-                .works_computer.col-6
+                img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass7
+                .works_computer.col-sm-6.col
                     .rec.cellphone_rec
                         img(src="./images/index_cell_ad.png", alt="", srcset="").works_block_img_cell_L
-                .works_word_block.col-5.align-self-center.works_word_cell
+                .works_word_block.col-sm-5.align-self-center.works_word_cell.works_block_cell.col-12.offset-4.offset-sm-0
                     h5.kind Banner
                     h2.works_name Facebook 廣告
                         br  
                         | Instergram 廣告
-                    a(href="#")
+                    a(href="./works_banner.html")
                         div.works_btn 
                             .works_btn_words  See More
                             img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
