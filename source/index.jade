@@ -1,5 +1,10 @@
 extend layout.jade
 
+
+block loading
+    -var borderColor = 'pink'
+    include ./partials/loading.jade
+
 block navbar
     -var path = 'index.html'
     -var logoColor = 'pink'

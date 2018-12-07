@@ -59,6 +59,8 @@ $light-wolf: #fff9f0;
 @import "./mixins/font";
 @import "./mixins/grid_self";
 
+//loading
+ @import "./helpers/loading";
 
 
 // all pages css
@@ -96,6 +98,7 @@ html,body{
 .svg_word,.bg_grass{
     position: absolute;
 }
+
 
 //navbar
 .navbar{

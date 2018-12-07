@@ -38,7 +38,7 @@ gulp.task('jade', function() {
   });
 
   gulp.task('babel', () =>{
-    return gulp.src('./source/js/**/*.js')
+    return gulp.src('./source/js/*.js')
         .pipe($.sourcemaps.init())
         .pipe($.babel({
             presets: ['@babel/env']
@@ -72,6 +72,12 @@ gulp.task('jade', function() {
       .pipe(browserSync.stream()); //輸出完sass後自動做重新整理
   });
 
+  gulp.task('concatCSS', function() {
+    return gulp.src('./source/stylesheets/**/*.css')
+        .pipe($.concat('plugin.css'))
+        .pipe(gulp.dest('./public/css'));
+  });
+
   gulp.task('image', () =>
     gulp.src('src/images/*')
         .pipe($.imagemin())
@@ -84,7 +90,7 @@ gulp.task('jade', function() {
   });
   
   gulp.task('vendorJs',['bower'], function() {
-    return gulp.src(['./.tmp/vendors/**/**.js','./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'])
+    return gulp.src(['./.tmp/vendors/**/**.js','./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js','./source/js/plugins/*.js','./node_modules/gsap/src/minified/TweenMax.min.js'])
         .pipe($.concat('vendors.js'))
         .pipe($.if(options.env === 'production',$.uglify))
         .pipe(gulp.dest('./public/js'))
@@ -121,4 +127,4 @@ gulp.task('image-min', () =>
   });
 
 
-  gulp.task('default',['jade','sass','babel','vendorJs','image-min','browser-sync','watch']);
+  gulp.task('default',['jade','concatCSS','sass','babel','vendorJs','image-min','browser-sync','watch']);
