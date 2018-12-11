@@ -1,0 +1,12 @@
+extend layout.jade
+
+block loading
+    -var borderColor = 'gold'
+    include ./partials/loading.jade
+
+block navbar
+    -var path = 'works.html'
+    -var logoColor = ''
+    include ./partials/navbar.jade
+
+block content

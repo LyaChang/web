@@ -9,3 +9,12 @@ window.onload=function(){
 }
 
 
+//selection
+
+
+$(document).ready(function(){
+    $('.kind_lists li a').on('click',(function(){
+        var name = $(this).data("value")
+        console.log(name)
+    }))
+})

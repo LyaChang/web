@@ -1,0 +1,73 @@
+extend layout.jade
+
+block loading
+    -var borderColor = 'pink'
+    //include ./partials/loading.jade
+
+block borders
+    .top_border_pink
+    .bottom_border_pink
+    .right_border_pink
+    .left_border_pink
+
+block navbar
+    -var path = 'works.html'
+    -var logoColor = 'pink'
+    include ./partials/navbar.jade
+
+block content
+    .works_grass
+        img(src="./images/bg_grass1.png", alt="", srcset="").bg_grass.bg_grass1
+        img(src="./images/bg_grass2.png", alt="", srcset="").bg_grass.bg_grass2
+        img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3.d-none.d-sm-block
+    .works_section1
+        .container
+            .row.justify-content-center
+                .col-11.col-sm-12
+                    ul.kind_lists
+                        li.list_kind.segment-0.selected-0(data-value="all")
+                            a(href="#",data-value="all").active All
+                                span (5)
+                        li.list_kind.segment-1
+                            a(href="#",data-value="web") WEB
+                                span (4)
+                        li.list_kind.segment-2
+                            a(href="#",data-value="app") APP
+                                span (1)
+                        li.list_kind.segment-3
+                            a(href="#",data-value="banner") BANNER
+                                span (5)
+    .works_section2
+        .container
+            .row
+                .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-1")
+                    a(href="./works_cv.html")
+                        img(src="./images/works_pic_CV.jpg", alt="", srcset="")
+                        .word_block
+                            .tag WEB
+                            .name 履歷健診
+                .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-2")
+                    a(href="./works_wolf.html")
+                        img(src="./images/works_pic_wolf.jpg", alt="", srcset="")
+                        .word_block
+                            .tag WEB
+                            .name Wolf Blass 活動頁
+                .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-3")
+                    a(href="./works_naked.html")
+                        img(src="./images/works_pic_nuke.jpg", alt="", srcset="")
+                        .word_block
+                            .tag WEB
+                            .name 裸雀小酒館活動頁
+                .col-11.col-sm-6.col-lg-4.work_block.app(data-id="id-4")
+                    a(href="./works_reminder.html")
+                        img(src="./images/works_pic_reminder.jpg", alt="", srcset="")
+                        .word_block
+                            .tag APP
+                            .name 交通助理
+                .col-11.col-sm-6.col-lg-4.work_block.banner(data-id="id-5")
+                    a(href="./works_banner.html")
+                        img(src="./images/works_pic_banner.jpg", alt="", srcset="")
+                        .word_block
+                            .tag BANNER
+                            .name Banner Collection
+                

@@ -1,20 +1,20 @@
 //border
-.top_border{
+.top_border_pink{
     top: 0;
     @include upDownBorder($main);
 }
 
-.bottom_border{
+.bottom_border_pink{
     bottom: 0;
     @include upDownBorder($main);
 }
 
-.right_border{
+.right_border_pink{
     right: 0;
     @include leftRightBorder($main);
 }
 
-.left_border{
+.left_border_pink{
     left: 0;
     @include leftRightBorder($main);
 }

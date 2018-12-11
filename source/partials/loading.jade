@@ -1,12 +1,21 @@
-//- mixin loading_color()
-//-     if(borderColor === "pink")
-//-         .loading_bg_pink
-//-     else
-//-         img(src="./images/logo_gray.svg").logo
-
-
-
-.loading_bg.loading_bg_pink
-    .loader-inner.ball-pulse
+mixin loading_color()
+    if(borderColor === "pink")
+        .loading_bg.loading_bg_pink
+            .loader-inner.ball-pulse
+    else if(borderColor === "gold")
+        .loading_bg.loading_bg_gold
+            .loader-inner.ball-pulse
+    else if(borderColor === "blue")
+        .loading_bg.loading_bg_blue
+            .loader-inner.ball-pulse
+    else if(borderColor === "orange")
+        .loading_bg.loading_bg_orange
+            .loader-inner.ball-pulse
+    else if(borderColor === "gray")
+        .loading_bg.loading_bg_gray
+            .loader-inner.ball-pulse
     
+
+
++loading_color
 
