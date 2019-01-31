@@ -4,9 +4,55 @@ block loading
     -var borderColor = 'orange'
     include ./partials/loading.jade
 
+block borders
+    .top_border_orange
+    .bottom_border_orange
+    .right_border_orange
+    .left_border_orange
+
 block navbar
     -var path = 'works.html'
     -var logoColor = ''
+    -var nav_bg= 'grey'
+    -var togglerColor = 'orange'
     include ./partials/navbar.jade
 
 block content
+    .container-fluid.top_sec
+        .container
+            .row.justify-content-center.top_pic_sec
+                img(src="./images/naked_top.png", alt="").top_pic
+    .container.sec2
+        .row
+            .col-12.big_title
+                .title_works 裸雀小酒館活動頁
+                .title_kind Responsive Website
+                .title_line
+        .row
+            .col-12.col-md-4
+                .works_subtitle 日期
+                .works_text September 2017
+            .col-12.col-md-8
+                .works_subtitle 客戶
+                .works_text The Naked Grouse
+        .row.last_line
+            .col-12.col-md-4
+                .works_subtitle 參與項目
+                .works_text 網頁設計
+                            br
+                            | 響應式網頁設計及 HTML5 切版
+                            br
+                            | 網頁動態設計及撰寫
+            .col-12.col-md-8
+                .works_subtitle 目標
+                .works_text 裸雀小酒館「人氣主場 由你決定」活動網站，內容為票選最受歡迎的酒專，使用者將會在各酒專當場掃描 QR Code 進入網頁投票，用原本的平面視覺延伸做成活動網頁視覺，以 Fullscreen 網頁形式呈現，資訊說明希望清楚明暸。
+    .container-fluid.orange_sec.sec3
+        .container
+            .row.justify-content-center
+                .sec_title_block
+                    h1.sec_title CASE STUDY
+                    img(src="./images/naked_detail.svg").svg_word.detail_word
+            .row.justify-content-center
+                .col-10
+                    .sm_title 配合原本的商品主視覺更進一步
+                    .sm_text 以原本的平面視覺延伸做成活動網頁視覺，配合「人氣主場 由你決定」比較活潑的企劃 —— 票選最受歡迎的酒專，以及本身logo的隨性感，網頁動態也用比較活潑的形式呈現，希望藉由動態讓主視覺有更加分的有加乘感。

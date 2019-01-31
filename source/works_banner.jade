@@ -4,9 +4,17 @@ block loading
     -var borderColor = 'pink'
     include ./partials/loading.jade
 
+block borders
+    .top_border_pink
+    .bottom_border_pink
+    .right_border_pink
+    .left_border_pink
+
 block navbar
     -var path = 'works.html'
-    -var logoColor = ''
+    -var logoColor = 'pink'
+    -var nav_bg= ''
+    -var togglerColor = ''
     include ./partials/navbar.jade
 
 block content

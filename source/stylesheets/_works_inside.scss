@@ -1,0 +1,95 @@
+.navbar_grey{
+    background-color: $top_bg;
+}
+
+.navbar-toggler_orange{
+    background-color: $naked;
+}
+
+.navbar-toggler_grey{
+    background-color: $brown-grey-two;
+}
+
+.navbar-toggler_gold{
+    background-color: $wolf;
+}
+
+.navbar-toggler_blue{
+    background-color: $blue;
+}
+
+.orange_sec{
+    background-color: $light-naked;
+}
+
+
+//每頁的固定樣式
+
+
+.top_sec{
+    background-color: $top_bg;
+    height: 350px;
+    margin-bottom: 230px;
+    .top_pic_sec{
+        position: relative;
+        top: 40px;
+    }
+}
+
+.sec2{
+    .big_title{
+        margin-bottom: 60px;
+        .title_works{
+            @include hansFont(57px,300,$greyish-brown,left);
+            letter-spacing: -1px;
+        }
+        .title_kind{
+            @include hansFont(48px,200,$greyish-brown,left);
+            letter-spacing: -1px;
+            top: -10px;
+            position: relative;
+        }
+        .title_line{
+            width: 20%;
+            height: 8px;
+            background-color: $naked;
+        }
+    }
+   
+    .works_subtitle{
+        @include hansFont(48px,300,$greyish-brown,left);
+        letter-spacing: -1px;
+    }
+    .works_text{
+        @include hansFont(21px,300,$warm-grey,left);
+        
+    }
+    .last_line{
+        margin-top: 30px;
+        margin-bottom: 136px;
+    }
+}
+
+.sec3{
+    height: 400px;
+    .sm_title{
+        @include hansFont(21px,600,#3e3e3e,center);
+        margin-bottom: 15px;
+    }
+    .sm_text{
+        @include hansFont(21px,300,$warm-grey,left);
+        margin-bottom: 40px;
+    }
+  
+    .sec_title_block{
+        position: relative;
+        top: -70px;
+        letter-spacing: -2px;
+        margin-bottom: 40px;
+    }
+    .detail_word{
+        position: absolute;
+        top: 40px;
+        left: calc(50% - 117px);
+    }
+}

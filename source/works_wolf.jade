@@ -4,9 +4,17 @@ block loading
     -var borderColor = 'gold'
     include ./partials/loading.jade
 
+block borders
+    .top_border_gold
+    .bottom_border_gold
+    .right_border_gold
+    .left_border_gold
+
 block navbar
     -var path = 'works.html'
     -var logoColor = ''
+    -var nav_bg= 'grey'
+    -var togglerColor = 'gold'
     include ./partials/navbar.jade
 
 block content

@@ -4,9 +4,17 @@ block loading
     -var borderColor = 'gray'
     include ./partials/loading.jade
 
+block borders
+    .top_border_grey
+    .bottom_border_grey
+    .right_border_grey
+    .left_border_grey
+
 block navbar
     -var path = 'works.html'
     -var logoColor = ''
+    -var nav_bg= 'grey'
+    -var togglerColor = 'grey'
     include ./partials/navbar.jade
 
 block content

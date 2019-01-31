@@ -19,6 +19,93 @@
     @include leftRightBorder($main);
 }
 
+//blue border
+.top_border_blue{
+    top: 0;
+    @include upDownBorder($blue);
+}
+
+.bottom_border_blue{
+    bottom: 0;
+    @include upDownBorder($blue);
+}
+
+.right_border_blue{
+    right: 0;
+    @include leftRightBorder($blue);
+}
+
+.left_border_blue{
+    left: 0;
+    @include leftRightBorder($blue);
+}
+//orange border
+.top_border_orange{
+    top: 0;
+    @include upDownBorder($naked);
+}
+
+.bottom_border_orange{
+    bottom: 0;
+    @include upDownBorder($naked);
+}
+
+.right_border_orange{
+    right: 0;
+    @include leftRightBorder($naked);
+}
+
+.left_border_orange{
+    left: 0;
+    @include leftRightBorder($naked);
+}
+//gold border
+
+.top_border_gold{
+    top: 0;
+    @include upDownBorder($wolf);
+}
+
+.bottom_border_gold{
+    bottom: 0;
+    @include upDownBorder($wolf);
+}
+
+.right_border_gold{
+    right: 0;
+    @include leftRightBorder($wolf);
+}
+
+.left_border_gold{
+    left: 0;
+    @include leftRightBorder($wolf);
+}
+//grey border
+
+.top_border_grey{
+    top: 0;
+    @include upDownBorder($brown-grey-two);
+}
+
+.bottom_border_grey{
+    bottom: 0;
+    @include upDownBorder($brown-grey-two);
+}
+
+.right_border_grey{
+    right: 0;
+    @include leftRightBorder($brown-grey-two);
+}
+
+.left_border_grey{
+    left: 0;
+    @include leftRightBorder($brown-grey-two);
+}
+
+
+
+
+
 //content
 
 .index_section1{ 
@@ -181,6 +268,7 @@
                 width: 132px;
                 left: -36px;
                 bottom: 30px;
+                z-index: 2;
                 @include xl(){
                     width: 112px;
                     left: -30px;
@@ -205,6 +293,7 @@
                 width: 201px;
                 left: 65px;
                 bottom: 30px;
+                z-index: 2;
                 @include xl(){
                     width: 180px;
                 }
@@ -229,6 +318,7 @@
                 width: 145px;
                 left: 130px;
                 bottom: 30px;
+                z-index: 2;
                 @include xl(){
                     width: 125px;
                     left: 115px;
