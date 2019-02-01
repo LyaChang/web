@@ -30,24 +30,65 @@
     background-color: $top_bg;
     height: 350px;
     margin-bottom: 230px;
+    @include xl(){
+        margin-bottom: 130px;
+    }
+    @include md(){
+        margin-bottom: 130px;
+        height: 240px;
+    }
+    @include sm(){
+        margin-bottom: 15vw;
+        height: 45vw;
+    }
+
     .top_pic_sec{
         position: relative;
         top: 40px;
+        .top_pic{
+            width: 100%;
+        }
     }
 }
 
 .sec2{
     .big_title{
         margin-bottom: 60px;
+        @include md(){
+            margin-bottom: 40px;
+        }
+        @include sm(){
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+
         .title_works{
             @include hansFont(57px,300,$greyish-brown,left);
             letter-spacing: -1px;
+            @include sm(){
+                font-size: 40px;
+            }
+            @include mobile480(){
+                font-size: 38px;
+            }
+            @include iphone5(){
+                font-size: 33px;
+            }
         }
         .title_kind{
             @include hansFont(48px,200,$greyish-brown,left);
             letter-spacing: -1px;
             top: -10px;
             position: relative;
+            @include sm(){
+                font-size: 30px;
+            }
+            @include mobile480(){
+                font-size: 28px;
+            }
+            @include iphone5(){
+                font-size: 25px;
+            }
         }
         .title_line{
             width: 20%;
@@ -59,19 +100,52 @@
     .works_subtitle{
         @include hansFont(48px,300,$greyish-brown,left);
         letter-spacing: -1px;
+        @include lg(){
+            font-size: 40px;
+        }
+        @include sm(){
+            padding-left: 10px;
+        }
+        @include mobile480(){
+            font-size: 35px;
+        }
+        @include iphone5(){
+            font-size: 30px;
+        }
+
     }
     .works_text{
         @include hansFont(21px,300,$warm-grey,left);
+        @include lg(){
+            font-size: 18px;
+        }
+        @include md(){
+            margin-bottom: 20px;
+        }
+        @include sm(){
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include iphone5(){
+            
+        }
         
     }
     .last_line{
         margin-top: 30px;
         margin-bottom: 136px;
+        @include md(){
+            margin-top: 0px;
+            margin-bottom: 100px;
+        }
+        @include mobile480(){
+            margin-bottom: 60px;
+        }
     }
 }
 
 .sec3{
-    height: 400px;
+    
     .sm_title{
         @include hansFont(21px,600,#3e3e3e,center);
         margin-bottom: 15px;
@@ -79,6 +153,12 @@
     .sm_text{
         @include hansFont(21px,300,$warm-grey,left);
         margin-bottom: 40px;
+        @include lg(){
+            font-size: 18px;
+        }
+        @include md(){
+            margin-bottom: 30px;
+        }
     }
   
     .sec_title_block{
@@ -86,10 +166,148 @@
         top: -70px;
         letter-spacing: -2px;
         margin-bottom: 40px;
+        @include lg(){
+            margin-bottom: 30px;
+        }
+        @include md(){
+            top: -50px;
+        }
+        @include sm(){
+            top: -40px;
+        }
+        @include mobile480(){
+            top: -30px;
+        }
+        @include iphone5(){
+            top: -25px;
+        }
     }
     .detail_word{
         position: absolute;
         top: 40px;
         left: calc(50% - 117px);
+        @include lg(){
+            width: 200px;
+            left: calc(50% - 100px);
+        }
+        @include md(){
+            top: 30px;
+            width: 170px;
+            left: calc(50% - 85px);
+        }
+        @include sm(){
+            top: 25px;
+            width: 140px;
+            left: calc(50% - 70px);
+        }
+        @include mobile480(){
+            top: 25px;
+            width: 120px;
+            left: calc(50% - 60px);
+        }
+        @include iphone5(){
+            top: 15px;
+            width: 100px;
+            left: calc(50% - 50px);
+        }
     }
+    .pic_all{
+        width: 100%;
+        margin-bottom: 40px;
+        @include md(){
+            margin-bottom: 25px;
+        }
+    }
+    .pic_btm{
+        margin-bottom: 70px;
+        @include md(){
+            margin-bottom: 45px;
+        }
+    }
+    .pic_last_btm{
+        margin-bottom: 120px;
+        @include md(){
+            margin-bottom: 80px;
+        }
+    }
+}
+
+.sec4{
+    .sec_title_block{
+        position: relative;
+        margin-top: 100px;
+        letter-spacing: -2px;
+        margin-bottom: 130px;
+        @include lg(){
+            margin-top: 80px;
+        }
+        @include sm(){
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        @include mobile480(){
+            margin-bottom: 70px;
+        }
+        @include iphone5(){
+
+        }
+        .sec_title{
+            @include xl(){
+                font-size: 124px;
+            }
+            @include lg(){
+                font-size: 100px;
+            }
+            @include md(){
+                font-size: 80px;
+            }
+            @include sm(){
+                font-size: 65px;
+            }
+            @include mobile480(){
+                font-size: 50px;
+            }
+            @include iphone5(){
+                font-size: 45px;
+            }
+        }
+    }
+    .go_word{
+        position: absolute;
+        top: 60px;
+        left: calc(50% - 68px);
+        @include lg(){
+            width: 120px;
+            left: calc(50% - 60px);
+        }
+        @include sm(){
+            top: 40px;
+            width: 100px;
+            left: calc(50% - 50px);
+        }
+        @include mobile480(){
+            top: 30px;
+            width: 70px;
+            left: calc(50% - 35px);
+        }
+        @include iphone5(){
+            top: 30px;
+            width: 60px;
+            left: calc(50% - 30px);
+        }
+
+    }
+    .go_buttun{
+        width: 100%;
+        padding: 20px;
+        background-color: $naked;
+        @include hansFont(24px,300,#fff,center);
+        letter-spacing: 2.8px;
+        margin-bottom: 100px;
+        @include mobile480(){
+            font-size: 20px;
+            padding: 15px;
+        }
+    }
+
 }
