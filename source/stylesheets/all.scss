@@ -6,7 +6,7 @@ $brown-grey-two: #838383;
 $very-light-pink: #d9d9d9;
 $top_bg: #f4f4f4;
 $black: #3b3939;
-$white: #f9f9f9;
+$light-reminder: #f9f9f9;
 $main: #f27298;
 $faded-red: #d4535e;
 $light-naked: #fffaf7;
@@ -144,6 +144,7 @@ button:focus{
 @import "index";
 @import "works";
 @import "works_inside";
+@import "works_banner";
 @import "./works_inside/naked";
 @import "./works_inside/reminder";
 @import "./works_inside/wolf";

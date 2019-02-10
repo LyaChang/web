@@ -21,9 +21,14 @@
 .orange_sec{
     background-color: $light-naked;
 }
+.gold_sec{
+    background-color: $light-wolf;
+}
+.reminder_sec{
+    background-color: $light-reminder;
+}
 
-
-//每頁的固定樣式
+//網頁作品的固定樣式
 
 
 .top_sec{
@@ -50,6 +55,39 @@
         }
     }
 }
+
+//手機作品固定樣式
+
+.top_sec_mobile{
+    background-color: $top_bg;
+    height: 350px;
+    margin-bottom: 230px;
+    @include xl(){
+        margin-bottom: 130px;
+    }
+    @include md(){
+        margin-bottom: 130px;
+        height: 240px;
+    }
+    @include sm(){
+        margin-bottom: 5vw;
+        height: 90vw;
+        overflow: hidden;
+    }
+
+    .top_pic_sec_mobile{
+        position: relative;
+        top: 40px;
+        .top_pic{
+            width: 100%;
+        }
+        @include sm(){
+            top: 10px;
+        }
+    }
+}
+
+//其他樣式
 
 .sec2{
     .big_title{
@@ -93,7 +131,19 @@
         .title_line{
             width: 20%;
             height: 8px;
+            
+        }
+        .title_naked{
             background-color: $naked;
+        }
+        .title_wolf{
+            background-color: $wolf;
+        }
+        .title_cv{
+            background-color: $blue;
+        }
+        .title_reminder{
+            background-color: $brown-grey-two;
         }
     }
    
@@ -159,6 +209,12 @@
         @include md(){
             margin-bottom: 30px;
         }
+    }
+    .sm_text_top{
+        margin-bottom: 10px;
+    }
+    .sm_middle{
+        text-align: center;
     }
   
     .sec_title_block{
@@ -300,14 +356,20 @@
     .go_buttun{
         width: 100%;
         padding: 20px;
-        background-color: $naked;
         @include hansFont(24px,300,#fff,center);
         letter-spacing: 2.8px;
         margin-bottom: 100px;
         @include mobile480(){
             font-size: 20px;
             padding: 15px;
-        }
+        }   
+     }
+    .orange_btn{
+        background-color: $naked;
     }
+    .gold_btn{
+        background-color: $wolf;
+    }
+    
 
 }
