@@ -271,12 +271,17 @@
             left: calc(50% - 50px);
         }
     }
-    .pic_all{
-        width: 100%;
+    .pic_all_mb{
         margin-bottom: 40px;
         @include md(){
             margin-bottom: 25px;
         }
+    }
+    .pic_all{
+        width: 100%;
+       
+        vertical-align: inherit;
+       
     }
     .pic_btm{
         margin-bottom: 70px;

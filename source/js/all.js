@@ -11,6 +11,23 @@ window.onload=function(){
 
 //selection
 
+var winH = $(window).width();
+
+function masonry_fn(){
+
+    if (winH > 576){
+        $('#masonry').imagesLoaded(function(){
+            $('#masonry').masonry({
+                itemSelector: '.item',
+                columnWidth: 10,
+                isAnimated: true
+            });
+        });
+    }else{
+        $('#masonry').masonry('destroy');
+    }
+
+};
 
 $(document).ready(function(){
     $('.kind_lists_work li a').on('click',(function(){
@@ -64,6 +81,10 @@ $(document).ready(function(){
             if(name == "work"){
                 $(".work").css("display","block");
                 $(".act,.test,.travel").css("display","none");
+                $(".act,.test,.travel").hide();
+                $(".work").show();
+               
+                masonry_fn();
                 TweenMax.to(".work",1,{opacity:"1",ease: Power2.easeOut});
                 TweenMax.to(".test",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".act",1,{opacity:"0",ease: Power2.easeOut});
@@ -74,6 +95,10 @@ $(document).ready(function(){
             else if(name == "test"){
                 $(".work,.act,.travel").css("display","none");
                 $(".test").css("display","block");
+                $(".work,.act,.travel").hide();
+                $(".test").show();
+              
+                masonry_fn();
                 TweenMax.to(".test",1,{opacity:"1",ease: Power2.easeOut});
                 TweenMax.to(".work",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".act",1,{opacity:"0",ease: Power2.easeOut});
@@ -84,6 +109,10 @@ $(document).ready(function(){
             else if(name == "act"){
                 $(".work,.test,.travel").css("display","none");
                 $(".act").css("display","block");
+                $(".work,.test,.travel").hide();
+                $(".act").show();
+               
+                masonry_fn();
                 TweenMax.to(".test",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".work",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".act",1,{opacity:"1",ease: Power2.easeOut});
@@ -95,6 +124,10 @@ $(document).ready(function(){
             else if(name == "travel"){
                 $(".work,.test,.act").css("display","none");
                 $(".travel").css("display","block");
+                $(".work,.test,.act").hide();
+                $(".travel").show;
+               
+                masonry_fn();
                 TweenMax.to(".test",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".work",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".act",1,{opacity:"0",ease: Power2.easeOut});
@@ -105,6 +138,12 @@ $(document).ready(function(){
             }
             else{
                 $(".work,.test,.act,.travel").css("display","block");
+                $(".work,.test,.act,.travel").show();
+                $('#masonry').masonry({
+                    itemSelector: '.item',
+                    columnWidth: 10,
+                    isAnimated: true
+                });
                 TweenMax.to(".work,.test,.act,.travel",1,{opacity:"1",ease: Power2.easeOut});
                 
                 $(".kind_lists_banner a").removeClass("active");
@@ -112,10 +151,20 @@ $(document).ready(function(){
             }
         
     }))
-    //瀑布流
-    // $('.box').masonry({
-    //     itemSelector: '.item',
-    // });
+
+    masonry_fn();
+    $('.gif').gifplayer({label:""});
+
+    $(window).resize(function(){
+        
+        //改變視窗時重新整理一次
+        this.location.reload();
+        masonry_fn();
+    });
+
+
 })
+
+
 
 

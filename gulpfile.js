@@ -90,11 +90,19 @@ gulp.task('jade', function() {
   });
   
   gulp.task('vendorJs',['bower'], function() {
-    return gulp.src(['./.tmp/vendors/**/**.js','./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js','./source/js/plugins/*.js','./node_modules/gsap/src/minified/TweenMax.min.js'])
+    return gulp.src(['./.tmp/vendors/jquery.js','./.tmp/vendors/**/**.js','./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js','./node_modules/gsap/src/minified/TweenMax.min.js'])
         .pipe($.concat('vendors.js'))
         .pipe($.if(options.env === 'production',$.uglify))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest('./public/js'))
+  });
+
+  gulp.task('concatJS', function() {
+    return gulp.src('./source/js/plugins/*.js')
+    .pipe($.concat('plugin.js'))
+    .pipe($.if(options.env === 'production',$.uglify))
+    .pipe($.sourcemaps.write('.'))
+        .pipe(gulp.dest('./public/js'));
   });
 
   // Static server
@@ -128,4 +136,4 @@ gulp.task('image-min', () =>
   });
 
 
-  gulp.task('default',['jade','concatCSS','sass','babel','vendorJs','image-min','browser-sync','watch']);
+  gulp.task('default',['jade','concatCSS','sass','babel','vendorJs','concatJS','image-min','browser-sync','watch']);
