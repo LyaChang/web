@@ -29,6 +29,11 @@ function masonry_fn(){
 
 };
 
+function errorOne() {
+    console.log('first image load error!');
+  }
+  
+
 $(document).ready(function(){
     $('.kind_lists_work li a').on('click',(function(){
         var name = $(this).data("value")
@@ -161,7 +166,7 @@ $(document).ready(function(){
         this.location.reload();
         masonry_fn();
     });
-
+    
 
 })
 

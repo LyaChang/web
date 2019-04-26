@@ -23,10 +23,10 @@ block content
     .works_section1
         .container
             .row.justify-content-center
-                .col-11.col-sm-12
+                .col-11.col-sm-12.d-none.d-md-block
                     ul.kind_lists.kind_lists_work
                         li.list_kind.segment-0.selected-0(data-value="all")
-                            a(href="#",data-value="all").active All
+                            a(href="#",data-value="all").active ALL
                                 span (5)
                         li.list_kind.segment-1
                             a(href="#",data-value="web") WEB
@@ -37,6 +37,13 @@ block content
                         li.list_kind.segment-3
                             a(href="#",data-value="banner") BANNER
                                 span (1)
+                .col-11.d-md-none
+                    .dropmenu
+                        .dropmenu_words ALL
+                            .dropbtn
+                                img(src="./images/arrow_down.png", alt="")
+                            span 5
+                            
     .works_section2
         .container
             .row

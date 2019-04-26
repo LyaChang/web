@@ -18,6 +18,13 @@ ins.play-gif{
 	cursor:pointer;
 	text-decoration: none;
 }
+@media (max-width: 767px) {
+	ins.play-gif{
+		width: 20vw;
+		height: 20vw;
+	}
+}
+
 
 ins.play-gif:hover{
 	opacity:.5;
