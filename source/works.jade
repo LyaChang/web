@@ -1,5 +1,19 @@
 extend layout.jade
 
+block popin
+    .dropmenu_space#menu_content
+        ul.kind_lists_work
+            li.list.segment-0.selected-0(data-value="all")
+                a(href="#",data-value="all") ALL
+            li.list.segment-1
+                a(href="#",data-value="web") WEB
+            li.list.segment-2
+                a(href="#",data-value="app") APP
+            li.list.segment-3
+                a(href="#",data-value="banner") BANNER
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+
 block loading
     -var borderColor = 'pink'
     include ./partials/loading.jade
@@ -39,7 +53,8 @@ block content
                                 span (1)
                 .col-11.d-md-none
                     .dropmenu
-                        .dropmenu_words ALL
+                        .dropmenu_words 
+                            .words ALL
                             .dropbtn
                                 img(src="./images/arrow_down.png", alt="")
                             span 5

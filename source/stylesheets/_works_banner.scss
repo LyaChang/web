@@ -1,6 +1,7 @@
 .works_section1{
     .banner_title{
-        @include hansFont(57px,300,#444,left);
+        @include hansFont(50px,300,#444,left);
+        margin-bottom: 20px;
     }
 }
 .works_banner_section2{

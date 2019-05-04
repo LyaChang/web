@@ -1,5 +1,21 @@
 extend layout.jade
 
+block popin
+    .dropmenu_space#menu_content_banner
+        ul.kind_lists_banner
+            li.list(data-value="all").segment-0
+                a(href="#",data-value="all").active ALL
+            li.list.segment-1
+                a(href="#",data-value="work") 工作轉職
+            li.list.segment-2
+                a(href="#",data-value="test") 測驗分析
+            li.list.segment-3
+                a(href="#",data-value="act") 活動
+            li.list.segment-4
+                a(href="#",data-value="travel") 旅遊
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+
 block loading
     -var borderColor = 'pink'
     include ./partials/loading.jade
@@ -23,7 +39,7 @@ block content
             .row.justify-content-center
                 .col-11.col-sm-12
                     h1.banner_title Banner Collection
-                .col-11.col-sm-12
+                .col-11.col-sm-12.d-none.d-md-block
                     ul.kind_lists.kind_lists_banner
                         li.list_kind(data-value="all").segment-0
                             a(href="#",data-value="all_banner").active All
@@ -40,6 +56,13 @@ block content
                         li.list_kind.segment-4
                             a(href="#",data-value="travel") 旅遊
                                 span (1)
+                .col-11.d-md-none
+                    .dropmenu
+                        .dropmenu_words 
+                            .words ALL
+                            .dropbtn
+                                img(src="./images/arrow_down.png", alt="")
+                            span 22
     .works_banner_section2
         .container
             .row#masonry.justify-content-center

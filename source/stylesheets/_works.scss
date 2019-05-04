@@ -1,3 +1,38 @@
+.dropmenu_space{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: $main;
+    opacity: 0;
+    z-index: 9999;
+    display: none;
+    ul{
+        position: relative;
+        margin-top: 100px;
+    }
+    .list{
+        position: relative;
+        margin: 0 auto;
+        list-style:none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        a{
+            cursor: pointer;
+            @include hansFont(30px,300,#fff,center);
+        }
+       
+    }
+    .cancel_btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        img{
+            width: 40px;
+        }
+    }
+}
+
+
 .works_grass{
     .bg_grass1{
         width: 250px;
@@ -95,6 +130,10 @@
         .dropmenu_words{
             @include hansFont(21px,300,$black,left);
             margin-left: 5px;
+            .words{
+                position: relative;
+                display: inline-block;
+            }
             span{
                 text-align: right;
                 float: right;

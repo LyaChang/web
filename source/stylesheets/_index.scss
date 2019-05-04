@@ -102,9 +102,11 @@
     @include leftRightBorder($brown-grey-two);
 }
 
-
-
-
+#nav{
+    position: fixed;
+    z-index: 9998;
+    right: 20px;
+}
 
 //content
 

@@ -144,11 +144,7 @@ $(document).ready(function(){
             else{
                 $(".work,.test,.act,.travel").css("display","block");
                 $(".work,.test,.act,.travel").show();
-                $('#masonry').masonry({
-                    itemSelector: '.item',
-                    columnWidth: 10,
-                    isAnimated: true
-                });
+                masonry_fn();
                 TweenMax.to(".work,.test,.act,.travel",1,{opacity:"1",ease: Power2.easeOut});
                 
                 $(".kind_lists_banner a").removeClass("active");
@@ -156,6 +152,62 @@ $(document).ready(function(){
             }
         
     }))
+    $('.dropmenu').on('click',(function(){
+        TweenMax.to(".dropmenu_space",.6,{opacity:"0.94",ease: Power2.easeOut,"display":"block"});        
+    }));
+    $('#menu_content li a').on('click',(function(){
+        TweenMax.to(".dropmenu_space",.6,{opacity:"0",ease: Power2.easeOut,"display":"none"});
+        var name = $(this).data("value")
+        if(name == "web"){
+            $(".dropmenu .words").html("WEB");
+            $(".dropmenu span").html("3");
+        }
+        else if(name == "all"){
+            $(".dropmenu .words").html("ALL");
+            $(".dropmenu span").html("5");
+        }
+        else if(name == "app"){
+            $(".dropmenu .words").html("APP");
+            $(".dropmenu span").html("1");
+        }
+        else if(name == "banner"){
+            $(".dropmenu .words").html("BANNER");
+            $(".dropmenu span").html("1");
+        }
+    }));
+    $('#menu_content_banner li a').on('click',(function(){
+        TweenMax.to(".dropmenu_space",.6,{opacity:"0",ease: Power2.easeOut,"display":"none"});
+        var name = $(this).data("value")
+        if(name == "work"){
+            $(".dropmenu .words").html("工作轉職");
+            $(".dropmenu span").html("7");
+        }
+        else if(name == "all"){
+            $(".dropmenu .words").html("ALL");
+            $(".dropmenu span").html("22");
+        }
+        else if(name == "test"){
+            $(".dropmenu .words").html("測驗分析");
+            $(".dropmenu span").html("6");
+        }
+        else if(name == "act"){
+            $(".dropmenu .words").html("活動");
+            $(".dropmenu span").html("8");
+        }
+        else if(name == "travel"){
+            $(".dropmenu .words").html("旅遊");
+            $(".dropmenu span").html("1");
+        }
+    }));
+    $('.dropmenu_space .cancel_btn').on('click',(function(){
+        TweenMax.to(".dropmenu_space",.6,{opacity:"0",ease: Power2.easeOut,"display":"none"});
+    }));
+
+    //nav
+
+    $('#nav').on('click',(function(){
+        console.log("nav");
+    }));
 
     masonry_fn();
     $('.gif').gifplayer({label:""});

@@ -17,19 +17,19 @@ mixin logo()
 
 mixin togglerColor()
     if(togglerColor === "orange")
-        button.navbar-toggler.navbar-toggler_orange(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        button.navbar-toggler.navbar-toggler_orange#nav(type='button')
                 span.navbar-toggler-icon
     else if(togglerColor === "grey")
-        button.navbar-toggler.navbar-toggler_grey(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        button.navbar-toggler.navbar-toggler_grey#nav(type='button')
                 span.navbar-toggler-icon
     else if(togglerColor === "blue")
-        button.navbar-toggler.navbar-toggler_blue(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        button.navbar-toggler.navbar-toggler_blue#nav(type='button')
                 span.navbar-toggler-icon
     else if(togglerColor === "gold")
-        button.navbar-toggler.navbar-toggler_gold(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        button.navbar-toggler.navbar-toggler_gold#nav(type='button')
                 span.navbar-toggler-icon
     else
-        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        button.navbar-toggler#nav(type='button')
                 span.navbar-toggler-icon
 
 
