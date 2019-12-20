@@ -13,8 +13,29 @@ block popin
                 a(href="#",data-value="act") 活動
             li.list.segment-4
                 a(href="#",data-value="travel") 旅遊
+            li.list.segment-5
+                a(href="#",data-value="pd") 商品
         .cancel_btn
             img(src="./images/cancel.png", alt="")
+    .nav_mobile
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    .all_works_btn.works_btn_pink.d-none.d-lg-block
+        a(href="./works.html")
+            img(src="./images/btn_Allworks.png", alt="")
 
 block loading
     -var borderColor = 'pink'
@@ -43,19 +64,22 @@ block content
                     ul.kind_lists.kind_lists_banner
                         li.list_kind(data-value="all").segment-0
                             a(href="#",data-value="all_banner").active All
-                                span (22)
+                                span (31)
                         li.list_kind.segment-1
                             a(href="#",data-value="work") 工作轉職
-                                span (7)
+                                span (6)
                         li.list_kind.segment-2
                             a(href="#",data-value="test") 測驗分析
                                 span (6)
                         li.list_kind.segment-3
                             a(href="#",data-value="act") 活動
-                                span (8)
+                                span (5)
                         li.list_kind.segment-4
                             a(href="#",data-value="travel") 旅遊
                                 span (1)
+                        li.list_kind.segment-5
+                            a(href="#",data-value="pd") 商品
+                                span (13)
                 .col-11.d-md-none
                     .dropmenu
                         .dropmenu_words 
@@ -67,44 +91,66 @@ block content
         .container
             .row#masonry.justify-content-center
                 .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_v1.jpg",srcset="./images/banner/banner_v1.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v1.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_v2.jpg",srcset="./images/banner/banner_v2.gif").banner
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v2.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_v4.jpg",srcset="./images/banner/banner_v4.gif").banner
-                .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_v5.jpg",srcset="./images/banner/banner_v5.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v5.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p23.jpg").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v24.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v25.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/banner/banner_p6.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p6.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/banner/banner_v7.jpg",srcset="./images/banner/banner_v7.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v7.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/banner/banner_v8.jpg",srcset="./images/banner/banner_v8.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v8.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/banner/banner_v9.jpg",srcset="./images/banner/banner_v9.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v9.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v26.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v27.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/banner/banner_p10.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_p10.jpg", data-src="./images/banner/banner_p10.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/banner/banner_p11.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p11.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_v12.jpg",srcset="./images/banner/banner_v12.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v12.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.travel.item.mb-25
-                    img(src="./images/banner/banner_p13.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_p13.jpg", data-src="./images/banner/banner_p13.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/banner/banner_v14.jpg",srcset="./images/banner/banner_v14.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v14.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_p15.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p15.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/banner/banner_p16.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p16.jpg").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p30.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/banner/banner_p17.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p17.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/banner/banner_v18.jpg",srcset="./images/banner/banner_v18.gif").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v18.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v28.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_v29.jpg").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p32.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/banner/banner_p19.jpg", alt="", srcset="").banner
-                .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/banner/banner_p20.jpg", alt="", srcset="").banner
+                    img(src="./images/loading_p19.jpg", data-src="./images/banner/banner_p19.jpg").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_v21.jpg",srcset="./images/banner/banner_v21.gif").banner
-                .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/banner/banner_p22.jpg", alt="", srcset="").banner
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v21.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v31.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v32.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v33.gif").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v34.gif").banner.lazyload
+                
+               

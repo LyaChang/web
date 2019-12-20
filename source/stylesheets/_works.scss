@@ -33,6 +33,56 @@
 }
 
 
+.all_works_btn{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+    border-radius: 100%;
+    transition: 2s;
+
+    img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 20px;
+        left: 20px;
+    }
+    &:hover:after {
+        content: "WORKS";
+        display: block;
+        top: -25px;
+        left: 7px;
+        position: absolute;
+        @include hansFont(16px,300,#8a8585,left);
+       
+    }
+}
+
+.works_btn_grey{
+    background-color: $brown-grey-two;
+}
+
+.works_btn_gold{
+    background: $wolf;
+}
+
+.works_btn_blue{
+    background: $blue;
+}
+
+.works_btn_orange{
+    background: $naked;
+}
+
+.works_btn_pink{
+    background: $main;
+}
+
+
+
 .works_grass{
     .bg_grass1{
         width: 250px;
@@ -224,4 +274,19 @@
             }
         }
     }
+}
+
+.long_video{
+    position: relative;
+    width: 100%;
+    top: -50px;
+    margin-bottom: 25px;
+    @include sm(){
+        
+    }
+    @include mobile480(){
+        top: -30px;
+        margin-bottom: 0px;
+    }
+    
 }

@@ -1,5 +1,26 @@
 extend layout.jade
 
+block popin
+    .nav_mobile.nav_mobile_blue
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    .all_works_btn.works_btn_blue.d-none.d-lg-block
+        a(href="./works.html")
+            img(src="./images/btn_Allworks.png", alt="")
+
 block loading
     -var borderColor = 'blue'
     include ./partials/loading.jade
@@ -22,7 +43,7 @@ block content
         .container
             .row.justify-content-center.top_pic_sec
                 .col-12.col-sm-12.col-lg-9
-                    img(src="./images/cv_top.png", alt="").top_pic
+                    img(src="./images/CV_top.png", alt="").top_pic
     .container.sec2
         .row
             .col-12.big_title
@@ -46,7 +67,7 @@ block content
                             | 網頁動態設計及部分撰寫
             .col-12.col-md-8
                 .works_subtitle 目標
-                .works_text 將服務推廣出去，改善他們的服務流程，讓使用者願意加入他們的會員去使用。
+                .works_text 舊網頁改版。將履歷健診這項服務推廣出去，改善他們的網頁架構、服務流程，整體的頁面希望呈現專業感，讓人充滿信任感，願意去報名這項服務。
                             br
                             | 此網站除了主要的報名履歷健診服務外，也涵蓋了一些相關的頁面，如：成功案例、顧問群介紹、求職文章.......等等。
     .container-fluid.blue_sec.sec3
@@ -57,30 +78,58 @@ block content
                     img(src="./images/cv_detail.svg").svg_word.detail_word
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 用單一色系及資料數據化呈現專業感
-                    .sm_text 履歷健診是由客戶1111人力銀行推出的服務——找業界專業人士幫你看履歷以提高找到理想工作的機率。整體的頁面特別著重於呈現專業感，讓人充滿信任，願意去參與這項服務，進而去加入他們的會員。
+                    .sm_title 網頁1個月內要上線，設計只有我1人
+                    .sm_text.sm_text_top 由於客戶要求的時程非常趕，一開始只能先研究下原有的網站的架構及設計，針對他們提出的想要改善的頁面專業感和服務流程列出可以修改的點，先提出一版新網頁架構及首頁新視覺確定視覺風格和頁面數量。
+                    .sm_text.sm_text_top 舊版本問題：
+                                        br
+                                        | 1. 首頁元素太多太擁擠，色彩過多，無法展現專業感。
+                                        br
+                                        | 2. 太多跟履歷健診沒有直接相關的頁面 (想要放的服務太多)及有些名稱會讓人誤解。
+                    .sm_text 解決方式：
+                            br
+                            | 1. 網頁元素和顏色盡量簡潔，首頁最上面採用一張專業人士的圖做主視覺，並在旁邊擺部分成功案例，增加信任感，下面用數據、使用者見證持續加強信任感，並增加專業感。
+                            br
+                            | 2. 提出新的網站架構及修改會混淆的名字，拿掉覺得不相關的服務。
             .row.justify-content-center
                 .col-12.col-lg-10
-                   img(src="./images/cv_pic1.jpg").pic_all.pic_btm
+                    img(src="./images/cv_pic1.png").pic_all
+                .col-12.col-lg-10
+                    img(src="./images/cv_pic5.png").pic_all.pic_btm
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 最重要的報名流程
-                    .sm_text.sm_text_top 他們希望報名的時候使用者要先填好履歷和完成他們網站的興趣性向測驗，之後再填張報名的問卷方便他們篩選人。
-                    .sm_text 因此在報名流程上，先塞選是否符合資格，如果未符合資格則可一目瞭然知道是哪邊少了，減少使用者的問題，確定符合資格後再填寫報名問卷，問卷採用一題一題出現的形式，比照以前的直接一整個表單自己選哪題要填哪題不用，來的方便許多，也不會覺得題目很多不想填了的狀態。
+                    .sm_title 為節省雙方時間，先做 Wireframe 確認
+                    .sm_text 除了先確定整體架構及視覺後，由於頁面過多及時間緊迫，先做 Wireframe 提給客戶，讓雙方對頁面的組成和內容有共識後，再照著首頁的視覺一次做完其他頁面的初稿。
             .row.justify-content-center
-                .col-12.col-lg-10.pic_all_mb
+                .col-12.col-lg-10
+                    img(src="./images/cv_pic4.jpg").pic_all.pic_btm
+            .row.justify-content-center
+                .col-12.col-lg-10
+                    .sm_title 報名流程新增事前資格篩選和付費服務
+                    .sm_text.sm_text_top 由於舊版本報名流程遇到了些問題，例如：舊版本無法篩選進行健診的人，有沒有完成履歷撰寫 ; 客戶希望進行健診前能完成他們的線上測驗，以提供更多資訊給顧問參考....等等， 和新增了付費的服務，差別是免費不一定能被選上且不能指定顧問，付費則可以自由選擇顧問幫你健診。
+                    .sm_text 為提供流暢的報名流程，採用一開始先檢查資格的機制，都符合資格後再進入報名表單。表單設計方面，採用一次顯示一個問題的模式，讓使用者可以專注，且特別設計讓日益增多的手機使用者好操作，有別傳統表單字小看不到、容易按錯或按不到的問題。
+            .row.justify-content-center
+                .col-12.col-lg-10
                     img(src="./images/cv_pic2.jpg").pic_all
                 .col-12.col-lg-10
-                   img(src="./images/cv_pic3.jpg").pic_all.pic_btm
+                   img(src="./images/cv_pic3.png").pic_all.pic_btm
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 網頁架構圖＆ Wireframe
-                    .sm_text 網站的架構圖和 Wireframe 不能少，便於雙方溝通用的，減少溝通誤會，讓專案更順利。
+                    .sm_title 側邊展開固定選單方便展示，內容也能第一時間看到
+                    .sm_text.sm_text_top 在履歷範本頁面中，產業種類選項高達20種，考慮到此頁面大多數的使用者為職場新鮮人，會想看多個產業的範例，用下拉式選單比較不方便，且不希望內容無法在第一時間看到，因此放在側邊。
+                    .sm_text.sm_text_top 放在側邊也會有些問題產生：
+                                        br
+                                        | 1. 項目過多，頁面被拉長，有時不知道選到了什麼。
+                                        br
+                                        | 2. 手機無法有側邊欄。
+                    .sm_text 解決方式：
+                            br
+                            | 1. 將被選擇的產業永久置頂，讓選了什麼選項一清二楚，且可當標題用，不用占右邊內容的空間。
+                            br
+                            | 2. 在手機中，側邊欄置頂，預設是收合的，有需要再展開，方便按，收合時也可當標題，不用再多空間寫標題。
             .row.justify-content-center
                 .col-12.col-lg-10.pic_all_mb
-                    img(src="./images/cv_pic4.jpg").pic_all
-                .col-12.col-lg-10
-                    img(src="./images/cv_pic5.jpg").pic_all.pic_last_btm
+                    img(src="./images/cv_pic6.png").pic_all.pic_btm
+            
     .container-fluid.sec4
         .container
             .row.justify-content-center
@@ -90,6 +139,6 @@ block content
                     img(src="./images/cv_go.svg").svg_word.go_word
             .row.justify-content-center
                 .col-12.col-md-6.col-lg-3
-                    a(href="#")
+                    a(href="https://event.1111.com.tw/careermaster/resume/Home",target="_blank")
                         div.go_buttun.blue_btn 前往網頁
                             

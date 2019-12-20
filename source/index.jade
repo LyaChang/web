@@ -1,5 +1,23 @@
 extend layout.jade
 
+block popin
+    .nav_mobile
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="../images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+
 
 block loading
     -var borderColor = 'pink'
@@ -25,8 +43,8 @@ block content
             .row.justify-content-center
                 .content.col-lg-8.col-md-10.col-sm-11
                     h1 HELLO
-                    h3 我是一名 Web / UI 設計師        
-                    p 畢業於台北藝術大學新媒體藝術學系，目前有快 2 年相關的工作經驗，專長有 HTML5、CSS3、動畫、網頁設計規劃、App 設計、Banner 製作。
+                    h3 我的名字叫張淑涵        
+                    p 熱愛設計，享受幫忙解決問題的成就感，目標是成為解決各種問題的專業設計師。專長有 HTML5、CSS3、動畫、網頁設計規劃、App 設計、Banner 製作。
             .row.justify-content-center
                 .work_kind
                     .pic.col
@@ -104,7 +122,7 @@ block content
                 img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass7
                 .works_computer.col-sm-6.col
                     .rec.cellphone_rec
-                        img(src="./images/index_cell_ad.png", alt="", srcset="").works_block_img_cell_L
+                        img(src="./images/123.png", alt="", srcset="").works_block_img_cell_L
                 .works_word_block.col-sm-5.align-self-center.works_word_cell.works_block_cell.col-12.offset-4.offset-sm-0
                     h5.kind Banner
                     h2.works_name Facebook 廣告

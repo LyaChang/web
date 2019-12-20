@@ -13,6 +13,22 @@ block popin
                 a(href="#",data-value="banner") BANNER
         .cancel_btn
             img(src="./images/cancel.png", alt="")
+    .nav_mobile
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
 
 block loading
     -var borderColor = 'pink'

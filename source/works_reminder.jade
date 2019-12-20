@@ -1,5 +1,26 @@
 extend layout.jade
 
+block popin
+    .nav_mobile.nav_mobile_gray
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    .all_works_btn.works_btn_grey.d-none.d-lg-block
+        a(href="./works.html")
+            img(src="./images/btn_Allworks.png", alt="")
+
 block loading
     -var borderColor = 'gray'
     include ./partials/loading.jade
@@ -53,17 +74,17 @@ block content
                     img(src="./images/reminder_detail.svg").svg_word.detail_word
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 發想
+                    .sm_title 為什麼設計
                     .sm_text 常聽到很多人會分享說：「我又不小心坐過頭了」實際到捷運或公車上看，發現到很多人在埋頭滑手機或是睡覺，有時熱門時段人很多很吵雜，根本聽不到下一站的站名，不注意的話一不小心就坐過站了。
             .row.justify-content-center
                 .col-12.col-lg-10
                     img(src="./images/reminder_pic1.jpg").pic_all.pic_btm
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 需求設定
-                    .sm_text 根據目標族群(通勤族)的需要，制定了幾個需求：
+                    .sm_title 跟一般常見的等公車 App 不一樣
+                    .sm_text 一開始設計這個 App 的契機是希望不要坐過站，有別一般專屬公車時刻的 App ，由於我住在台北市，這個 App 要包含一般台北市的大眾交通手段 ——公車和捷運，再根據目標族群(通勤族)的需要，制定了幾個需求：
                             br
-                            | 1. 從家裡出發到公車站，公車馬上進站
+                            | 1. 從家裡出發到公車站，公車可以剛好進站，不用在外面苦苦等候
                             br
                             | 2. 不要坐過站
                             br
@@ -71,18 +92,21 @@ block content
                             br
                             | 4. 通勤來回路線很有可能是一樣的
                             br
-                            | 5. A 站到 B 站，同時有兩路公車可以選擇，不管來哪班都要提醒
-                            br
-                            | 6. 轉乘
+                            | 5. 有可能轉乘
             .row.justify-content-center
                 .col-12.col-lg-10
                     img(src="./images/reminder_pic2.jpg").pic_all.pic_btm
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 希望步驟懶人化
-                    .sm_text 每天都要接觸的東西，希望是越直覺越好，可以少輸入的東西就少輸入東西，現代人普遍都很少花時間去設定，因此我希望可以用最簡單的方式達到上面的需求，最後是用路線規劃的方式，來輔助使用者輸入要提醒的站牌。
+                    .sm_title 輸入提醒的步驟懶人化
+                    .sm_text.sm_text_top 由於有轉乘的需求，實際畫了流程發現會非常麻煩。
+                            br
+                            | 例: Ａ小姐每天上班需要搭捷運文湖線在南京復興站轉公車到公館夜市。
+                            br
+                            | 其中捷運要設定一次後再設定一次公車，且每次起始站和終點站都要輸入且提醒時間也是要設定。
+                    .sm_text 每天都要接觸的東西，希望是越直覺越好，可以少輸入的東西就少輸入東西，現代人普遍都很少花時間去設定，因此我希望可以用最簡單的方式達到上面的需求。最後是找到用 Google API 路線規劃的方式，來輔助使用者輸入要提醒的站牌，只要輸入起點和終點，其他由 Google 計算路線，再從中選你平常走的即可。
             .row.justify-content-center
-                .col-12.col-lg-6
+                .col-12.col-lg-10
                     img(src="./images/reminder_pic3.jpg").pic_all.pic_btm
             .row.justify-content-center
                 .col-12.col-lg-10
@@ -103,7 +127,6 @@ block content
                     h1.sec_title.d-none.d-xl-block VIEW THE APP
                     h1.sec_title.d-xl-none APPLICATION
                     img(src="./images/reminder_go.svg").svg_word.go_word
-            .row.justify-content-center
-                .col-12.col-md-6.col-lg-3
-                    a(href="#")
-                        div.go_buttun 前往網頁
+                .col-12.col-sm-6.col-lg-4
+                    video(poster="./images/reminder_v.png",playsinline,controls).long_video
+                        source(src="./images/video/reminder.mp4",type="video/mp4")

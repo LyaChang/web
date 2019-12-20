@@ -1,5 +1,26 @@
 extend layout.jade
 
+block popin
+    .nav_mobile.nav_mobile_orange
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    .all_works_btn.works_btn_orange.d-none.d-lg-block
+        a(href="./works.html")
+            img(src="./images/btn_Allworks.png", alt="")
+
 block loading
     -var borderColor = 'orange'
     include ./partials/loading.jade
@@ -39,9 +60,7 @@ block content
         .row.last_line
             .col-12.col-md-4
                 .works_subtitle 參與項目
-                .works_text 網頁設計
-                            br
-                            | 響應式網頁設計及 HTML5 切版
+                .works_text 響應式網頁設計及 HTML5 切版
                             br
                             | 網頁動態設計及撰寫
             .col-12.col-md-8
@@ -55,33 +74,35 @@ block content
                     img(src="./images/naked_detail.svg").svg_word.detail_word
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 配合原本的商品主視覺更進一步
-                    .sm_text 以原本的平面視覺延伸做成活動網頁視覺，配合「人氣主場 由你決定」比較活潑的企劃 —— 票選最受歡迎的酒專，以及本身logo的隨性感，網頁動態也用比較活潑的形式呈現，希望藉由動態讓主視覺有更加分的有加乘感。
+                    .sm_title 動態配合原本的商品主視覺更進一步
+                    .sm_text 以原本的平面視覺延伸做成活動網頁視覺，客戶希望一進去就有具有驚喜感的動態。他原本的平面視覺就是走只有產品是彩色的路線，因此我決定做商品從黑白過渡到彩色的動態，更凸顯原本的設計理念。
             .row.justify-content-center
                 .col-12.col-lg-10.pic_all_mb
-                    img(src="./images/nake_p1.jpg",data-scope="one",data-mode="video",data-mp4="./images/video/naked_v1.mp4").gif.pic_all
-                    //- video(playsinline,loop,autoplay).pic_all
-                    //-     source(src="./images/vedio/naked_v1.mov",type="video/mp4")
-                .col-12.col-lg-10.pic_btm
-                    img(src="./images/nake_p2.jpg",data-scope="one",data-mode="video",data-mp4="./images/video/naked_v2.mp4").gif.pic_all
-                    //- video(playsinline,loop,autoplay).pic_all
-                    //-     source(src="./images/video/naked_v2.mp4",type="video/mp4")
+                    video(poster="./images/nake_p1.jpg",playsinline,controls,autoplay,loop).pic_all
+                        source(src="./images/video/naked_v1.mp4",type="video/mp4")
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 考慮使用者體驗
-                    .sm_text 考慮到 Fullscreen 網頁設計，不只用旁邊的點點暗示有4個區域，還用了一般最熟知的漢堡選單，另外也加了通往下一區塊的固定按鈕，上面的 icon 圖示隨著下個區塊的內容做變化。此外可滑性區塊，因為很容易滑走，容易造成使用者的不方便，所以就鎖住讓他不會影響到整體頁面的滾輪。
+                    .sm_text 由於與酒類相關網站被規定要做個確認年齡的動作，所以就將這次活動的大標放在這個前導頁中。配合標題「人氣主場 由你決定」做了個比較率性的動態。
             .row.justify-content-center
-                .col-12.col-lg-10.pic_btm
-                    img(src="./images/nake_p3.jpg",data-scope="one",data-mode="video",data-mp4="./images/video/naked_v3.mp4").gif.pic_all
-                    //- video(playsinline,loop,autoplay).pic_all
-                    //-     source(src="./images/video/naked_v3.mp4",type="video/mp4")
+                .col-12.col-lg-10.pic_all_mb
+                    video(poster="./images/nake_p2.jpg",playsinline,controls,autoplay,loop).pic_all
+                        source(src="./images/video/naked_v2.mp4",type="video/mp4")
             .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 行動版網頁
-                    .sm_text 由於這個活動需要用到 QR Code 掃描投票，行動版網頁也是一大重點，便於一般民眾參與活動，累積參與人數。
+                    .sm_text Fullscreen 分4個區塊，都有做進場動態，讓使用者每到一個區塊都有驚喜。
             .row.justify-content-center
-                .col-12.col-lg-10.pic_last_btm
-                    img(src="./images/naked_pic4.jpg").pic_all
+                .col-12.col-lg-10.pic_btm
+                    video(poster="",playsinline,controls,autoplay,loop).pic_all
+                        source(src="./images/video/naked_v3.mp4",type="video/mp4")
+            .row.justify-content-center
+                .col-12.col-lg-10
+                    .sm_title Fullscreen 的使用者體驗
+                    .sm_text.sm_text_top 由於是第一次做 Fullscreen 網頁，做到中途才發現因為各個區域可以用滑動轉換，在各區域中擺可滑性區塊滑到最後時再滑動，會直接滑到下個區域，容易造成使用者的不方便，尤其是手機上的使用者，可能沒看完就會滑到下個區域。
+                    .sm_text 因此就將他這區域鎖住，在這區塊滑動只會影響這區塊，不會影響整個頁面。
+            .row.justify-content-center
+                .col-12.col-lg-10.pic_btm
+                    video(poster="",playsinline,controls,autoplay,loop).pic_all
+                        source(src="./images/video/naked_v4.mp4",type="video/mp4")
     .container-fluid.sec4
         .container
             .row.justify-content-center
@@ -91,6 +112,6 @@ block content
                     img(src="./images/naked_go.svg").svg_word.go_word
             .row.justify-content-center
                 .col-12.col-md-6.col-lg-3
-                    a(href="#")
+                    a(href="./works/naked/leading.html",target="_blank")
                         div.go_buttun.orange_btn 前往網頁
                             

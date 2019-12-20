@@ -1,5 +1,26 @@
 extend layout.jade
 
+block popin
+    .nav_mobile.nav_mobile_gold
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    .all_works_btn.works_btn_gold.d-none.d-lg-block
+        a(href="./works.html")
+            img(src="./images/btn_Allworks.png", alt="")
+
 block loading
     -var borderColor = 'gold'
     include ./partials/loading.jade
@@ -39,14 +60,12 @@ block content
         .row.last_line
             .col-12.col-md-4
                 .works_subtitle 參與項目
-                .works_text 網頁設計
-                            br
-                            | 響應式網頁設計及 HTML5 切版
+                .works_text 響應式網頁設計及 HTML5 切版
                             br
                             | 網頁動態設計及撰寫
             .col-12.col-md-8
                 .works_subtitle 目標
-                .works_text Wolf Blass 為一家知名的酒廠，本次活動希望將他們的品牌精神「追求，勇無止盡」跟運動積極進取的精神做結合，因此希望視覺上也可以將兩者做結合，活動內容為上傳照片加入做好的自製框分享到自己的 Facebook 上以此參加抽獎活動。
+                .works_text Wolf Blass 為一家知名的酒廠，本次活動希望將他們的品牌精神「追求，勇無止盡」跟運動積極進取的精神做結合，因此希望視覺上也可以將兩者做結合，活動內容為上傳照片加上做好的自製框分享到自己的 Facebook 上以此參加抽獎活動。
     .container-fluid.gold_sec.sec3
         .container
             .row.justify-content-center
@@ -56,16 +75,15 @@ block content
             .row.justify-content-center
                 .col-12.col-lg-10
                     .sm_title 將運動及酒品做結合
-                    .sm_text 本次最大的難題是如何將運動和酒品感覺融合在一起，一開始是用原始的全彩的運動照加上酒品(上圖)，後與客戶溝通後發現他們希望還是以酒品感覺為重，再加上運動的感覺，於是就決定以剪影呈現，用背景的燈光去襯托，給人一種燈光美酒感(下圖)。
+                    .sm_text 本次最大的難題是如何將運動和酒品感覺融合在一起，一開始是用原始的全彩的運動照加上酒品，後與客戶溝通後發現他們希望還是以酒品感覺為重，再加上運動的感覺，於是就決定以剪影呈現，用背景的燈光去襯托，給人一種燈光美酒感。
             .row.justify-content-center
                 .col-12.col-lg-10.pic_all_mb
-                    img(src="./images/wolf_pic1.jpg").pic_all
-                .col-12.col-lg-10
-                    img(src="./images/wolf_pic2.jpg").pic_all.pic_btm
+                    img(src="./images/wolf_pic1.png").pic_all
             .row.justify-content-center
                 .col-12.col-lg-10
                     .sm_title 設計運動風和旅遊風的邊框
-                    .sm_text 這次的主題是勇於追求，客戶選了2種情境做表達——旅遊和運動，使用者可以選運動風或旅遊風的照片，套上喜歡的邊框做合圖並上傳分享，運動採用較動感的線條表達，旅遊則放了些旅遊度假的元素，如：墨鏡、明信片、郵戳......等等。
+                    .sm_text.sm_text_top 這次的主題是勇於追求，客戶選了2種情境做表達——旅遊和運動，使用者可以選運動風或旅遊風的照片，套上喜歡的邊框做合圖並上傳分享，每個情境各要設計2款不同邊框。
+                    .sm_text 為了可以跟任何照片百搭，運動邊框參考了許多運動風格設計或海報，不用具體的球類或是各式運動的剪影，只採用動感的線條，配上運動的照片後．自然就具有運動海報的躍動感。旅遊邊框也是為求百搭，一個邊框設計成明信片的樣式，另一個則用草寫字加上墨鏡，營造旅遊悠閒感。
             .row.justify-content-center
                 .col-6.col-lg-5.pic_all_mb
                     img(src="./images/wolf_pic4.jpg").pic_all
@@ -79,17 +97,22 @@ block content
             .row.justify-content-center
                 .col-12.col-lg-10
                     .sm_title 中途修改流程，參加人數大增
-                    .sm_text.sm_text_top 由於參與人數比想像中少很多，所以決定簡化參加流程，以提升參加的意願。
+                    .sm_text.sm_text_top 由於一開始參與人數比想像中少很多，決定要再改版網頁。
                              br   
-                             | 從原先的是否18歲的頁面，再滑到參加的按鈕中間經過了很多資訊，如活動說明、活動的主視覺、活動辦法，還要使用者自己往下拉才能看到，再加上沒有放大活動的誘因——抽iphoneＸ等等，比較重視原本活動的精神卻忽略了消費者最想看的東西，導致參加的人數過少。
-                    .sm_text 而新流程改為一進去就說明是抽獎活動，有什麼大獎，然後用很直觀的方式呈現簡單的活動參加辦法，讓人很清楚要做什麼，一進去也是直接連到參加按鈕，這間單的流程大大的增加了活動參加人數，從只有幾百人變成幾千人。
+                             | 研究後發現問題可能是
+                             br
+                             | 1. 沒有強調抽獎的獎品，只有在活動條款裡提到
+                             br
+                             | 2. 抽獎方式因為是一塊塊下來，可能不少人覺得麻煩就不參與了
+
+                    .sm_text 新流程改為一進去就說明是抽獎活動，有什麼大獎，然後用很直觀的方式呈現簡單的活動參加辦法，讓人很清楚要做什麼，且和是否18歲的前導頁融合，一進去也是直接連到參加按鈕，這簡單的流程大大的增加了活動參加人數，從不到一百人變成幾千人參加。
             .row.justify-content-center
                 .col-12.col-lg-6
                     img(src="./images/wolf_pic8.jpg").pic_all.pic_btm
             .row.justify-content-center
                 .col-12.col-lg-10
                     .sm_title 社群廣告投放
-                    .sm_text.sm_middle 廣告的素材皆為比較偏向宣傳這次的活動的大獎，藉以吸引人點擊。
+                    .sm_text.sm_middle 廣告的素材由於新流程的成功皆為比較偏向宣傳這次的活動的大獎，藉以吸引人點擊參加活動。
             .row.justify-content-center
                 .col-12.col-lg-10.pic_all_mb
                     img(src="./images/wolf_pic9.jpg").pic_all
@@ -106,5 +129,5 @@ block content
                     img(src="./images/wolf_go.svg").svg_word.go_word
             .row.justify-content-center
                 .col-12.col-md-6.col-lg-3
-                    a(href="#")
+                    a(href="./works/wolf/wolf_index.html",target="_blank")
                         div.go_buttun.gold_btn 前往網頁

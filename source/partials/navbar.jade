@@ -3,10 +3,15 @@ mixin navLink(name,url)
         li.nav-item.active
             a.nav-link(href='#{url}')
                 | #{name} 
+    else if(name === 'RESUME')
+        li.nav-item
+            a.nav-link(href='#{url}',target="_blank")
+                | #{name} 
     else
         li.nav-item
             a.nav-link(href='#{url}')
                 | #{name} 
+    
 
 mixin logo()
     if(logoColor === "pink")
