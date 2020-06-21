@@ -11,7 +11,7 @@ block popin
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
                     a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
                     a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
@@ -34,12 +34,12 @@ block borders
 block navbar
     -var path = 'works.html'
     -var logoColor = ''
-    -var nav_bg= 'grey'
+    -var nav_bg= 'gold'
     -var togglerColor = 'gold'
     include ./partials/navbar.jade
 
 block content
-    .container-fluid.top_sec
+    .container-fluid.top_sec.top_sec_gold
         .container
             .row.justify-content-center.top_pic_sec
                 .col-12.col-sm-12.col-lg-9
@@ -73,29 +73,31 @@ block content
                     h1.sec_title CASE STUDY
                     img(src="./images/wolf_detail.svg").svg_word.detail_word
             .row.justify-content-center
-                .col-12.col-lg-10
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_wolf_01.png").pic_num
+                .col-12.col-lg-9
                     .sm_title 將運動及酒品做結合
                     .sm_text 本次最大的難題是如何將運動和酒品感覺融合在一起，一開始是用原始的全彩的運動照加上酒品，後與客戶溝通後發現他們希望還是以酒品感覺為重，再加上運動的感覺，於是就決定以剪影呈現，用背景的燈光去襯托，給人一種燈光美酒感。
             .row.justify-content-center
-                .col-12.col-lg-10.pic_all_mb
-                    img(src="./images/wolf_pic1.png").pic_all
-            .row.justify-content-center
                 .col-12.col-lg-10
+                    img(src="./images/wolf_pic1.png").pic_all.pic_btm
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_wolf_02.png").pic_num
+                .col-12.col-lg-9
                     .sm_title 設計運動風和旅遊風的邊框
                     .sm_text.sm_text_top 這次的主題是勇於追求，客戶選了2種情境做表達——旅遊和運動，使用者可以選運動風或旅遊風的照片，套上喜歡的邊框做合圖並上傳分享，每個情境各要設計2款不同邊框。
                     .sm_text 為了可以跟任何照片百搭，運動邊框參考了許多運動風格設計或海報，不用具體的球類或是各式運動的剪影，只採用動感的線條，配上運動的照片後．自然就具有運動海報的躍動感。旅遊邊框也是為求百搭，一個邊框設計成明信片的樣式，另一個則用草寫字加上墨鏡，營造旅遊悠閒感。
             .row.justify-content-center
-                .col-6.col-lg-5.pic_all_mb
-                    img(src="./images/wolf_pic4.jpg").pic_all
-                .col-6.col-lg-5.pic_all_mb
-                    img(src="./images/wolf_pic5.jpg").pic_all
-            .row.justify-content-center
-                .col-6.col-lg-5.pic_all_mb
-                    img(src="./images/wolf_pic6.jpg").pic_all
-                .col-6.col-lg-5
-                    img(src="./images/wolf_pic7.jpg").pic_all.pic_btm
-            .row.justify-content-center
                 .col-12.col-lg-10
+                    img(src="./images/wolf_pic2.png").pic_all.pic_btm
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_wolf_03.png").pic_num
+                .col-12.col-lg-9
                     .sm_title 中途修改流程，參加人數大增
                     .sm_text.sm_text_top 由於一開始參與人數比想像中少很多，決定要再改版網頁。
                              br   
@@ -107,27 +109,23 @@ block content
 
                     .sm_text 新流程改為一進去就說明是抽獎活動，有什麼大獎，然後用很直觀的方式呈現簡單的活動參加辦法，讓人很清楚要做什麼，且和是否18歲的前導頁融合，一進去也是直接連到參加按鈕，這簡單的流程大大的增加了活動參加人數，從不到一百人變成幾千人參加。
             .row.justify-content-center
-                .col-12.col-lg-6
-                    img(src="./images/wolf_pic8.jpg").pic_all.pic_btm
-            .row.justify-content-center
                 .col-12.col-lg-10
-                    .sm_title 社群廣告投放
-                    .sm_text.sm_middle 廣告的素材由於新流程的成功皆為比較偏向宣傳這次的活動的大獎，藉以吸引人點擊參加活動。
-            .row.justify-content-center
-                .col-12.col-lg-10.pic_all_mb
-                    img(src="./images/wolf_pic9.jpg").pic_all
-                .col-12.col-lg-10.pic_all_mb
-                    img(src="./images/wolf_pic10.jpg").pic_all
-                .col-12.col-lg-10
-                    img(src="./images/wolf_pic11.jpg").pic_all.pic_last_btm
+                    img(src="./images/wolf_pic3.png").pic_all.pic_last_btm
     .container-fluid.sec4
         .container
-            .row.justify-content-center
-                .sec_title_block
-                    h1.sec_title.d-none.d-xl-block VIEW THE WEBSITE
-                    h1.sec_title.d-xl-none WEBSITE
-                    img(src="./images/wolf_go.svg").svg_word.go_word
-            .row.justify-content-center
-                .col-12.col-md-6.col-lg-3
-                    a(href="./works/wolf/wolf_index.html",target="_blank")
-                        div.go_buttun.gold_btn 前往網頁
+            .row.justify-content-between
+                .col-4
+                    p.page_pre.page_dir PREV
+                .col-4
+                    p.page_next.page_dir NEXT
+            .row.justify-content-between
+                .col-6.col-lg-4
+                    a(href="./works_cv.html")
+                        p.page_pre.page_name.page_name_wolf 履歷健診
+                                                br
+                                                | 響應式網頁
+                .col-6.col-lg-4
+                    a(href="./works_naked.html")
+                        p.page_next.page_name.page_name_wolf 裸雀小酒館
+                                                br
+                                                | 活動頁

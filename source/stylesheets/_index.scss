@@ -230,17 +230,17 @@
     }
 }
 
-.nav_mobile_gray{
-    background-color: $brown-grey-two;
+.nav_mobile_vitoas{
+    background-color: $vitoas;
     .nav_list{
         .nav_work_web::before{
-            background: #555;
+            background: #b56100;
         }
         .nav_work_app::before{
-            background: #555;
+            background: #b56100;
         }
         .nav_work_banner::before{
-            background: #555;
+            background: #b56100;
         }
 
     }
@@ -627,7 +627,21 @@
     }
     .rec{
         position: relative;
-        background-color: $faded-red;
+    }
+    .rec_one{
+        background-color: $blue;
+    }
+    .rec_two{
+        background-color: $wolf;
+    }
+    .rec_three{
+        background-color: $naked;
+    }
+    .rec_four{
+        background-color: #F69B30;
+    }
+    .rec_five{
+        background-color: $ad_rec;
     }
     .works_sec{
         position: relative;
@@ -650,7 +664,6 @@
         padding-bottom: 30px;
 
         .rec{
-            background-color: $faded-red;
             height: 95%;
             @include lg(){
                 width: 110%;
@@ -738,11 +751,11 @@
                 }
                 @include lg(){
                     width: 250px;
-                    right: -25px; 
+                    right: -45px; 
                 }
                 @include md(){
                     width: 200px;
-                    right: -25px;
+                    right: -22px;
                     top: -50px;
                 }
                 @include sm(){
@@ -768,7 +781,7 @@
                 }
                 @include lg(){
                     width: 250px;
-                    left: 30px; 
+                    left: 40px; 
                 }
                 @include md(){
                     width: 200px;
@@ -776,20 +789,24 @@
                     top: -50px;
                 }
                 @include sm(){
-                    width: 35vw;
-                    left: 40px;
+                    width: 37vw;
+                    left: 30px;
                 }
                 @include mobile480(){
-                    width: 40vw;
-                    left: 8vw;
+                    width: 42vw;
+                    left: 6vw;
                     top: -50px;
                 }
                 
             }
         }
         .cellphone_rec{
+            
             width: 90%;
-            height: 80%;
+            height: 70%;
+            @include lg(){
+                width: 100%;
+            }
             @include md(){
                 width: 100%;
                 height: 70%;

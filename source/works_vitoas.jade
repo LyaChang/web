@@ -1,0 +1,127 @@
+extend layout.jade
+
+block popin
+    .nav_mobile.nav_mobile_vitoas
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    .all_works_btn.works_btn_vitoas.d-none.d-lg-block
+        a(href="./works.html")
+            img(src="./images/btn_Allworks.png", alt="")
+
+block loading
+    -var borderColor = 'vitoas'
+    include ./partials/loading.jade
+
+block borders
+    .top_border_grey
+    .bottom_border_grey
+    .right_border_grey
+    .left_border_grey
+
+block navbar
+    -var path = 'works.html'
+    -var logoColor = ''
+    -var nav_bg= 'vitoas'
+    -var togglerColor = 'vitoas'
+    include ./partials/navbar.jade
+
+block content
+    .container-fluid.top_sec_mobile.top_sec_vitoas
+        .container
+            .row.justify-content-center.top_pic_sec_mobile
+                .col-12.col-sm-5.col-lg-4.offset-sm-6
+                    img(src="./images/index_cell_vitoas.png", alt="").top_pic
+    .container.sec2
+        .row
+            .col-12.big_title
+                .title_works 蜜得絲活動頁
+                .title_kind Mobile Website
+                .title_line.title_vitoas
+        .row
+            .col-12.col-md-4
+                .works_subtitle 日期
+                .works_text September 2019
+            .col-12.col-md-8
+                .works_subtitle 客戶
+                .works_text 廣告公司
+        .row.last_line
+            .col-12.col-md-4
+                .works_subtitle 參與項目
+                .works_text 網頁設計
+                            br
+                            | 網頁程式撰寫
+            .col-12.col-md-8
+                .works_subtitle 目標
+                .works_text 由於產品比較高單價，希望設計上有專櫃高級感且讓人願意下單購買。
+    .container-fluid.vitoas_sec.sec3
+        .container
+            .row.justify-content-center
+                .sec_title_block
+                    h1.sec_title CASE STUDY
+                    img(src="./images/vitoas_detail.svg").svg_word.detail_word
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_vitoas_01.png").pic_num
+                .col-12.col-lg-9
+                    .sm_title 用相同特性的元素打造高級感
+                    .sm_text 活動頁大量使用跟光相關的元素去展現專櫃高級感，像是主視覺是選用有光線照過來很有度假風，瓶子被照得相當有質感、光線特別好的照片，配合泡泡、漸層、光散焦的背景，有一致性又不失質感。
+            .row.justify-content-center
+                .col-12.col-lg-10
+                    img(src="./images/vitoas_pic1.png").pic_all.pic_btm
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_vitoas_02.png").pic_num
+                .col-12.col-lg-9
+                    .sm_title 強調 All in One 的產品特色
+                    .sm_text 用各種方式表達一瓶可以取代化妝水、精華液和乳液乳霜 All in One 的特色。
+            .row.justify-content-center
+                .col-12.col-lg-10
+                    img(src="./images/vitoas_pic2.png").pic_all.pic_btm
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_vitoas_03.png").pic_num
+                .col-12.col-lg-9
+                    .sm_title 製作社群廣告
+                    .sm_text.sm_text_top 主要投放地點為 Facebook 和 Instergram，風格會依廣告訴求而有所變化。
+                .col-12.col-lg-10
+                    img(src="./images/vitoas_pic3.png").pic_all.pic_btm
+            
+            .row.justify-content-center
+                 .col-12.col-sm-8.col-lg-6
+                    video(autoplay,loop,muted).long_video
+                        source(src="./images/video/vitoas.mp4",type="video/mp4")
+    .container-fluid.sec4
+        .container
+            .row.justify-content-between
+                .col-4
+                    p.page_pre.page_dir PREV
+                .col-4
+                    p.page_next.page_dir NEXT
+            .row.justify-content-between
+                .col-6.col-lg-4
+                    a(href="./works_naked.html")
+                        p.page_pre.page_name.page_name_vitoas 裸雀小酒館
+                                                br
+                                                | 活動頁
+                .col-6.col-lg-4
+                    a(href="./works_banner.html")
+                        p.page_next.page_name.page_name_vitoas FACEBOOK 廣告
+                                                br
+                                                | INSTERGRAM 廣告
+               

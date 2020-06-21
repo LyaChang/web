@@ -1,6 +1,23 @@
+.navbar_cv{
+    background-color: $light-blue;
+}
+
+.navbar_naked{
+    background-color: $light-naked;
+}
+
+.navbar_wolf{
+    background-color: $light-wolf;
+}
+
 .navbar_grey{
     background-color: $top_bg;
 }
+
+.navbar_vitoas{
+    background-color: $vitoas_light;
+}
+
 
 .navbar-toggler_orange{
     background-color: $naked;
@@ -18,6 +35,10 @@
     background-color: $blue;
 }
 
+.navbar-toggler_vitoas{
+    background-color: $vitoas;
+}
+
 .orange_sec{
     background-color: $light-naked;
 }
@@ -32,11 +53,29 @@
     background-color:$light-blue;
 }
 
+.vitoas_sec{
+    background-color: $vitoas_light;
+}
+
 //網頁作品的固定樣式
 
+.top_sec_blue{
+    background-color:$light-blue;
+}
 
+.top_sec_orange{
+    background-color:$light-naked;
+}
+
+.top_sec_gold{
+    background-color:$light-wolf;
+}
+
+.top_sec_vitoas{
+    background-color: $vitoas_light;
+}
 .top_sec{
-    background-color: $top_bg;
+    //background-color: $top_bg;
     height: 350px;
     margin-bottom: 230px;
     @include xl(){
@@ -63,7 +102,7 @@
 //手機作品固定樣式
 
 .top_sec_mobile{
-    background-color: $top_bg;
+    //background-color: $top_bg;
     height: 350px;
     margin-bottom: 230px;
     @include xl(){
@@ -91,6 +130,7 @@
     }
 }
 
+
 //其他樣式
 
 .sec2{
@@ -105,7 +145,7 @@
         }
 
         .title_works{
-            @include hansFont(57px,300,$greyish-brown,left);
+            @include hansFont(57px,500,$greyish-brown,left);
             letter-spacing: -1px;
             @include sm(){
                 font-size: 40px;
@@ -147,12 +187,15 @@
             background-color: $blue;
         }
         .title_reminder{
-            background-color: $brown-grey-two;
+            
+        }
+        .title_vitoas{
+            background-color: $vitoas;
         }
     }
    
     .works_subtitle{
-        @include hansFont(48px,300,$greyish-brown,left);
+        @include hansFont(48px,500,$greyish-brown,left);
         letter-spacing: -1px;
         @include lg(){
             font-size: 40px;
@@ -171,7 +214,7 @@
     .works_text{
         @include hansFont(21px,300,$warm-grey,left);
         @include lg(){
-            font-size: 18px;
+            font-size: 16px;
         }
         @include md(){
             margin-bottom: 20px;
@@ -199,16 +242,49 @@
 }
 
 .sec3{
-    
+    .pic_num_div{
+        text-align: center;
+        @include lg(){
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        @include sm(){
+            margin-bottom: 20px;
+        }
+        @include mobile480(){
+            margin-bottom: 15px;
+        }
+        @include iphone5(){
+            margin-bottom: 15px;
+        }
+        .pic_num{
+            @include lg(){
+                width: 80px;
+            }
+            @include md(){
+                width: 70px;
+            }
+            @include sm(){
+                width: 60px;
+            }
+            @include mobile480(){
+                width: 50px;
+            }
+            @include iphone5(){
+                width: 40px;
+            }
+        }
+
+    }
     .sm_title{
-        @include hansFont(21px,600,#3e3e3e,center);
+        @include hansFont(21px,600,#3e3e3e,left);
         margin-bottom: 15px;
     }
     .sm_text{
         @include hansFont(21px,300,$warm-grey,left);
         margin-bottom: 40px;
         @include lg(){
-            font-size: 18px;
+            font-size: 16px;
         }
         @include md(){
             margin-bottom: 30px;
@@ -244,31 +320,32 @@
     }
     .detail_word{
         position: absolute;
-        top: 40px;
-        left: calc(50% - 117px);
+        top: 70px;
+        left: calc(50% - 86px);
         @include lg(){
-            width: 200px;
-            left: calc(50% - 100px);
+            top: 60px;
+            width: 150px;
+            left: calc(50% - 75px);
         }
         @include md(){
-            top: 30px;
-            width: 170px;
-            left: calc(50% - 85px);
-        }
-        @include sm(){
-            top: 25px;
-            width: 140px;
-            left: calc(50% - 70px);
-        }
-        @include mobile480(){
-            top: 25px;
+            top: 40px;
             width: 120px;
             left: calc(50% - 60px);
         }
-        @include iphone5(){
-            top: 15px;
+        @include sm(){
+            top: 30px;
             width: 100px;
             left: calc(50% - 50px);
+        }
+        @include mobile480(){
+            top: 25px;
+            width: 80px;
+            left: calc(50% - 40px);
+        }
+        @include iphone5(){
+            top: 25px;
+            width: 70px;
+            left: calc(50% - 35px);
         }
     }
     .pic_all_mb{
@@ -298,89 +375,52 @@
 }
 
 .sec4{
-    .sec_title_block{
-        position: relative;
-        margin-top: 100px;
-        letter-spacing: -2px;
-        margin-bottom: 130px;
+    .page_dir{
+        @include hansFont(28px,800,$very-light-pink,left);
+        margin-top: 40px;
+        margin-bottom: 40px;
         @include lg(){
-            margin-top: 80px;
+            font-size: 21px;
         }
         @include sm(){
-            margin-top: 50px;
-            margin-bottom: 100px;
-        }
-        @include mobile480(){
-            margin-bottom: 70px;
-        }
-        @include iphone5(){
-
-        }
-        .sec_title{
-            @include xl(){
-                font-size: 124px;
-            }
-            @include lg(){
-                font-size: 100px;
-            }
-            @include md(){
-                font-size: 80px;
-            }
-            @include sm(){
-                font-size: 65px;
-            }
-            @include mobile480(){
-                font-size: 50px;
-            }
-            @include iphone5(){
-                font-size: 45px;
-            }
+            margin-bottom: 20px;
         }
     }
-    .go_word{
-        position: absolute;
-        top: 60px;
-        left: calc(50% - 68px);
+
+    .page_name{
+        @include hansFont(28px,600,$black,left);
+        margin-bottom: 60px;
+        
         @include lg(){
-            width: 120px;
-            left: calc(50% - 60px);
+            font-size: 16px;
         }
-        @include sm(){
-            top: 40px;
-            width: 100px;
-            left: calc(50% - 50px);
-        }
-        @include mobile480(){
-            top: 30px;
-            width: 70px;
-            left: calc(50% - 35px);
-        }
-        @include iphone5(){
-            top: 30px;
-            width: 60px;
-            left: calc(50% - 30px);
-        }
-
     }
-    .go_buttun{
-        width: 100%;
-        padding: 20px;
-        @include hansFont(24px,300,#fff,center);
-        letter-spacing: 2.8px;
-        margin-bottom: 100px;
-        @include mobile480(){
-            font-size: 20px;
-            padding: 15px;
-        }   
-     }
-    .orange_btn{
-        background-color: $naked;
+    .page_name_cv{
+        transition:color 0.3s;
+        &:hover{
+            color: $blue; 
+        }
     }
-    .gold_btn{
-        background-color: $wolf;
+    .page_name_wolf{
+        transition:color 0.3s;
+        &:hover{
+            color: $wolf; 
+        }
     }
-    .blue_btn{
-        background-color: $blue;
+    .page_name_naked{
+        transition:color 0.3s;
+        &:hover{
+            color: $naked; 
+        }
+    }
+    .page_name_vitoas{
+        transition:color 0.3s;
+        &:hover{
+            color: $vitoas; 
+        }
+    }
+    .page_next{
+        text-align: right;
     }
 
 }

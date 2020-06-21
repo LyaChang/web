@@ -11,7 +11,7 @@ block popin
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
                     a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_app(href="./works_reminder.html") 交通助理
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
                     a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
@@ -34,12 +34,12 @@ block borders
 block navbar
     -var path = 'works.html'
     -var logoColor = ''
-    -var nav_bg= 'grey'
+    -var nav_bg= 'orange'
     -var togglerColor = 'orange'
     include ./partials/navbar.jade
 
 block content
-    .container-fluid.top_sec
+    .container-fluid.top_sec.top_sec_orange
         .container
             .row.justify-content-center.top_pic_sec
                 .col-12.col-sm-12.col-lg-9
@@ -73,7 +73,10 @@ block content
                     h1.sec_title CASE STUDY
                     img(src="./images/naked_detail.svg").svg_word.detail_word
             .row.justify-content-center
-                .col-12.col-lg-10
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_naked_01.png").pic_num
+                .col-12.col-lg-9
                     .sm_title 動態配合原本的商品主視覺更進一步
                     .sm_text 以原本的平面視覺延伸做成活動網頁視覺，客戶希望一進去就有具有驚喜感的動態。他原本的平面視覺就是走只有產品是彩色的路線，因此我決定做商品從黑白過渡到彩色的動態，更凸顯原本的設計理念。
             .row.justify-content-center
@@ -81,21 +84,24 @@ block content
                     video(poster="./images/nake_p1.jpg",playsinline,controls,autoplay,loop).pic_all
                         source(src="./images/video/naked_v1.mp4",type="video/mp4")
             .row.justify-content-center
-                .col-12.col-lg-10
+                .col-12.col-lg-9
                     .sm_text 由於與酒類相關網站被規定要做個確認年齡的動作，所以就將這次活動的大標放在這個前導頁中。配合標題「人氣主場 由你決定」做了個比較率性的動態。
             .row.justify-content-center
                 .col-12.col-lg-10.pic_all_mb
                     video(poster="./images/nake_p2.jpg",playsinline,controls,autoplay,loop).pic_all
                         source(src="./images/video/naked_v2.mp4",type="video/mp4")
             .row.justify-content-center
-                .col-12.col-lg-10
+                .col-12.col-lg-9
                     .sm_text Fullscreen 分4個區塊，都有做進場動態，讓使用者每到一個區塊都有驚喜。
             .row.justify-content-center
                 .col-12.col-lg-10.pic_btm
                     video(poster="",playsinline,controls,autoplay,loop).pic_all
                         source(src="./images/video/naked_v3.mp4",type="video/mp4")
             .row.justify-content-center
-                .col-12.col-lg-10
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_naked_02.png").pic_num
+                .col-12.col-lg-9
                     .sm_title Fullscreen 的使用者體驗
                     .sm_text.sm_text_top 由於是第一次做 Fullscreen 網頁，做到中途才發現因為各個區域可以用滑動轉換，在各區域中擺可滑性區塊滑到最後時再滑動，會直接滑到下個區域，容易造成使用者的不方便，尤其是手機上的使用者，可能沒看完就會滑到下個區域。
                     .sm_text 因此就將他這區域鎖住，在這區塊滑動只會影響這區塊，不會影響整個頁面。
@@ -105,13 +111,20 @@ block content
                         source(src="./images/video/naked_v4.mp4",type="video/mp4")
     .container-fluid.sec4
         .container
-            .row.justify-content-center
-                .sec_title_block
-                    h1.sec_title.d-none.d-xl-block VIEW THE WEBSITE
-                    h1.sec_title.d-xl-none WEBSITE
-                    img(src="./images/naked_go.svg").svg_word.go_word
-            .row.justify-content-center
-                .col-12.col-md-6.col-lg-3
-                    a(href="./works/naked/leading.html",target="_blank")
-                        div.go_buttun.orange_btn 前往網頁
+            .row.justify-content-between
+                .col-4
+                    p.page_pre.page_dir PREV
+                .col-4
+                    p.page_next.page_dir NEXT
+            .row.justify-content-between
+                .col-6.col-lg-4
+                    a(href="./works_wolf.html")
+                        p.page_pre.page_name.page_name_naked Wolf Blass
+                                                br
+                                                | 活動頁
+                .col-6.col-lg-4
+                    a(href="./works_vitoas.html")
+                        p.page_next.page_name.page_name_naked 蜜得絲 Vitoas
+                                                br
+                                                | 活動頁
                             
