@@ -6800,7 +6800,7 @@ html, body {
   display: none; }
 
 .sec_title_block .sec_title {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 124px;
   font-weight: 900;
   color: #d9d9d9;
@@ -6857,226 +6857,6 @@ html, body {
 button:focus {
   outline: none; }
 
-.top_border_pink {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #f27298;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .top_border_pink {
-      height: 7px; } }
-
-.bottom_border_pink {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #f27298;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .bottom_border_pink {
-      height: 7px; } }
-
-.right_border_pink {
-  right: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #f27298;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .right_border_pink {
-      width: 7px; } }
-
-.left_border_pink {
-  left: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #f27298;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .left_border_pink {
-      width: 7px; } }
-
-.top_border_blue {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #5688C5;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .top_border_blue {
-      height: 7px; } }
-
-.bottom_border_blue {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #5688C5;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .bottom_border_blue {
-      height: 7px; } }
-
-.right_border_blue {
-  right: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #5688C5;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .right_border_blue {
-      width: 7px; } }
-
-.left_border_blue {
-  left: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #5688C5;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .left_border_blue {
-      width: 7px; } }
-
-.top_border_orange {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #ea6a24;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .top_border_orange {
-      height: 7px; } }
-
-.bottom_border_orange {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #ea6a24;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .bottom_border_orange {
-      height: 7px; } }
-
-.right_border_orange {
-  right: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #ea6a24;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .right_border_orange {
-      width: 7px; } }
-
-.left_border_orange {
-  left: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #ea6a24;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .left_border_orange {
-      width: 7px; } }
-
-.top_border_gold {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #cfa56b;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .top_border_gold {
-      height: 7px; } }
-
-.bottom_border_gold {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #cfa56b;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .bottom_border_gold {
-      height: 7px; } }
-
-.right_border_gold {
-  right: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #cfa56b;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .right_border_gold {
-      width: 7px; } }
-
-.left_border_gold {
-  left: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #cfa56b;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .left_border_gold {
-      width: 7px; } }
-
-.top_border_grey {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #838383;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .top_border_grey {
-      height: 7px; } }
-
-.bottom_border_grey {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  height: 13px;
-  background-color: #838383;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .bottom_border_grey {
-      height: 7px; } }
-
-.right_border_grey {
-  right: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #838383;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .right_border_grey {
-      width: 7px; } }
-
-.left_border_grey {
-  left: 0;
-  position: fixed;
-  width: 13px;
-  height: 100vh;
-  background-color: #838383;
-  z-index: 1040; }
-  @media (max-width: 767px) {
-    .left_border_grey {
-      width: 7px; } }
-
 #nav {
   position: fixed;
   z-index: 9998;
@@ -7106,7 +6886,7 @@ button:focus {
     margin-bottom: 10px; }
     .nav_mobile .nav_list a {
       cursor: pointer;
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 30px;
       font-weight: 300;
       color: #fff;
@@ -7114,7 +6894,7 @@ button:focus {
     .nav_mobile .nav_list .nav_work {
       width: 100%;
       display: block;
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 20px;
       font-weight: 300;
       color: #fff;
@@ -7124,7 +6904,7 @@ button:focus {
     .nav_mobile .nav_list .nav_work_web::before {
       position: relative;
       content: "WEB";
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 16px;
       font-weight: 300;
       color: #fff;
@@ -7136,7 +6916,7 @@ button:focus {
     .nav_mobile .nav_list .nav_work_app::before {
       position: relative;
       content: "APP";
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 16px;
       font-weight: 400;
       color: #fff;
@@ -7148,7 +6928,7 @@ button:focus {
     .nav_mobile .nav_list .nav_work_banner::before {
       position: relative;
       content: "BANNER";
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 16px;
       font-weight: 300;
       color: #fff;
@@ -7270,7 +7050,7 @@ button:focus {
     .index_section1 .content {
       margin-top: 30px; } }
   .index_section1 .content h1 {
-    font-family: "sourcehansans-tc";
+    font-family: "source-han-sans-traditional";
     font-size: 84px;
     font-weight: 900;
     color: #444444;
@@ -7286,7 +7066,7 @@ button:focus {
       .index_section1 .content h1 {
         font-size: 40px; } }
   .index_section1 .content h3 {
-    font-family: "xingothic-tc";
+    font-family: "source-han-sans-traditional";
     font-size: 54px;
     font-weight: 300;
     color: #444444;
@@ -7305,7 +7085,7 @@ button:focus {
         font-size: 24px; } }
   .index_section1 .content p {
     margin-top: 35px;
-    font-family: "xingothic-tc";
+    font-family: "source-han-sans-traditional";
     font-size: 21px;
     font-weight: 300;
     color: #8a8585;
@@ -7730,7 +7510,7 @@ button:focus {
       .index_section2 .works_word_block {
         margin-left: 65px; } }
     .index_section2 .works_word_block .kind {
-      font-family: "xingothic-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 26px;
       font-weight: normal;
       color: #325c2a;
@@ -7742,7 +7522,7 @@ button:focus {
         .index_section2 .works_word_block .kind {
           font-size: 20px; } }
     .index_section2 .works_word_block .works_name {
-      font-family: "xingothic-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 70px;
       font-weight: 300;
       color: #3b3939;
@@ -7781,7 +7561,7 @@ button:focus {
         background-image: linear-gradient(to left, #f6b9c2, #e9838f); }
       .index_section2 .works_word_block .works_btn .works_btn_words {
         display: inline-block;
-        font-family: "xingothic-tc";
+        font-family: "source-han-sans-traditional";
         font-size: 30px;
         font-weight: bold;
         color: #d4535e;
@@ -7897,7 +7677,7 @@ button:focus {
   .index_section3 .email_block {
     margin-top: 40px; }
     .index_section3 .email_block a {
-      font-family: "xingothic-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 44px;
       font-weight: bold;
       color: #3b3939;
@@ -7944,7 +7724,7 @@ button:focus {
     margin-bottom: 10px; }
     .dropmenu_space .list a {
       cursor: pointer;
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 30px;
       font-weight: 300;
       color: #fff;
@@ -8078,7 +7858,7 @@ button:focus {
       height: 5px;
       background-image: linear-gradient(to left, #f6b9c2, #e9838f); }
     .works_section1 .dropmenu .dropmenu_words {
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 21px;
       font-weight: 300;
       color: #3b3939;
@@ -8109,13 +7889,13 @@ button:focus {
       cursor: pointer; }
       .works_section1 .kind_lists .list_kind span {
         padding-left: 3px;
-        font-family: "sourcehansans-tc";
+        font-family: "source-han-sans-traditional";
         font-size: 16px;
         font-weight: 300;
         color: #9b9b9b;
         text-align: left; }
       .works_section1 .kind_lists .list_kind a {
-        font-family: "sourcehansans-tc";
+        font-family: "source-han-sans-traditional";
         font-size: 16px;
         font-weight: normal;
         color: #444444;
@@ -8153,13 +7933,13 @@ button:focus {
       margin-bottom: 10px;
       transition: border 0.3s; }
     .works_section2 .work_block .word_block .tag {
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 21px;
       font-weight: 300;
       color: #d4535e;
       text-align: left; }
     .works_section2 .work_block .word_block .name {
-      font-family: "sourcehansans-tc";
+      font-family: "source-han-sans-traditional";
       font-size: 24px;
       font-weight: 300;
       color: #444444;
@@ -8286,7 +8066,7 @@ button:focus {
       padding-left: 30px;
       margin-bottom: 30px; } }
   .sec2 .big_title .title_works {
-    font-family: "sourcehansans-tc";
+    font-family: "source-han-sans-traditional";
     font-size: 57px;
     font-weight: 500;
     color: #444444;
@@ -8302,7 +8082,7 @@ button:focus {
       .sec2 .big_title .title_works {
         font-size: 33px; } }
   .sec2 .big_title .title_kind {
-    font-family: "sourcehansans-tc";
+    font-family: "source-han-sans-traditional";
     font-size: 48px;
     font-weight: 200;
     color: #444444;
@@ -8332,7 +8112,7 @@ button:focus {
     background-color: #F69B30; }
 
 .sec2 .works_subtitle {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 48px;
   font-weight: 500;
   color: #444444;
@@ -8352,7 +8132,7 @@ button:focus {
       font-size: 30px; } }
 
 .sec2 .works_text {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 21px;
   font-weight: 300;
   color: #8a8585;
@@ -8411,7 +8191,7 @@ button:focus {
       width: 40px; } }
 
 .sec3 .sm_title {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 21px;
   font-weight: 600;
   color: #3e3e3e;
@@ -8419,7 +8199,7 @@ button:focus {
   margin-bottom: 15px; }
 
 .sec3 .sm_text {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 21px;
   font-weight: 300;
   color: #8a8585;
@@ -8512,7 +8292,7 @@ button:focus {
       margin-bottom: 80px; } }
 
 .sec4 .page_dir {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 28px;
   font-weight: 800;
   color: #d9d9d9;
@@ -8527,7 +8307,7 @@ button:focus {
       margin-bottom: 20px; } }
 
 .sec4 .page_name {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 28px;
   font-weight: 600;
   color: #3b3939;
@@ -8561,7 +8341,7 @@ button:focus {
   text-align: right; }
 
 .works_section1 .banner_title {
-  font-family: "sourcehansans-tc";
+  font-family: "source-han-sans-traditional";
   font-size: 50px;
   font-weight: 300;
   color: #444;
