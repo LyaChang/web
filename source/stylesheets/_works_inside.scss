@@ -18,6 +18,10 @@
     background-color: $vitoas_light;
 }
 
+.navbar_bifi{
+    background-color: $bifi_light;
+}
+
 
 .navbar-toggler_orange{
     background-color: $naked;
@@ -39,6 +43,10 @@
     background-color: $vitoas;
 }
 
+.navbar-toggler_bifi{
+    background-color: $bifi;
+}
+
 .orange_sec{
     background-color: $light-naked;
 }
@@ -57,6 +65,10 @@
     background-color: $vitoas_light;
 }
 
+.bifi_sec{
+    background-color: $bifi_light;
+}
+
 //網頁作品的固定樣式
 
 .top_sec_blue{
@@ -73,6 +85,9 @@
 
 .top_sec_vitoas{
     background-color: $vitoas_light;
+}
+.top_sec_bifi{
+    background-color: $bifi_light;
 }
 .top_sec{
     //background-color: $top_bg;
@@ -191,6 +206,9 @@
         }
         .title_vitoas{
             background-color: $vitoas;
+        }
+        .title_bifi{
+            background-color: $bifi;
         }
     }
    
@@ -417,6 +435,12 @@
         transition:color 0.3s;
         &:hover{
             color: $vitoas; 
+        }
+    }
+    .page_name_bifi{
+        transition:color 0.3s;
+        &:hover{
+            color: $bifi; 
         }
     }
     .page_next{

@@ -180,16 +180,16 @@ $(document).ready(function(){
         var name = $(this).data("value")
         if(name == "web"){
             $(".dropmenu .words").html("WEB");
-            $(".dropmenu span").html("3");
+            $(".dropmenu span").html("5");
         }
         else if(name == "all"){
             $(".dropmenu .words").html("ALL");
-            $(".dropmenu span").html("5");
+            $(".dropmenu span").html("6");
         }
-        else if(name == "app"){
-            $(".dropmenu .words").html("APP");
-            $(".dropmenu span").html("1");
-        }
+        // else if(name == "app"){
+        //     $(".dropmenu .words").html("APP");
+        //     $(".dropmenu span").html("1");
+        // }
         else if(name == "banner"){
             $(".dropmenu .words").html("BANNER");
             $(".dropmenu span").html("1");
@@ -200,19 +200,19 @@ $(document).ready(function(){
         var name = $(this).data("value")
         if(name == "work"){
             $(".dropmenu .words").html("工作轉職");
-            $(".dropmenu span").html("6");
+            $(".dropmenu span").html("4");
         }
         else if(name == "all"){
             $(".dropmenu .words").html("ALL");
-            $(".dropmenu span").html("31");
+            $(".dropmenu span").html("43");
         }
         else if(name == "test"){
             $(".dropmenu .words").html("測驗分析");
-            $(".dropmenu span").html("6");
+            $(".dropmenu span").html("5");
         }
         else if(name == "act"){
             $(".dropmenu .words").html("活動");
-            $(".dropmenu span").html("5");
+            $(".dropmenu span").html("3");
         }
         else if(name == "travel"){
             $(".dropmenu .words").html("旅遊");
@@ -220,7 +220,7 @@ $(document).ready(function(){
         }
         else if(name == "pd"){
             $(".dropmenu .words").html("商品");
-            $(".dropmenu span").html("13");
+            $(".dropmenu span").html("30");
         }
     }));
     $('.dropmenu_space .cancel_btn').on('click',(function(){

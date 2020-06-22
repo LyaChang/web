@@ -9,9 +9,10 @@ block popin
                 a(href="./works.html")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
                     a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
                     a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
@@ -24,12 +25,6 @@ block popin
 block loading
     -var borderColor = 'vitoas'
     include ./partials/loading.jade
-
-//- block borders
-//-     .top_border_grey
-//-     .bottom_border_grey
-//-     .right_border_grey
-//-     .left_border_grey
 
 block navbar
     -var path = 'works.html'
@@ -47,7 +42,7 @@ block content
     .container.sec2
         .row
             .col-12.big_title
-                .title_works 蜜得絲活動頁
+                .title_works 蜜得絲 商品導購頁
                 .title_kind Mobile Website
                 .title_line.title_vitoas
         .row
@@ -56,11 +51,13 @@ block content
                 .works_text September 2019
             .col-12.col-md-8
                 .works_subtitle 客戶
-                .works_text 廣告公司
+                .works_text 廣告代理商
         .row.last_line
             .col-12.col-md-4
                 .works_subtitle 參與項目
-                .works_text 網頁設計
+                .works_text Banner 製作
+                            br
+                            | 網頁設計
                             br
                             | 網頁程式撰寫
             .col-12.col-md-8
@@ -78,7 +75,7 @@ block content
                         img(src="./images/num_vitoas_01.png").pic_num
                 .col-12.col-lg-9
                     .sm_title 用相同特性的元素打造高級感
-                    .sm_text 活動頁大量使用跟光相關的元素去展現專櫃高級感，像是主視覺是選用有光線照過來很有度假風，瓶子被照得相當有質感、光線特別好的照片，配合泡泡、漸層、光散焦的背景，有一致性又不失質感。
+                    .sm_text 導購頁大量使用跟光相關的元素去展現專櫃高級感，像是主視覺是選用有光線照過來很有度假風，瓶子被照得相當有質感、光線特別好的照片，配合泡泡、漸層、光散焦的背景，有一致性又不失質感。
             .row.justify-content-center
                 .col-12.col-lg-10
                     img(src="./images/vitoas_pic1.png").pic_all.pic_btm
@@ -114,13 +111,11 @@ block content
                     p.page_next.page_dir NEXT
             .row.justify-content-between
                 .col-6.col-lg-4
-                    a(href="./works_naked.html")
-                        p.page_pre.page_name.page_name_vitoas 裸雀小酒館
-                                                br
-                                                | 活動頁
+                    a(href="./works_cv.html")
+                        p.page_pre.page_name.page_name_vitoas 履歷健診
                 .col-6.col-lg-4
-                    a(href="./works_banner.html")
-                        p.page_next.page_name.page_name_vitoas FACEBOOK 廣告
+                    a(href="./works_bifi.html")
+                        p.page_next.page_name.page_name_vitoas 比菲德氏菌
                                                 br
-                                                | INSTAGRAM 廣告
+                                                | 導購頁
                

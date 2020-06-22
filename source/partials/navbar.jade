@@ -30,6 +30,9 @@ mixin togglerColor()
     else if(togglerColor === "vitoas")
         button.navbar-toggler.navbar-toggler_vitoas#nav(type='button')
                 span.navbar-toggler-icon
+    else if(togglerColor === "bifi")
+        button.navbar-toggler.navbar-toggler_bifi#nav(type='button')
+                span.navbar-toggler-icon
     else if(togglerColor === "blue")
         button.navbar-toggler.navbar-toggler_blue#nav(type='button')
                 span.navbar-toggler-icon
@@ -71,6 +74,15 @@ mixin nav_bg()
                         +navLink(item.name,item.url)
     else if(nav_bg === "vitoas")
         nav.navbar.navbar-expand-lg.navbar-light.navbar_vitoas
+            a.navbar-brand(href='index.html') 
+                +logo
+            +togglerColor
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.ml-auto
+                    each item in menu.list
+                        +navLink(item.name,item.url)
+    else if(nav_bg === "bifi")
+        nav.navbar.navbar-expand-lg.navbar-light.navbar_bifi
             a.navbar-brand(href='index.html') 
                 +logo
             +togglerColor

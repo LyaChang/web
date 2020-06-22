@@ -25,11 +25,11 @@ block popin
                 a(href="./works.html")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
                     a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
                     a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
-            li.nav_list
                 a(href="./images/resume.pdf")  RESUME
         .cancel_btn
             img(src="./images/cancel.png", alt="")
@@ -41,11 +41,6 @@ block loading
     -var borderColor = 'pink'
     include ./partials/loading.jade
 
-block borders
-    .top_border_pink
-    .bottom_border_pink
-    .right_border_pink
-    .left_border_pink
 
 block navbar
     -var path = 'works.html'
@@ -64,7 +59,7 @@ block content
                     ul.kind_lists.kind_lists_banner
                         li.list_kind(data-value="all").segment-0
                             a(href="#",data-value="all_banner").active All
-                                span (42)
+                                span (43)
                         li.list_kind.segment-1
                             a(href="#",data-value="work") 工作轉職
                                 span (4)
@@ -79,17 +74,19 @@ block content
                                 span (1)
                         li.list_kind.segment-5
                             a(href="#",data-value="pd") 商品
-                                span (29)
+                                span (30)
                 .col-11.d-md-none
                     .dropmenu
                         .dropmenu_words 
                             .words ALL
                             .dropbtn
                                 img(src="./images/arrow_down.png", alt="")
-                            span 22
+                            span 43
     .works_banner_section2
         .container
             .row#masonry.justify-content-center
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v51.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.pd.item.mb-25
                     img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v31.gif").banner.lazyload
                 .col-11.col-sm-6.col-lg-4.pd.item.mb-25

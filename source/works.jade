@@ -7,8 +7,8 @@ block popin
                 a(href="#",data-value="all") ALL
             li.list.segment-1
                 a(href="#",data-value="web") WEB
-            li.list.segment-2
-                a(href="#",data-value="app") APP
+            //- li.list.segment-2
+            //-     a(href="#",data-value="app") APP
             li.list.segment-3
                 a(href="#",data-value="banner") BANNER
         .cancel_btn
@@ -21,9 +21,10 @@ block popin
                 a(href="./works.html")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
                     a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
                     a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
@@ -33,12 +34,6 @@ block popin
 block loading
     -var borderColor = 'pink'
     include ./partials/loading.jade
-
-//- block borders
-//-     .top_border_pink
-//-     .bottom_border_pink
-//-     .right_border_pink
-//-     .left_border_pink
 
 block navbar
     -var path = 'works.html'
@@ -57,10 +52,10 @@ block content
                     ul.kind_lists.kind_lists_work
                         li.list_kind.segment-0.selected-0(data-value="all")
                             a(href="#",data-value="all").active ALL
-                                span (5)
+                                span (6)
                         li.list_kind.segment-1
                             a(href="#",data-value="web") WEB
-                                span (4)
+                                span (5)
                         //- li.list_kind.segment-2
                         //-     a(href="#",data-value="app") APP
                         //-         span (1)
@@ -73,7 +68,7 @@ block content
                             .words ALL
                             .dropbtn
                                 img(src="./images/arrow_down.png", alt="")
-                            span 5
+                            span 6
                             
     .works_section2
         .container
@@ -84,6 +79,18 @@ block content
                         .word_block
                             .tag WEB
                             .name 履歷健診
+                .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-4")
+                    a(href="./works_vitoas.html")
+                        img(src="./images/works_pic_vitoas.jpg", alt="", srcset="")
+                        .word_block
+                            .tag WEB
+                            .name 蜜得絲商品導購頁
+                .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-6")
+                    a(href="./works_bifi.html")
+                        img(src="./images/works_pic_bifi.jpg", alt="", srcset="")
+                        .word_block
+                            .tag WEB
+                            .name 比菲德氏菌導購頁
                 .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-2")
                     a(href="./works_wolf.html")
                         img(src="./images/works_pic_wolf.jpg", alt="", srcset="")
@@ -96,12 +103,6 @@ block content
                         .word_block
                             .tag WEB
                             .name 裸雀小酒館活動頁
-                .col-11.col-sm-6.col-lg-4.work_block.app(data-id="id-4")
-                    a(href="./works_vitoas.html")
-                        img(src="./images/works_pic_vitoas.jpg", alt="", srcset="")
-                        .word_block
-                            .tag WEB
-                            .name 蜜得絲商品活動頁
                 .col-11.col-sm-6.col-lg-4.work_block.banner(data-id="id-5")
                     a(href="./works_banner.html")
                         img(src="./images/works_pic_banner.jpg", alt="", srcset="")

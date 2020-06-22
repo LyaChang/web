@@ -1,0 +1,126 @@
+extend layout.jade
+
+block popin
+    .nav_mobile.nav_mobile_bifi
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="./works.html")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
+                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    .all_works_btn.works_btn_bifi.d-none.d-lg-block
+        a(href="./works.html")
+            img(src="./images/btn_Allworks.png", alt="")
+
+block loading
+    -var borderColor = 'bifi'
+    include ./partials/loading.jade
+
+
+block navbar
+    -var path = 'works.html'
+    -var logoColor = ''
+    -var nav_bg= 'bifi'
+    -var togglerColor = 'bifi'
+    include ./partials/navbar.jade
+
+block content
+    .container-fluid.top_sec_mobile.top_sec_bifi
+        .container
+            .row.justify-content-center.top_pic_sec_mobile
+                .col-12.col-sm-5.col-lg-4.offset-sm-6
+                    img(src="./images/index_cell_bifi.png", alt="").top_pic
+    .container.sec2
+        .row
+            .col-12.big_title
+                .title_works 比菲德氏菌 導購頁
+                .title_kind Mobile Website
+                .title_line.title_bifi
+        .row
+            .col-12.col-md-4
+                .works_subtitle 日期
+                .works_text December 2018 - March 2020
+            .col-12.col-md-8
+                .works_subtitle 客戶
+                .works_text 廣告代理商
+        .row.last_line
+            .col-12.col-md-4
+                .works_subtitle 參與項目
+                .works_text 廣告吉祥物設計
+                            br
+                            | Banner 製作
+                            br
+                            | 網頁設計
+                            br
+                            | 網頁程式撰寫
+            .col-12.col-md-8
+                .works_subtitle 目標
+                .works_text 確認商品主要廣告風格走向、設計廣告吉祥物，廣告及網頁目標都是要增加下單率。
+    .container-fluid.bifi_sec.sec3
+        .container
+            .row.justify-content-center
+                .sec_title_block
+                    h1.sec_title CASE STUDY
+                    img(src="./images/bifi_detail.png").svg_word.detail_word
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_bifi_01.png").pic_num
+                .col-12.col-lg-9
+                    .sm_title 由產品不同成份擬人化作為吉祥物
+                    .sm_text 參考市面上多項競品風格，選用比較可愛的風格去展現各種成分，形狀有參考真實菌種的長相，也設定了指定色，讓之後的相關設計有固定的顏色去展現成分。
+            .row.justify-content-center
+                .col-12.col-lg-10
+                    img(src="./images/bifi_pic1.png").pic_all.pic_btm
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_bifi_02.png").pic_num
+                .col-12.col-lg-9
+                    .sm_title 導購頁走親切、讓人信賴的路線
+                    .sm_text 頁面裡面有很多使用者使用心得、照片和介紹裡面成份的說明，更附上了熱銷100萬袋的數字和一些網路媒體給的具有公信力的獎章就是希望給消費者一種可以信賴的感覺。
+            .row.justify-content-center
+                .col-12.col-lg-10
+                    img(src="./images/bifi_pic2.png").pic_all.pic_btm
+            .row.justify-content-center
+                .col-12.col-lg-2
+                    div.pic_num_div
+                        img(src="./images/num_bifi_03.png").pic_num
+                .col-12.col-lg-9
+                    .sm_title 製作社群廣告
+                    .sm_text.sm_text_top 主要投放地點為 Facebook 和 Instagram，風格主要走清新健康風。
+                .col-12.col-lg-10
+                    img(src="./images/bifi_pic3.png").pic_all.pic_btm
+            .row.justify-content-center
+                 .col-12.col-sm-8.col-lg-6
+                    video(autoplay,loop,muted,playsinline).long_video
+                        source(src="./images/video/bifi.mp4",type="video/mp4")
+    .container-fluid.sec4
+        .container
+            .row.justify-content-between
+                .col-4
+                    p.page_pre.page_dir PREV
+                .col-4
+                    p.page_next.page_dir NEXT
+            .row.justify-content-between
+                .col-6.col-lg-4
+                    a(href="./works_vitoas.html")
+                        p.page_pre.page_name.page_name_bifi 蜜得絲 Vitoas
+                                                br
+                                                | 導購頁
+                .col-6.col-lg-4
+                    a(href="./works_naked.html")
+                        p.page_next.page_name.page_name_bifi 裸雀小酒館
+                                                br
+                                                | 活動頁
+               

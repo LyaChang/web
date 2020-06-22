@@ -246,6 +246,22 @@
     }
 }
 
+.nav_mobile_bifi{
+    background-color: $bifi;
+    .nav_list{
+        .nav_work_web::before{
+            background: #0c6bd2;
+        }
+        .nav_work_app::before{
+            background: #0c6bd2;
+        }
+        .nav_work_banner::before{
+            background: #0c6bd2;
+        }
+
+    }
+}
+
 
 
 
@@ -632,10 +648,10 @@
         background-color: $blue;
     }
     .rec_two{
-        background-color: $wolf;
+        background-color: $naked;
     }
     .rec_three{
-        background-color: $naked;
+        background-color: $bifi;
     }
     .rec_four{
         background-color: #F69B30;
@@ -938,6 +954,29 @@
     .works_block_cell{
         @include sm(){
             margin-top: -50px;
+        }
+    }
+    .more_btn{
+        background-color: $faded-red;
+        padding: 15px 50px;
+        @include xingFont(26px,500,#fff,center);
+        margin-bottom: 200px;
+        margin-top: -50px;
+        &:hover{
+            background-color: $main;
+        }
+        @include xl(){
+            font-size: 26px;
+        }
+        @include lg(){
+            font-size: 23px;
+        }
+        @include md(){
+            font-size: 20px;
+        }
+        @include sm(){
+            margin-top:-10px;
+            margin-bottom: 100px;
         }
     }
 }

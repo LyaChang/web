@@ -9,9 +9,10 @@ block popin
                 a(href="./works.html")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
                     a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
                     a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="../images/resume.pdf")  RESUME
@@ -23,11 +24,6 @@ block loading
     -var borderColor = 'pink'
     include ./partials/loading.jade
 
-//- block borders
-//-     .top_border_pink
-//-     .bottom_border_pink
-//-     .right_border_pink
-//-     .left_border_pink
 
 block navbar
     -var path = 'index.html'
@@ -45,17 +41,6 @@ block content
                     h1 HELLO
                     h3 我的名字叫張淑涵        
                     p 熱愛設計，享受幫忙解決問題的成就感，目前已有3年經驗。專長有 HTML5、CSS3、動畫、網頁設計規劃、App 設計、Banner 製作。
-            //- .row.justify-content-center
-                //- .work_kind
-                //-     .pic.col
-                //-         img(src="./images/index_word_Web.svg", alt="", srcset="").svg_word.web_word
-                //-         img(src="./images/work_kind_web.jpg", alt="", srcset="").pic_web
-                //-     .pic.col
-                //-         img(src="./images/index_word_Banner.svg", alt="", srcset="").svg_word.banner_word
-                //-         img(src="./images/work_kind_banner.jpg", alt="", srcset="").pic_banner
-                //-     .pic.col
-                //-         img(src="./images/index_word_App.svg", alt="", srcset="").svg_word.app_word
-                //-         img(src="./images/work_kind_app.jpg", alt="", srcset="").pic_app
     .index_section2
         img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4.d-none.d-sm-block
         img(src="./images/bg_grass5.png", alt="", srcset="").bg_grass.bg_grass5.d-none.d-sm-block
@@ -84,7 +69,7 @@ block content
                     h5.kind Mobile Website
                     h2.works_name 蜜德絲
                         br  
-                        | 商品活動頁
+                        | 商品導購頁
                     a(href="./works_vitoas.html")
                         div.works_btn 
                             .works_btn_words  See More
@@ -96,9 +81,20 @@ block content
             .row.justify-content-around.works_sec
                 img(src="./images/bg_grass5.png", alt="", srcset="").bg_grass.bg_grass5.d-block.d-sm-none
                 .works_computer.col-sm-6.col
-                    .rec.rec_three
-                        img(src="./images/naked_top.png", alt="", srcset="").works_block_img_L
-                .works_word_block.col-sm-5.align-self-center.offset-lg-0.offset-sm-1.col.offset-2
+                    .rec.cellphone_rec.rec_three
+                        img(src="./images/index_cell_bifi.png", alt="", srcset="").works_block_img_cell_L
+                .works_word_block.col-sm-5.align-self-center.works_word_cell.works_block_cell.col-12.offset-4.offset-sm-0
+                    h5.kind Mobile Website
+                    h2.works_name 比菲德氏菌
+                        br  
+                        | 導購頁
+                    a(href="./works_bifi.html")
+                        div.works_btn 
+                            .works_btn_words  See More
+                            img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
+             .row.justify-content-around.works_sec
+                img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4.d-block.d-sm-none
+                .works_word_block.align-self-center.offset-xl-2.offset-lg-2.col-md-4.col-sm-5.offset-sm-1.col.offset-2.order-sm-1.order-2
                     h5.kind RWD Web Design
                     h2.works_name 裸雀小酒館
                         br  
@@ -107,20 +103,9 @@ block content
                         div.works_btn 
                             .works_btn_words  See More
                             img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-             .row.justify-content-around.works_sec
-                img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4.d-block.d-sm-none
-                .works_word_block.align-self-center.offset-xl-2.offset-lg-2.col-md-4.col-sm-5.offset-sm-1.col.offset-2.order-sm-1.order-2
-                    h5.kind RWD Web Design
-                    h2.works_name Wolf Blass
-                        br  
-                        | 活動頁 
-                    a(href="./works_wolf.html")
-                        div.works_btn 
-                            .works_btn_words  See More
-                            img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
                 .works_computer.col-sm-6.col.order-sm-2.order-1
                     .rec.rec_two
-                        img(src="./images/wolf_top.png", alt="", srcset="").works_block_img_R
+                        img(src="./images/naked_top.png", alt="", srcset="").works_block_img_R
             .row.justify-content-around.works_sec.works_sec5
                 img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass7
                 .works_computer.col-sm-6.col
@@ -135,6 +120,9 @@ block content
                         div.works_btn 
                             .works_btn_words  See More
                             img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
+            .row.justify-content-center
+                a(href="./works.html")
+                    p.more_btn MORE WORKS 
     .index_section3
         img(src="./images/bg_grass7.png", alt="", srcset="").bg_grass.bg_grass7
         .container

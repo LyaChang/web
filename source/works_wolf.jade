@@ -9,9 +9,10 @@ block popin
                 a(href="./works.html")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
                     a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品活動頁
                     a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
@@ -25,11 +26,6 @@ block loading
     -var borderColor = 'gold'
     include ./partials/loading.jade
 
-//- block borders
-//-     .top_border_gold
-//-     .bottom_border_gold
-//-     .right_border_gold
-//-     .left_border_gold
 
 block navbar
     -var path = 'works.html'
@@ -124,12 +120,12 @@ block content
                     p.page_next.page_dir NEXT
             .row.justify-content-between
                 .col-6.col-lg-4
-                    a(href="./works_cv.html")
-                        p.page_pre.page_name.page_name_wolf 履歷健診
-                                                br
-                                                | 響應式網頁
-                .col-6.col-lg-4
                     a(href="./works_naked.html")
-                        p.page_next.page_name.page_name_wolf 裸雀小酒館
+                        p.page_pre.page_name.page_name_wolf 裸雀小酒館
                                                 br
                                                 | 活動頁
+                .col-6.col-lg-4
+                    a(href="./works_banner.html")
+                        p.page_next.page_name.page_name_wolf FACEBOOK 廣告
+                                                br
+                                                | INSTAGRAM 廣告
