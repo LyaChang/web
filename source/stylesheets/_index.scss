@@ -1,106 +1,106 @@
-//border
-.top_border_pink{
-    top: 0;
-    @include upDownBorder($main);
-}
+// //border
+// .top_border_pink{
+//     top: 0;
+//     @include upDownBorder($main);
+// }
 
-.bottom_border_pink{
-    bottom: 0;
-    @include upDownBorder($main);
-}
+// .bottom_border_pink{
+//     bottom: 0;
+//     @include upDownBorder($main);
+// }
 
-.right_border_pink{
-    right: 0;
-    @include leftRightBorder($main);
-}
+// .right_border_pink{
+//     right: 0;
+//     @include leftRightBorder($main);
+// }
 
-.left_border_pink{
-    left: 0;
-    @include leftRightBorder($main);
-}
+// .left_border_pink{
+//     left: 0;
+//     @include leftRightBorder($main);
+// }
 
-//blue border
-.top_border_blue{
-    top: 0;
-    @include upDownBorder($blue);
-}
+// //blue border
+// .top_border_blue{
+//     top: 0;
+//     @include upDownBorder($blue);
+// }
 
-.bottom_border_blue{
-    bottom: 0;
-    @include upDownBorder($blue);
-}
+// .bottom_border_blue{
+//     bottom: 0;
+//     @include upDownBorder($blue);
+// }
 
-.right_border_blue{
-    right: 0;
-    @include leftRightBorder($blue);
-}
+// .right_border_blue{
+//     right: 0;
+//     @include leftRightBorder($blue);
+// }
 
-.left_border_blue{
-    left: 0;
-    @include leftRightBorder($blue);
-}
-//orange border
-.top_border_orange{
-    top: 0;
-    @include upDownBorder($naked);
-}
+// .left_border_blue{
+//     left: 0;
+//     @include leftRightBorder($blue);
+// }
+// //orange border
+// .top_border_orange{
+//     top: 0;
+//     @include upDownBorder($naked);
+// }
 
-.bottom_border_orange{
-    bottom: 0;
-    @include upDownBorder($naked);
-}
+// .bottom_border_orange{
+//     bottom: 0;
+//     @include upDownBorder($naked);
+// }
 
-.right_border_orange{
-    right: 0;
-    @include leftRightBorder($naked);
-}
+// .right_border_orange{
+//     right: 0;
+//     @include leftRightBorder($naked);
+// }
 
-.left_border_orange{
-    left: 0;
-    @include leftRightBorder($naked);
-}
-//gold border
+// .left_border_orange{
+//     left: 0;
+//     @include leftRightBorder($naked);
+// }
+// //gold border
 
-.top_border_gold{
-    top: 0;
-    @include upDownBorder($wolf);
-}
+// .top_border_gold{
+//     top: 0;
+//     @include upDownBorder($wolf);
+// }
 
-.bottom_border_gold{
-    bottom: 0;
-    @include upDownBorder($wolf);
-}
+// .bottom_border_gold{
+//     bottom: 0;
+//     @include upDownBorder($wolf);
+// }
 
-.right_border_gold{
-    right: 0;
-    @include leftRightBorder($wolf);
-}
+// .right_border_gold{
+//     right: 0;
+//     @include leftRightBorder($wolf);
+// }
 
-.left_border_gold{
-    left: 0;
-    @include leftRightBorder($wolf);
-}
-//grey border
+// .left_border_gold{
+//     left: 0;
+//     @include leftRightBorder($wolf);
+// }
+// //grey border
 
-.top_border_grey{
-    top: 0;
-    @include upDownBorder($brown-grey-two);
-}
+// .top_border_grey{
+//     top: 0;
+//     @include upDownBorder($brown-grey-two);
+// }
 
-.bottom_border_grey{
-    bottom: 0;
-    @include upDownBorder($brown-grey-two);
-}
+// .bottom_border_grey{
+//     bottom: 0;
+//     @include upDownBorder($brown-grey-two);
+// }
 
-.right_border_grey{
-    right: 0;
-    @include leftRightBorder($brown-grey-two);
-}
+// .right_border_grey{
+//     right: 0;
+//     @include leftRightBorder($brown-grey-two);
+// }
 
-.left_border_grey{
-    left: 0;
-    @include leftRightBorder($brown-grey-two);
-}
+// .left_border_grey{
+//     left: 0;
+//     @include leftRightBorder($brown-grey-two);
+// }
 
 //nav_mobile
 #nav{

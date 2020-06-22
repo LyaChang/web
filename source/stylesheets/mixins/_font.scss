@@ -1,5 +1,5 @@
 @mixin xingFont($size,$weight,$color,$direction){
-    font-family: "xingothic-tc";
+    font-family: "source-han-sans-traditional";
     font-size: $size;
     font-weight: $weight;
     color: $color;
@@ -7,7 +7,7 @@
 }
 
 @mixin hansFont($size,$weight,$color,$direction){
-    font-family: "sourcehansans-tc";
+    font-family: "source-han-sans-traditional";
     font-size: $size;
     font-weight: $weight;
     color: $color;

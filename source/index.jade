@@ -23,11 +23,11 @@ block loading
     -var borderColor = 'pink'
     include ./partials/loading.jade
 
-block borders
-    .top_border_pink
-    .bottom_border_pink
-    .right_border_pink
-    .left_border_pink
+//- block borders
+//-     .top_border_pink
+//-     .bottom_border_pink
+//-     .right_border_pink
+//-     .left_border_pink
 
 block navbar
     -var path = 'index.html'
@@ -128,9 +128,9 @@ block content
                         img(src="./images/index_cell_fb.png", alt="", srcset="").works_block_img_cell_L
                 .works_word_block.col-sm-5.align-self-center.works_word_cell.works_block_cell.col-12.offset-4.offset-sm-0
                     h5.kind Banner
-                    h2.works_name Facebook 廣告
+                    h2.works_name Facebook &
                         br  
-                        | Instergram 廣告
+                        | Instagram Ads
                     a(href="./works_banner.html")
                         div.works_btn 
                             .works_btn_words  See More
