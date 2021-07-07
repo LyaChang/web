@@ -13,11 +13,11 @@ mixin navLink(name,url)
                 | #{name} 
     
 
-mixin logo()
-    if(logoColor === "pink")
-        img(src="./images/logo_pink.svg").logo
-    else
-        img(src="./images/logo_gray.svg").logo
+//- mixin logo()
+//-     if(logoColor === "pink")
+//-         img(src="./images/logo_pink.svg").logo
+//-     else
+//-         img(src="./images/logo_gray.svg").logo
 
 
 mixin togglerColor()
@@ -39,6 +39,9 @@ mixin togglerColor()
     else if(togglerColor === "gold")
         button.navbar-toggler.navbar-toggler_gold#nav(type='button')
                 span.navbar-toggler-icon
+    else if(togglerColor === "nijigen")
+        button.navbar-toggler.navbar-toggler_nijigen#nav(type='button')
+                span.navbar-toggler-icon
     else
         button.navbar-toggler#nav(type='button')
                 span.navbar-toggler-icon
@@ -47,58 +50,74 @@ mixin togglerColor()
 mixin nav_bg()
     if(nav_bg === "blue")
         nav.navbar.navbar-expand-lg.navbar-light.navbar_cv
-            a.navbar-brand(href='index.html') 
-                +logo
-            +togglerColor
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.ml-auto
-                    each item in menu.list
-                        +navLink(item.name,item.url)
+            .container 
+                a.navbar-brand(href='index.html') 
+                    div.nav_logo LYA CHANG
+                +togglerColor
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        each item in menu.list
+                            +navLink(item.name,item.url)
     else if(nav_bg === "orange")
         nav.navbar.navbar-expand-lg.navbar-light.navbar_naked
-            a.navbar-brand(href='index.html') 
-                +logo
-            +togglerColor
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.ml-auto
-                    each item in menu.list
-                        +navLink(item.name,item.url)
+             .container 
+                a.navbar-brand(href='index.html') 
+                    div.nav_logo LYA CHANG
+                +togglerColor
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        each item in menu.list
+                            +navLink(item.name,item.url)
     else if(nav_bg === "gold")
         nav.navbar.navbar-expand-lg.navbar-light.navbar_wolf
-            a.navbar-brand(href='index.html') 
-                +logo
-            +togglerColor
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.ml-auto
-                    each item in menu.list
-                        +navLink(item.name,item.url)
+          .container 
+                a.navbar-brand(href='index.html') 
+                    div.nav_logo LYA CHANG
+                +togglerColor
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        each item in menu.list
+                            +navLink(item.name,item.url)
     else if(nav_bg === "vitoas")
         nav.navbar.navbar-expand-lg.navbar-light.navbar_vitoas
-            a.navbar-brand(href='index.html') 
-                +logo
-            +togglerColor
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.ml-auto
-                    each item in menu.list
-                        +navLink(item.name,item.url)
+            .container 
+                a.navbar-brand(href='index.html') 
+                    div.nav_logo LYA CHANG
+                +togglerColor
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        each item in menu.list
+                            +navLink(item.name,item.url)
     else if(nav_bg === "bifi")
         nav.navbar.navbar-expand-lg.navbar-light.navbar_bifi
-            a.navbar-brand(href='index.html') 
-                +logo
-            +togglerColor
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.ml-auto
-                    each item in menu.list
-                        +navLink(item.name,item.url)
+            .container 
+                a.navbar-brand(href='index.html') 
+                    div.nav_logo LYA CHANG
+                +togglerColor
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        each item in menu.list
+                            +navLink(item.name,item.url)
+    else if(nav_bg === "nijigen")
+        nav.navbar.navbar-expand-lg.navbar-light.navbar_nijigen
+            .container 
+                a.navbar-brand(href='index.html') 
+                    div.nav_logo LYA CHANG
+                +togglerColor
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        each item in menu.list
+                            +navLink(item.name,item.url)
     else
         nav.navbar.navbar-expand-lg.navbar-light
-            a.navbar-brand(href='index.html') 
-                +logo
-            +togglerColor
-            #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.ml-auto
-                    each item in menu.list
-                        +navLink(item.name,item.url)
+            .container 
+                a.navbar-brand(href='index.html') 
+                    div.nav_logo LYA CHANG
+                +togglerColor
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        each item in menu.list
+                            +navLink(item.name,item.url)
 
 
 

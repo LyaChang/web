@@ -6,21 +6,22 @@ block popin
             li.nav_list
                 a(href="./index.html")  ABOUT
             li.nav_list
-                a(href="./works.html")  WORKS:
+                a(href="javascript:void(0)")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
                     a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
                     a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
-                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_nijigen.html") NIJIGEN 官方網頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") Banner Collection
+                    a.nav_work.nav_work_banner(href="./works_graphic.html") 平面印刷品
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
         .cancel_btn
             img(src="./images/cancel.png", alt="")
-    .all_works_btn.works_btn_orange.d-none.d-lg-block
-        a(href="./works.html")
-            img(src="./images/btn_Allworks.png", alt="")
+    //- .all_works_btn.works_btn_orange.d-none.d-lg-block
+    //-     a(href="./works.html")
+    //-         img(src="./images/btn_Allworks.png", alt="")
 
 block loading
     -var borderColor = 'orange'
@@ -40,87 +41,102 @@ block content
             .row.justify-content-center.top_pic_sec
                 .col-12.col-sm-12.col-lg-9
                     img(src="./images/naked_top.png", alt="").top_pic
-    .container.sec2
-        .row
-            .col-12.big_title
-                .title_works 裸雀小酒館活動頁
-                .title_kind Responsive Website
-                .title_line.title_naked
-        .row
-            .col-12.col-md-4
-                .works_subtitle 日期
-                .works_text September 2017
-            .col-12.col-md-8
-                .works_subtitle 客戶
-                .works_text The Naked Grouse
-        .row.last_line
-            .col-12.col-md-4
-                .works_subtitle 參與項目
-                .works_text 響應式網頁設計及 HTML5 切版
-                            br
-                            | 網頁動態設計及撰寫
-            .col-12.col-md-8
-                .works_subtitle 目標
-                .works_text 裸雀小酒館「人氣主場 由你決定」活動網站，內容為票選最受歡迎的酒專，使用者將會在各酒專當場掃描 QR Code 進入網頁投票，用原本的平面視覺延伸做成活動網頁視覺，以 Fullscreen 網頁形式呈現，資訊說明希望清楚明暸。
-    .container-fluid.orange_sec.sec3
+    .container-fluid.sec2
         .container
-            .row.justify-content-center
-                .sec_title_block
+            .row
+                .col-12.big_title
+                    .title_works 裸雀小酒館活動頁
+                    .title_kind Responsive Website
+                    .title_line.title_naked
+            .row
+                .col-12.col-md-4
+                    .works_subtitle 日期
+                    .works_text September 2017
+                .col-12.col-md-8
+                    .works_subtitle 客戶
+                    .works_text The Naked Grouse
+            .row.last_line
+                .col-12.col-md-4
+                    .works_subtitle 參與項目
+                    .works_text RWD 網頁設計及 HTML5 切版
+                                br
+                                | 網頁動態設計及撰寫
+                .col-12.col-md-8
+                    .works_subtitle 目標
+                    .works_text 裸雀小酒館「人氣主場 由你決定」活動網站，內容為票選最受歡迎的酒專，使用者將會在各酒專當場掃描 QR Code 進入網頁投票，用原本的平面視覺延伸做成活動網頁視覺，以 Fullscreen 網頁形式呈現，資訊說明希望清楚明暸。
+    .container-fluid.sec3
+        .container
+            .row.sec_title_block
+                .col-12.col-lg-4
                     h1.sec_title CASE STUDY
-                    img(src="./images/naked_detail.png").svg_word.detail_word
-            .row.justify-content-center
-                .col-12.col-lg-2
-                    div.pic_num_div
-                        img(src="./images/num_naked_01.png").pic_num
-                .col-12.col-lg-9
+                .col-12.col-lg-8
+                    div.title_divide_line
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_orange 01
                     .sm_title 動態配合原本的商品主視覺更進一步
+                .col-12.col-lg-8
                     .sm_text 以原本的平面視覺延伸做成活動網頁視覺，客戶希望一進去就有具有驚喜感的動態。他原本的平面視覺就是走只有產品是彩色的路線，因此我決定做商品從黑白過渡到彩色的動態，更凸顯原本的設計理念。
             .row.justify-content-center
-                .col-12.col-lg-10.pic_all_mb
+                .col-12
                     video(poster="./images/nake_p1.jpg",playsinline,controls,autoplay,loop).pic_all
                         source(src="./images/video/naked_v1.mp4",type="video/mp4")
-            .row.justify-content-center
-                .col-12.col-lg-9
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_orange 01-1
+                    .sm_title 前導頁動態
+                .col-12.col-lg-8
                     .sm_text 由於與酒類相關網站被規定要做個確認年齡的動作，所以就將這次活動的大標放在這個前導頁中。配合標題「人氣主場 由你決定」做了個比較率性的動態。
             .row.justify-content-center
-                .col-12.col-lg-10.pic_all_mb
+                .col-12
                     video(poster="./images/nake_p2.jpg",playsinline,controls,autoplay,loop).pic_all
                         source(src="./images/video/naked_v2.mp4",type="video/mp4")
+             .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_orange 01-2
+                    .sm_title 網頁採用 Fullscreen形式
+                .col-12.col-lg-8
+                    .sm_text Fullscreen 分 4 個區塊，都有做進場動態，讓使用者每到一個區塊都有驚喜，也增加了網頁的豐富度。
             .row.justify-content-center
-                .col-12.col-lg-9
-                    .sm_text Fullscreen 分4個區塊，都有做進場動態，讓使用者每到一個區塊都有驚喜。
-            .row.justify-content-center
-                .col-12.col-lg-10.pic_btm
+                .col-12
                     video(poster="",playsinline,controls,autoplay,loop).pic_all
                         source(src="./images/video/naked_v3.mp4",type="video/mp4")
-            .row.justify-content-center
-                .col-12.col-lg-2
-                    div.pic_num_div
-                        img(src="./images/num_naked_02.png").pic_num
-                .col-12.col-lg-9
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_orange 02
                     .sm_title Fullscreen 的使用者體驗
+                .col-12.col-lg-8
                     .sm_text.sm_text_top 由於是第一次做 Fullscreen 網頁，做到中途才發現因為各個區域可以用滑動轉換，在各區域中擺可滑性區塊滑到最後時再滑動，會直接滑到下個區域，容易造成使用者的不方便，尤其是手機上的使用者，可能沒看完就會滑到下個區域。
                     .sm_text 因此就將他這區域鎖住，在這區塊滑動只會影響這區塊，不會影響整個頁面。
-            .row.justify-content-center
-                .col-12.col-lg-10.pic_btm
+            .row.justify-content-center.last_block
+                .col-12
                     video(poster="",playsinline,controls,autoplay,loop).pic_all
                         source(src="./images/video/naked_v4.mp4",type="video/mp4")
-    .container-fluid.sec4
-        .container
+     .container-fluid.sec4
+        .container 
+            .row
+                .col
+                    div.double_line
             .row.justify-content-between
                 .col-4
-                    p.page_pre.page_dir PREV
+                    p.page_pre.page_dir PREV/
                 .col-4
-                    p.page_next.page_dir NEXT
+                    p.page_next.page_dir NEXT/
             .row.justify-content-between
                 .col-6.col-lg-4
-                    a(href="./works_bifi.html")
-                        p.page_pre.page_name.page_name_naked 比菲德氏菌
+                    a(href="./works_graphic.html")
+                        p.page_pre.page_name.page_name_naked GRAPHIC
                                                 br
-                                                | 導購頁
+                                                | 平面印刷品
                 .col-6.col-lg-4
-                    a(href="./works_wolf.html")
-                        p.page_next.page_name.page_name_naked Wolf Blass
+                    a(href="./works_cv.html")
+                        p.page_next.page_name.page_name_naked RECRUIT
                                                 br
-                                                | 活動頁
+                                                | 履歷健診
+            .row
+                .col
+                    div.double_line
+            .row
+                .col
+                    div.copyright © 2017 — 2021 LyaChang  All right reserved
                             

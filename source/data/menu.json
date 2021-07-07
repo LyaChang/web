@@ -2,10 +2,6 @@
 	"list": [{
 		"name": "ABOUT",
 		"url": "index.html"
-	},
-	{
-		"name": "WORKS",
-		"url": "works.html"
 	},{
 		"name": "RESUME",
 		"url": "./images/resume.pdf"

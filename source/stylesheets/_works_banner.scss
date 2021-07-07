@@ -1,7 +1,19 @@
 .works_section1{
     .banner_title{
-        @include hansFont(50px,300,#444,left);
-        margin-bottom: 20px;
+        @include urwCFont(68px,100,#444,left);
+        letter-spacing: 2.8px;
+        @include lg(){
+            font-size: 55px;
+        }
+        @include sm(){
+            font-size: 65px;
+        }
+        @include mobile480(){
+            font-size: 40px;
+        }
+        @include iphone5(){
+            font-size: 35px;
+        }
     }
 }
 .works_banner_section2{

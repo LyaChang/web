@@ -6,21 +6,22 @@ block popin
             li.nav_list
                 a(href="./index.html")  ABOUT
             li.nav_list
-                a(href="./works.html")  WORKS:
+                a(href="javascript:void(0)")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
                     a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
                     a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
-                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_nijigen.html") NIJIGEN 官方網頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") Banner Collection
+                    a.nav_work.nav_work_banner(href="./works_graphic.html") 平面印刷品
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
         .cancel_btn
             img(src="./images/cancel.png", alt="")
-    .all_works_btn.works_btn_blue.d-none.d-lg-block
-        a(href="./works.html")
-            img(src="./images/btn_Allworks.png", alt="")
+    //- .all_works_btn.works_btn_blue.d-none.d-lg-block
+    //-     a(href="./works.html")
+    //-         img(src="./images/btn_Allworks.png", alt="")
 
 block loading
     -var borderColor = 'blue'
@@ -40,44 +41,48 @@ block content
             .row.justify-content-center.top_pic_sec
                 .col-12.col-sm-12.col-lg-9
                     img(src="./images/CV_top.png", alt="").top_pic
-    .container.sec2
-        .row
-            .col-12.big_title
-                .title_works 履歷健診
-                .title_kind Responsive Website
-                .title_line.title_cv
-        .row
-            .col-12.col-md-4
-                .works_subtitle 日期
-                .works_text November 2017
-            .col-12.col-md-8
-                .works_subtitle 客戶
-                .works_text 1111人力銀行
-        .row.last_line
-            .col-12.col-md-4
-                .works_subtitle 參與項目
-                .works_text 網頁規劃
-                            br
-                            | 響應式網頁設計及 HTML5 切版
-                            br
-                            | 網頁動態設計及部分撰寫
-            .col-12.col-md-8
-                .works_subtitle 目標
-                .works_text 舊網頁改版。將履歷健診這項服務推廣出去，改善他們的網頁架構、服務流程，整體的頁面希望呈現專業感，讓人充滿信任感，願意去報名這項服務。
-                            br
-                            | 此網站除了主要的報名履歷健診服務外，也涵蓋了一些相關的頁面，如：成功案例、顧問群介紹、求職文章.......等等。
-    .container-fluid.blue_sec.sec3
+    .container-fluid.sec2
         .container
-            .row.justify-content-center
-                .sec_title_block
+            .row
+                .col-12.big_title
+                    .title_works 履歷健診
+                    .title_kind Responsive Website
+                    .title_line.title_cv
+            .row
+                .col-12.col-md-4
+                    .works_subtitle 日期
+                    .works_text November 2017
+                .col-12.col-md-8
+                    .works_subtitle 客戶
+                    .works_text 1111人力銀行
+            .row.last_line
+                .col-12.col-md-4
+                    .works_subtitle 參與項目
+                    .works_text 網頁規劃
+                                br
+                                | RWD 網頁設計及 HTML5 切版
+                                br
+                                | 網頁動態設計及部分撰寫
+                .col-12.col-md-8
+                    .works_subtitle 目標
+                    .works_text 舊網頁改版。將履歷健診這項服務推廣出去，改善他們的網頁架構、服務流程，整體的頁面希望呈現專業感，讓人充滿信任感，願意去報名這項服務。
+                                br
+                                | 此網站除了主要的報名履歷健診服務外，也涵蓋了一些相關的頁面，如：成功案例、顧問群介紹、求職文章.......等等。
+    .container-fluid.sec3
+        .container
+            .row.sec_title_block
+                .col-12.col-lg-4
                     h1.sec_title CASE STUDY
-                    img(src="./images/cv_detail.png").svg_word.detail_word
-            .row.justify-content-center
-                .col-12.col-lg-2
-                    div.pic_num_div
-                        img(src="./images/num_cv_01.png").pic_num
-                .col-12.col-lg-9
-                    .sm_title 網頁1個月內要上線，設計只有我1人
+                .col-12.col-lg-8
+                    div.title_divide_line
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_blue 01
+                    .sm_title.d-none.d-md-block 網頁1個月內要上線，設計只
+                            br
+                            |有我1人
+                    .sm_title.d-block.d-md-none 網頁1個月內要上線，設計只有我1人
+                .col-12.col-lg-8
                     .sm_text.sm_text_top 由於客戶要求的時程非常趕，一開始只能先研究下原有的網站的架構及設計，針對他們提出的想要改善的頁面專業感和服務流程列出可以修改的點，先提出一版新網頁架構及首頁新視覺確定視覺風格和頁面數量。
                     .sm_text.sm_text_top 舊版本問題：
                                         br
@@ -89,36 +94,58 @@ block content
                             | 1. 網頁元素和顏色盡量簡潔，首頁最上面採用一張專業人士的圖做主視覺，並在旁邊擺部分成功案例，增加信任感，下面用數據、使用者見證持續加強信任感，並增加專業感。
                             br
                             | 2. 提出新的網站架構及修改會混淆的名字，拿掉覺得不相關的服務。
-            .row.justify-content-center
-                .col-12.col-lg-10
-                    img(src="./images/cv_pic1.png").pic_all.pic_btm
-            .row.justify-content-center
-                .col-12.col-lg-2
-                    div.pic_num_div
-                        img(src="./images/num_cv_02.png").pic_num
-                .col-12.col-lg-9
-                    .sm_title 為節省雙方時間，先做 Wireframe 確認
+            .row
+                .col-12.col-lg-4
+                    .sm_title 履歷健診架構
+            .row
+                .col-12.col-md-6
+                    img(src="./images/cv_pic/cv_pic1-1.jpg").pic_all.pic_btm
+                .col-12.col-md-6
+                    img(src="./images/cv_pic/cv_pic1-2.jpg").pic_all.pic_btm
+            .row
+                .col-12
+                    img(src="./images/cv_pic/cv_pic1-3.jpg").pic_all.pic_btm
+            .row
+                .col-12.col-md-6
+                    img(src="./images/cv_pic/cv_pic1-4.jpg").pic_all.pic_btm_mobile
+                .col-12.col-md-6
+                    img(src="./images/cv_pic/cv_pic1-5.jpg").pic_all
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_blue 02
+                    .sm_title.d-none.d-md-block 為節省雙方時間，先做
+                            br
+                            | Wireframe 確認
+                    .sm_title.d-block.d-md-none 為節省雙方時間，先做 Wireframe 確認
+                .col-12.col-lg-8
+                    
                     .sm_text 除了先確定整體架構及視覺後，由於頁面過多及時間緊迫，先做 Wireframe 提給客戶，讓雙方對頁面的組成和內容有共識後，再照著首頁的視覺一次做完其他頁面的初稿。
             .row.justify-content-center
                 .col-12
-                    img(src="./images/cv_pic2.gif").pic_all.pic_btm
-            .row.justify-content-center
-                .col-12.col-lg-2
-                    div.pic_num_div
-                        img(src="./images/num_cv_03.png").pic_num
-                .col-12.col-lg-9
-                    .sm_title 報名流程新增事前資格篩選和付費服務
+                    img(src="./images/cv_pic/cv_pic2-1.gif").pic_all.pic_btm_mobile
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_blue 03
+                    .sm_title.d-none.d-md-block 報名流程新增事前資格篩選
+                            br
+                            |和付費服務
+                    .sm_title.d-block.d-md-none 報名流程新增事前資格篩選和付費服務
+                .col-12.col-lg-8
                     .sm_text.sm_text_top 由於舊版本報名流程遇到了些問題，例如：舊版本無法篩選進行健診的人，有沒有完成履歷撰寫 ; 客戶希望進行健診前能完成他們的線上測驗，以提供更多資訊給顧問參考....等等， 和新增了付費的服務，差別是免費不一定能被選上且不能指定顧問，付費則可以自由選擇顧問幫你健診。
                     .sm_text 為提供流暢的報名流程，採用一開始先檢查資格的機制，都符合資格後再進入報名表單。表單設計方面，採用一次顯示一個問題的模式，讓使用者可以專注，且特別設計讓日益增多的手機使用者好操作，有別傳統表單字小看不到、容易按錯或按不到的問題。
-            .row.justify-content-center
-                .col-12.col-lg-10
-                   img(src="./images/cv_pic3.png").pic_all.pic_btm
-            .row.justify-content-center
-                .col-12.col-lg-2
-                    div.pic_num_div
-                        img(src="./images/num_cv_04.png").pic_num
-                .col-12.col-lg-9
-                    .sm_title 側邊展開固定選單方便展示，內容也能第一時間看到
+            .row
+                .col-12.col-md-6
+                    img(src="./images/cv_pic/cv_pic3-1.jpg").pic_all.pic_btm_mobile
+                .col-12.col-md-6
+                    img(src="./images/cv_pic/cv_pic3-2.jpg").pic_all
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_blue 04
+                    .sm_title.d-none.d-md-block 側邊展開固定選單方便展示，
+                              br
+                              |內容也能第一時間看到
+                    .sm_title.d-block.d-md-none 側邊展開固定選單方便展示，內容也能第一時間看到
+                .col-12.col-lg-8
                     .sm_text.sm_text_top 在履歷範本頁面中，產業種類選項高達20種，考慮到此頁面大多數的使用者為職場新鮮人，會想看多個產業的範例，用下拉式選單比較不方便，且不希望內容無法在第一時間看到，因此放在側邊。
                     .sm_text.sm_text_top 放在側邊也會有些問題產生：
                                         br
@@ -130,27 +157,35 @@ block content
                             | 1. 將被選擇的產業永久置頂，讓選了什麼選項一清二楚，且可當標題用，不用占右邊內容的空間。
                             br
                             | 2. 在手機中，側邊欄置頂，預設是收合的，有需要再展開，方便按，收合時也可當標題，不用再多空間寫標題。
-            .row.justify-content-center
-                .col-12.col-lg-10.pic_all_mb
-                    img(src="./images/cv_pic4.png").pic_all.pic_btm
-            
+            .row.last_block
+                .col-12
+                    img(src="./images/cv_pic/cv_pic4-1.jpg").pic_all.pic_btm_mobile
     .container-fluid.sec4
-        .container
+        .container 
+            .row
+                .col
+                    div.double_line
             .row.justify-content-between
                 .col-4
-                    p.page_pre.page_dir PREV
+                    p.page_pre.page_dir PREV/
                 .col-4
-                    p.page_next.page_dir NEXT
+                    p.page_next.page_dir NEXT/
             .row.justify-content-between
                 .col-6.col-lg-4
-                    a(href="./works_banner.html")
-                        p.page_pre.page_name.page_name_cv FACEBOOK 廣告
+                    a(href="./works_naked.html")
+                        p.page_pre.page_name.page_name_cv 裸雀小酒館
                                                 br
-                                                | INSTAGRAM 廣告
+                                                | 活動頁
                 .col-6.col-lg-4
                     a(href="./works_vitoas.html")
                         p.page_next.page_name.page_name_cv 蜜得絲 Vitoas
                                                 br
                                                 | 導購頁
+            .row
+                .col
+                    div.double_line
+            .row
+                .col
+                    div.copyright © 2017 — 2021 LyaChang  All right reserved
                     
                             

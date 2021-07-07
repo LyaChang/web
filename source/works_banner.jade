@@ -4,17 +4,21 @@ block popin
     .dropmenu_space#menu_content_banner
         ul.kind_lists_banner
             li.list(data-value="all").segment-0
-                a(href="#",data-value="all").active ALL
+                a(href="javascript:void(0)",data-value="all").active ALL
             li.list.segment-1
-                a(href="#",data-value="work") 工作轉職
+                a(href="javascript:void(0)",data-value="work") RECRUIT
             li.list.segment-2
-                a(href="#",data-value="test") 測驗分析
+                a(href="javascript:void(0)",data-value="test") TEST-AD
             li.list.segment-3
-                a(href="#",data-value="act") 活動
-            li.list.segment-4
-                a(href="#",data-value="travel") 旅遊
+                a(href="javascript:void(0)",data-value="act") ACTIVITY
+            //- li.list.segment-4
+            //-     a(href="javascript:void(0)",data-value="travel") TRAVEL
             li.list.segment-5
-                a(href="#",data-value="pd") 商品
+                a(href="javascript:void(0)",data-value="pd") PRODUCT
+            li.list.segment-6
+                a(href="javascript:void(0)",data-value="game") GAME
+            li.list.segment-7
+                a(href="javascript:void(0)",data-value="holiday") HOLIDAY
         .cancel_btn
             img(src="./images/cancel.png", alt="")
     .nav_mobile
@@ -22,20 +26,22 @@ block popin
             li.nav_list
                 a(href="./index.html")  ABOUT
             li.nav_list
-                a(href="./works.html")  WORKS:
+                a(href="javascript:void(0)")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
                     a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
                     a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
-                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_nijigen.html") NIJIGEN 官方網頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") Banner Collection
+                    a.nav_work.nav_work_banner(href="./works_graphic.html") 平面印刷品
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
+            li.nav_list
                 a(href="./images/resume.pdf")  RESUME
         .cancel_btn
             img(src="./images/cancel.png", alt="")
-    .all_works_btn.works_btn_pink.d-none.d-lg-block
-        a(href="./works.html")
-            img(src="./images/btn_Allworks.png", alt="")
+    //- .all_works_btn.works_btn_pink.d-none.d-lg-block
+    //-     a(href="./works.html")
+    //-         img(src="./images/btn_Allworks.png", alt="")
 
 block loading
     -var borderColor = 'pink'
@@ -53,124 +59,195 @@ block content
     .works_section1
         .container
             .row.justify-content-center
-                .col-11.col-sm-12
+                .col-11.col-sm-12.dis_title
                     h1.banner_title Banner Collection
                 .col-11.col-sm-12.d-none.d-md-block
                     ul.kind_lists.kind_lists_banner
                         li.list_kind(data-value="all").segment-0
-                            a(href="#",data-value="all_banner").active All
-                                span (43)
+                            a(href="javascript:void(0)",data-value="all_banner").active ALL
+                                span (59)
                         li.list_kind.segment-1
-                            a(href="#",data-value="work") 工作轉職
+                            a(href="javascript:void(0)",data-value="work") RECRUIT
                                 span (4)
                         li.list_kind.segment-2
-                            a(href="#",data-value="test") 測驗分析
+                            a(href="javascript:void(0)",data-value="test") TEST-AD
                                 span (5)
                         li.list_kind.segment-3
-                            a(href="#",data-value="act") 活動
+                            a(href="javascript:void(0)",data-value="act") ACTIVITY
                                 span (3)
-                        li.list_kind.segment-4
-                            a(href="#",data-value="travel") 旅遊
-                                span (1)
+                        //- li.list_kind.segment-4
+                        //-     a(href="javascript:void(0)",data-value="travel") TRAVEL
+                        //-         span (1)
                         li.list_kind.segment-5
-                            a(href="#",data-value="pd") 商品
+                            a(href="javascript:void(0)",data-value="pd") PRODUCT
                                 span (30)
-                .col-11.d-md-none
+                        li.list_kind.segment-6
+                            a(href="javascript:void(0)",data-value="game") GAME
+                                span (10)
+                        li.list_kind.segment-7
+                            a(href="javascript:void(0)",data-value="holiday") HOLIDAY
+                                span (7)
+                .col-11.col-sm-12.d-md-none
                     .dropmenu
                         .dropmenu_words 
                             .words ALL
                             .dropbtn
                                 img(src="./images/arrow_down.png", alt="")
-                            span 43
+                            span 59
     .works_banner_section2
         .container
             .row#masonry.justify-content-center
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v51.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v31.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v32.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v33.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v34.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p35.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p36.jpg").banner.lazyload 
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p37.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p38.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p39.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v40.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v41.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v42.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v43.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p44.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p45.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p46.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p47.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p48.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p49.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p50.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v1.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v2.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p23.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v24.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v25.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p6.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v7.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v8.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v9.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v26.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v27.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p11.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v12.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.travel.item.mb-25
-                    img(src="./images/loading_p13.jpg", data-src="./images/banner/banner_p13.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v14.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.work.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p15.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.act.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p16.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p30.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.test.item.mb-25
-                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v18.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v28.gif").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p29.jpg").banner.lazyload
-                .col-11.col-sm-6.col-lg-4.pd.item.mb-25
-                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p32.jpg").banner.lazyload
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p61.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec.jpg",data-src="./images/banner/banner_p60.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec2.jpg",data-src="./images/banner/banner_p59.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec2.jpg",data-src="./images/banner/banner_p58.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec2.jpg",data-src="./images/banner/banner_p57.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec2.jpg",data-src="./images/banner/banner_p56.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec2.jpg",data-src="./images/banner/banner_p55.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec.jpg",data-src="./images/banner/banner_p54.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p53.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.game.item.mb-25.banner_block
+                    img(src="./images/loading_rec.jpg",data-src="./images/banner/banner_p52.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.holiday.item.mb-25.banner_block
+                    video(autoplay,loop,muted,playsinline,poster="./images/loading.jpg").banner.pic_all.lazyload
+                        source(src="./images/banner/date/date05.mp4",type="video/mp4")
+                .col-11.col-sm-6.col-lg-4.holiday.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p63.jpg").banner.lazyload.pic_all.pic_dark_all
+                .col-11.col-sm-6.col-lg-4.holiday.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p62.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.holiday.item.mb-25.banner_block
+                    video(autoplay,loop,muted,playsinline,poster="./images/loading.jpg").banner.pic_all.lazyload.pic_dark_all
+                        source(src="./images/banner/date/date04.mp4",type="video/mp4")
+                .col-11.col-sm-6.col-lg-4.holiday.item.mb-25.banner_block
+                    video(autoplay,loop,muted,playsinline,poster="./images/loading.jpg").banner.pic_all.lazyload.pic_dark_all
+                        source(src="./images/banner/date/date03.mp4",type="video/mp4")
+                .col-11.col-sm-6.col-lg-4.holiday.item.mb-25.banner_block
+                    video(autoplay,loop,muted,playsinline,poster="./images/loading.jpg").banner.pic_all.lazyload
+                        source(src="./images/banner/date/date02.mp4",type="video/mp4")
+                .col-11.col-sm-6.col-lg-4.holiday.item.mb-25.banner_block
+                    video(autoplay,loop,muted,playsinline,poster="./images/loading.jpg").banner.pic_all.lazyload.pic_dark_all
+                        source(src="./images/banner/date/date01.mp4",type="video/mp4")
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v51.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v31.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v32.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v33.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v34.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p35.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p36.jpg").banner.lazyload.pic_all 
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p37.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p38.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p39.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v40.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v41.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v42.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v43.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p44.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p45.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p46.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p47.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p48.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p49.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_p50.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.work.item.mb-25.banner_block
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v1.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.work.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v2.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p23.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v24.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v25.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.act.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p6.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.test.item.mb-25.banner_block
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v7.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.test.item.mb-25.banner_block
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v8.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.test.item.mb-25.banner_block
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v9.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v26.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v27.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.act.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p11.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.work.item.mb-25.banner_block
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v12.gif").banner.lazyload.pic_all
+                //- .col-11.col-sm-6.col-lg-4.travel.item.mb-25.banner_block
+                //-     img(src="./images/loading_p13.jpg", data-src="./images/banner/banner_p13.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.test.item.mb-25.banner_block
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v14.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.work.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p15.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.act.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p16.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p30.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.test.item.mb-25.banner_block
+                    img(src="./images/loading.jpg",data-src="./images/banner/banner_v18.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg",data-src="./images/banner/banner_v28.gif").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p29.jpg").banner.lazyload.pic_all
+                .col-11.col-sm-6.col-lg-4.pd.item.mb-25.banner_block
+                    img(src="./images/loading_sq.jpg", data-src="./images/banner/banner_p32.jpg").banner.lazyload.pic_all
 
-                
+     .container-fluid.sec4
+        .container 
+            .row
+                .col
+                    div.double_line
+            .row.justify-content-between
+                .col-4
+                    p.page_pre.page_dir PREV/
+                .col-4
+                    p.page_next.page_dir NEXT/
+            .row.justify-content-between
+                .col-6.col-lg-4
+                    a(href="./works_nijigen.html")
+                        p.page_pre.page_name.page_name_main NIJIGEN
+                                                br
+                                                | 官方網站
+                .col-6.col-lg-4
+                    a(href="./works_graphic.html")
+                        p.page_next.page_name.page_name_main GRAPHIC
+                                                br
+                                                | 平面印刷品
+            .row
+                .col
+                    div.double_line
+            .row
+                .col
+                    div.copyright © 2017 — 2021 LyaChang  All right reserved
                

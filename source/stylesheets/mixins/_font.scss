@@ -13,3 +13,21 @@
     color: $color;
     text-align: $direction;
 }
+
+@mixin urwCFont($size,$weight,$color,$direction){
+    font-family: urw-din-condensed, source-han-sans-traditional,sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    text-align: $direction;
+    font-style: normal;
+}
+
+@mixin urwFont($size,$weight,$color,$direction){
+    font-family: urw-din, source-han-sans-traditional,sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    text-align: $direction;
+    font-style: normal;
+}

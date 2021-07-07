@@ -6,14 +6,15 @@ block popin
             li.nav_list
                 a(href="./index.html")  ABOUT
             li.nav_list
-                a(href="./works.html")  WORKS:
+                a(href="javascript:void(0)")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
                     a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
                     a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
-                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_nijigen.html") NIJIGEN 官方網頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") Banner Collection
+                    a.nav_work.nav_work_banner(href="./works_graphic.html") 平面印刷品
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="../images/resume.pdf")  RESUME
         .cancel_btn
@@ -31,108 +32,83 @@ block navbar
     include ./partials/navbar.jade
 
 block content
-    .index_section1
-        img(src="./images/bg_grass1.png", alt="", srcset="").bg_grass.bg_grass1
-        img(src="./images/bg_grass2.png", alt="", srcset="").bg_grass.bg_grass2
-        img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3.d-none.d-sm-block
+    .index_top_banner
+        img(src="./images/index/index_banner_pc2.jpg", alt="")
+    .container-fluid
         .container
-            .row.justify-content-center
-                .content.col-lg-8.col-md-10.col-sm-11
-                    h1 HELLO
-                    h3 我的名字叫張淑涵        
-                    p 熱愛設計，享受幫忙解決問題的成就感，目前已有3年經驗。專長有 HTML5、CSS3、動畫、網頁設計規劃、App 設計、Banner 製作。
-    .index_section2
-        img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4.d-none.d-sm-block
-        img(src="./images/bg_grass5.png", alt="", srcset="").bg_grass.bg_grass5.d-none.d-sm-block
-        img(src="./images/bg_grass6.png", alt="", srcset="").bg_grass.bg_grass6.d-none.d-sm-block
+            .row.sec_title_block.index_title
+                .col-12.col-lg-4
+                    h1.sec_title WORKS
+                .col-12.col-lg-8
+                    div.title_divide_line
         .container
-            .row.justify-content-center
-                .sec_title_block
-                    h1.sec_title WHAT I DO
-                img(src="./images/index_word_Works.svg", alt="", srcset="").svg_word.works_word
-        .container
-            .row.justify-content-around.works_sec
-                img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3.d-block.d-sm-none
-                .works_computer.col-sm-6.col
-                    .rec.rec_one
-                        img(src="./images/CV_top.png", alt="", srcset="").works_block_img_L
-                .works_word_block.col-sm-5.align-self-center.offset-lg-0.offset-sm-1.col.offset-2
-                    h5.kind RWD Web Design
-                    h2.works_name 履歷健診
+            .row
+                .col-12.work_block
                     a(href="./works_cv.html")
-                        div.works_btn 
-                            .works_btn_words  See More
-                            img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-            .row.justify-content-around.works_sec
-                img(src="./images/bg_grass6.png", alt="", srcset="").bg_grass.bg_grass6.d-block.d-sm-none
-                .works_word_block.works_block_cell.align-self-center.offset-xl-2.offset-lg-2.col-md-4.col-sm-5.offset-sm-1.col.offset-2.order-sm-1.order-2
-                    h5.kind Mobile Website
-                    h2.works_name 蜜德絲
-                        br  
-                        | 商品導購頁
-                    a(href="./works_vitoas.html")
-                        div.works_btn 
-                            .works_btn_words  See More
-                            img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-                .works_computer.col-sm-6.col-12.order-sm-2.order-1
-                    .rec.cellphone_rec.rec_four
-                        img(src="./images/index_cell_vitoas.png", alt="", srcset="").works_block_img_cell_R
-           
-            .row.justify-content-around.works_sec
-                img(src="./images/bg_grass5.png", alt="", srcset="").bg_grass.bg_grass5.d-block.d-sm-none
-                .works_computer.col-sm-6.col
-                    .rec.cellphone_rec.rec_three
-                        img(src="./images/index_cell_bifi.png", alt="", srcset="").works_block_img_cell_L
-                .works_word_block.col-sm-5.align-self-center.works_word_cell.works_block_cell.col-12.offset-4.offset-sm-0
-                    h5.kind Mobile Website
-                    h2.works_name 比菲德氏菌
-                        br  
-                        | 導購頁
-                    a(href="./works_bifi.html")
-                        div.works_btn 
-                            .works_btn_words  See More
-                            img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-             .row.justify-content-around.works_sec
-                img(src="./images/bg_grass4.png", alt="", srcset="").bg_grass.bg_grass4.d-block.d-sm-none
-                .works_word_block.align-self-center.offset-xl-2.offset-lg-2.col-md-4.col-sm-5.offset-sm-1.col.offset-2.order-sm-1.order-2
-                    h5.kind RWD Web Design
-                    h2.works_name 裸雀小酒館
-                        br  
-                        | 活動頁 
-                    a(href="./works_naked.html")
-                        div.works_btn 
-                            .works_btn_words  See More
-                            img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-                .works_computer.col-sm-6.col.order-sm-2.order-1
-                    .rec.rec_two
-                        img(src="./images/naked_top.png", alt="", srcset="").works_block_img_R
-            .row.justify-content-around.works_sec.works_sec5
-                img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass7
-                .works_computer.col-sm-6.col
-                    .rec.cellphone_rec.rec_five
-                        img(src="./images/index_cell_fb.png", alt="", srcset="").works_block_img_cell_L
-                .works_word_block.col-sm-5.align-self-center.works_word_cell.works_block_cell.col-12.offset-4.offset-sm-0
-                    h5.kind Banner
-                    h2.works_name Facebook &
-                        br  
-                        | Instagram Ads
-                    a(href="./works_banner.html")
-                        div.works_btn 
-                            .works_btn_words  See More
-                            img.works_btn_arrow(src="./images/go.svg", alt="", srcset="")
-            .row.justify-content-center
-                a(href="./works.html")
-                    p.more_btn MORE WORKS 
-    .index_section3
-        img(src="./images/bg_grass7.png", alt="", srcset="").bg_grass.bg_grass7
+                        img(src="./images/index/work_long_banner1.jpg").pic_all.d-none.d-md-block
+                        .mobile_work.d-block.d-md-none
+                            img(src="./images/works_pic_CV.jpg").pic_all
+                            .word_block
+                                    .tag  RWD Web
+                                    .name 履歷健診
+            .row
+                .col-12.col-md-4.col-lg-4.work_block
+                    a(href="./works_bifi.html") 
+                        img(src="./images/works_pic_bifi.jpg").pic_all
+                        .word_block
+                                .tag Mobile Web・Banner
+                                .name 比菲德氏菌導購頁
+                .col-12.col-md-4.col-lg-4.work_block
+                    a(href="./works_vitoas.html") 
+                        img(src="./images/works_pic_vitoas.jpg").pic_all
+                        .word_block
+                                .tag Mobile Web・Banner
+                                .name 蜜得絲導購頁
+                .col-12.col-md-4.col-lg-4.work_block
+                    a(href="./works_banner.html") 
+                        img(src="./images/works_pic_banner.jpg").pic_all
+                        .word_block
+                                .tag Graphic Design
+                                .name Banner Collection
+            .row
+                .col-12.work_block
+                    a(href="./works_nijigen.html")
+                        img(src="./images/index/work_long_banner2.png").pic_all.d-none.d-md-block.block_nijigen
+                        .mobile_work.d-block.d-md-none
+                            img(src="./images/works_pic_nijigen.png").pic_all.block_nijigen
+                            .word_block
+                                    .tag  RWD Web
+                                    .name NIJIGEN 官方網頁
+            .row
+                .col-12.col-md-4.col-lg-4.work_block
+                    a(href="./works_graphic.html") 
+                        img(src="./images/works_pic_graphics.jpg").pic_all
+                        .word_block
+                                .tag Graphic design
+                                .name 平面印刷品
+                .col-12.col-md-4.col-lg-4.work_block
+                    a(href="./works_naked.html") 
+                        img(src="./images/works_pic_naked.jpg").pic_all.pic_dark_all
+                        .word_block
+                                .tag RWD Web
+                                .name 裸雀小酒館 活動頁
+
+    .container-fluid
         .container
-            .row.justify-content-center
-                .sec_title_block
+            .row.sec_title_block.index_title
+                .col-12
+                    div.title_divide_line
+            .row.sec_title_block.index_title
+                 .col-12
                     h1.sec_title CONTACT ME
-                img(src="./images/index_word_Email.svg", alt="", srcset="").svg_word.works_email
-            .row.justify-content-center
-                img(src="./images/email_icon.svg", alt="")
-             .row.justify-content-center
-                .email_block
-                    a(href="mailto:lyachang006@gmail.com") lyachang006@gmail.com
-                    .line 
+                 .col-12
+                    h3.sec_text lyachang006@gmail.com
+    
+    .container-fluid.sec4
+        .container 
+            .row
+                .col
+                    div.double_line
+            .row
+                .col
+                    div.copyright © 2017 — 2021 LyaChang  All right reserved

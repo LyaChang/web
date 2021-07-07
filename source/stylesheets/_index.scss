@@ -1,106 +1,3 @@
-// //border
-// .top_border_pink{
-//     top: 0;
-//     @include upDownBorder($main);
-// }
-
-// .bottom_border_pink{
-//     bottom: 0;
-//     @include upDownBorder($main);
-// }
-
-// .right_border_pink{
-//     right: 0;
-//     @include leftRightBorder($main);
-// }
-
-// .left_border_pink{
-//     left: 0;
-//     @include leftRightBorder($main);
-// }
-
-// //blue border
-// .top_border_blue{
-//     top: 0;
-//     @include upDownBorder($blue);
-// }
-
-// .bottom_border_blue{
-//     bottom: 0;
-//     @include upDownBorder($blue);
-// }
-
-// .right_border_blue{
-//     right: 0;
-//     @include leftRightBorder($blue);
-// }
-
-// .left_border_blue{
-//     left: 0;
-//     @include leftRightBorder($blue);
-// }
-// //orange border
-// .top_border_orange{
-//     top: 0;
-//     @include upDownBorder($naked);
-// }
-
-// .bottom_border_orange{
-//     bottom: 0;
-//     @include upDownBorder($naked);
-// }
-
-// .right_border_orange{
-//     right: 0;
-//     @include leftRightBorder($naked);
-// }
-
-// .left_border_orange{
-//     left: 0;
-//     @include leftRightBorder($naked);
-// }
-// //gold border
-
-// .top_border_gold{
-//     top: 0;
-//     @include upDownBorder($wolf);
-// }
-
-// .bottom_border_gold{
-//     bottom: 0;
-//     @include upDownBorder($wolf);
-// }
-
-// .right_border_gold{
-//     right: 0;
-//     @include leftRightBorder($wolf);
-// }
-
-// .left_border_gold{
-//     left: 0;
-//     @include leftRightBorder($wolf);
-// }
-// //grey border
-
-// .top_border_grey{
-//     top: 0;
-//     @include upDownBorder($brown-grey-two);
-// }
-
-// .bottom_border_grey{
-//     bottom: 0;
-//     @include upDownBorder($brown-grey-two);
-// }
-
-// .right_border_grey{
-//     right: 0;
-//     @include leftRightBorder($brown-grey-two);
-// }
-
-// .left_border_grey{
-//     left: 0;
-//     @include leftRightBorder($brown-grey-two);
-// }
 
 //nav_mobile
 #nav{
@@ -113,6 +10,24 @@
         right: 20px;
     }
 }
+.nav_logo{
+    color: #3B3939;
+    font-family: urw-din-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.nav-item{
+    color: #3B3939;
+    font-family: urw-din-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 21px;
+}
+
 
 .nav_mobile{
     width: 100%;
@@ -124,52 +39,60 @@
     display: none;
     ul{
         position: relative;
-        margin-top: 100px;
+        margin-top: 7vw;
+        padding-left: 8vw;
     }
     .nav_list{
         position: relative;
         margin: 0 auto;
         list-style:none;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         a{
             cursor: pointer;
-            @include hansFont(30px,300,#fff,left);
+            @include urwFont(30px,300,#fff,left);
         }
         .nav_work{
             width: 100%;
             display: block;
-            @include hansFont(20px,300,#fff,left);
-            margin-bottom: 10px;
-            margin-top: 10px;
+            @include urwFont(20px,300,#fff,left);
+            margin-bottom: 20px;
+            margin-top: 20px;
+            letter-spacing: 0.5px;
         }
         .nav_work_web::before{
             position: relative;
             content:"WEB";
-            @include hansFont(16px,300,#fff,left);
-            padding: 5px;
-            margin-right: 5px;
+            @include urwFont(16px,300,#fff,left);
+            padding: 5px 10px;
+            margin-right: 10px;
             background: $faded-red;
             top: -2px;
+            letter-spacing: 0.7px;
+            border-radius: 10px;
         }
         .nav_work_app::before{
             position: relative;
             content:"APP";
-            @include hansFont(16px,400,#fff,left);
-            padding: 5px;
-            margin-right: 5px;
+            @include urwFont(16px,300,#fff,left);
+            padding: 5px 10px;
+            margin-right: 10px;
             background: $faded-red;
             top: -2px;
+            letter-spacing: 0.7px;
+            border-radius: 10px;
             
         }
         .nav_work_banner::before{
             position: relative;
-            content:"BANNER";
-            @include hansFont(16px,300,#fff,left);
-            padding: 5px;
-            margin-right: 5px;
+            content:"GRAPHIC";
+            @include urwFont(16px,300,#fff,left);
+            padding: 5px 10px;
+            margin-right: 10px;
             background: $faded-red;
             top: -2px;
+            letter-spacing: 0.7px;
+            border-radius: 10px;
         }
     }
     .cancel_btn{
@@ -262,817 +185,101 @@
     }
 }
 
+.nav_mobile_nijigen{
+    background-color: $nijigen;
+    .nav_list{
+        .nav_work_web::before{
+            background: #2fa09f;
+        }
+        .nav_work_app::before{
+            background: #2fa09f;
+        }
+        .nav_work_banner::before{
+            background: #2fa09f;
+        }
+
+    }
+}
+
 
 
 
 
 
 //content
-
-.index_section1{ 
-
-    .bg_grass1{
-        width: 250px;
-        top: 0;
-        left: calc(50% - 125px);
-        z-index: 1039;
-        @include lg(){
-            width: 200px;
-            left: calc(50% - 100px);
-        }
-        @include sm(){
-            width: 150px;
-            left: calc(50% - 75px);
-        }
-        @include mobile480(){
-            width: 120px;
-            left: calc(50% - 30px);
-        }
-
-    }
-
-    .bg_grass2{
-        height: 500px;
-        top: 400px;
-        left: 0;
-        @include xl(){
-            height: 400px;
-        }
-        @include lg(){
-            height: 300px;
-        }
-        @include md(){
-            height: 250px;
-            top: 380px;
-        }
-        @include sm(){
-            display: none;
-        }
-    }
-
-    .bg_grass3{
-        height: 400px;
-        top: 900px;
-        right: 0;
-        @include xl(){
-            height: 300px;
-        }
-        @include lg(){
-            height: 250px;
-        }
-        @include md(){
-            height: 170px;
-            top: 930px;
-        }
-        @include sm(){
-            height: 170px;
-            top: 710px;
-        }
-        @include mobile480(){
-            top: 690px;
-        }
-    }
-
-    .content{
-        margin-top: 190px;
-        @include lg(){
-            margin-top: 120px;
-        }
-        @include sm(){
-            margin-top: 90px;
-        }
-        @include mobile480(){
-            margin-top: 30px;
-        }
-        h1{
-            @include hansFont(84px,900,$greyish-brown,center);
-            letter-spacing: -0.6px;
-            @include lg(){
-                font-size: 70px;
-            }
-            @include sm(){
-                font-size: 50px;
-            }
-            @include iphone5(){
-                font-size: 40px;
-            }
-        }
-        h3{
-            @include xingFont(54px,300,$greyish-brown,center);
-            @include xl(){
-                font-size: 40px;
-            }
-            @include sm(){
-                font-size: 30px;
-            }
-            @include mobile480(){
-                font-size: 25px;
-            }
-            @include iphone5(){
-                font-size: 24px;
-            }
-        }
-        p{
-            margin-top: 35px;
-            @include xingFont(21px,300,$warm-grey,center);
-            @include md(){
-                font-size: 20px;
-            }
-            @include sm(){
-                margin-top: 20px;
-                font-size: 18px;
-                margin-left: 30px;
-                margin-right: 30px;
-            }
-            @include mobile480(){
-                font-size: 16px;
-                margin-left: 15px;
-                margin-right: 15px;
-            }
-        }
-    }
-    .work_kind{
-        margin-top: 20px;
-        @include sm(){
-            margin-top: 0px;
-        }
-        .pic{
-            width: 250px;
-            display: inline-block;
-            @include xl(){
-                width: 230px;
-            }
-            @include lg(){
-                width: 200px;
-            }
-            @include md(){
-                width: 160px;
-                padding-left: 7.5px;
-                padding-right: 7.5px;
-            }
-            @include sm(){
-                width: 120px;
-            }
-            @include mobile480(){
-                width: 100px;
-                padding-left: 3px;
-                padding-right: 3px;
-            }
-            @include iphone5(){
-                width: 95px;
-            }
-
-            img{
-                width: 100%;
-            }
-            .web_word{
-                width: 132px;
-                left: -36px;
-                bottom: 30px;
-                z-index: 2;
-                @include xl(){
-                    width: 112px;
-                    left: -30px;
-                }
-                @include lg(){
-                    width: 100px;
-                }
-                @include md(){
-                    width: 80px;
-                    left: -10px;
-                    bottom: 20px;
-                }
-                @include sm(){
-                    left: -20px;
-                    bottom: 0px;
-                }
-                @include mobile480(){
-                    display: none;
-                }
-            }
-            .banner_word{
-                width: 201px;
-                left: 65px;
-                bottom: 30px;
-                z-index: 2;
-                @include xl(){
-                    width: 180px;
-                }
-                @include lg(){
-                    width: 150px;
-                }
-                @include md(){
-                    width: 120px;
-                    left: 50px;
-                    bottom: 20px;
-                }
-                @include sm(){
-                    bottom: 4px;
-                    left: 45px;
-                    z-index: 1;
-                }
-                @include mobile480(){
-                    display: none;
-                }
-            }
-            .app_word{
-                width: 145px;
-                left: 130px;
-                bottom: 30px;
-                z-index: 2;
-                @include xl(){
-                    width: 125px;
-                    left: 115px;
-                }
-                @include lg(){
-                    width: 105px;
-                }
-                @include md(){
-                    width: 85px;
-                    left: 100px;
-                    bottom: 10px;
-                }
-                @include sm(){
-                    width: 75px;
-                    bottom: 0;
-                    left: 70px;
-                }
-                @include mobile480(){
-                    display: none;
-                }
-            }
-            .pic_banner{
-                padding-top: 70px;
-                @include lg(){
-                    padding-top: 50px;
-                }
-            }
-        }
-       
-    }
-}
-
-.index_section2{
-    margin-top: 120px;
-    position: relative;
+.index_top_banner{
+    margin-top: 30px;
+    margin-bottom: 115px;
     @include md(){
-        margin-top: 80px;
-    }
-    @include mobile480(){
-        margin-top: 50px;
-    }
-    .bg_grass3{
-        height: 170px;
-        right: 0;
-
-        @include sm(){
-            height: 170px;
-            top: -90px;
-        }
-    }
-    .bg_grass4{
-        top: 1200px;
-        left: 0;
-        width: 300px;
-        @include xl(){
-            top: 1080px;
-            width: 250px;
-        }
-        @include lg(){
-            top: 923px;
-            width: 200px;
-        }
-        @include md(){
-            top: 725px;
-            width: 150px;
-        }
-        @include sm(){
-            top: -70px;
-        }
-    }
-
-    .bg_grass5{
-        right: 0;
-        top: 1650px;
-        @include xl(){
-            top: 1550px;
-            width: 150px;
-        }
-        @include lg(){
-            top: 1350px;
-            width: 130px;
-        }
-        @include md(){
-            top: 1020px;
-            width: 100px;
-        }
-        @include sm(){
-            top: -100px;
-        }
-       
-    }
-
-    .bg_grass6{
-        left: 0;
-        top: 2500px;
-        @include xl(){
-            top: 2200px;
-            width: 200px;
-        }
-        @include lg(){
-            top: 1820px;
-            width: 180px;
-        }
-        @include md(){
-            top: 1400px;
-            width: 120px;
-        }
-        @include sm(){
-            top: -70px;
-        }
-        @include mobile480(){
-            width: 140px;
-            top: -70px;
-           
-        }
-    }
-
-    .bg_grass7{
-        display: none;
-        right: 0;
-       
-        @include sm(){
-            display: block;
-            height: 170px;
-            top: -120px;
-        }
-        @include mobile480(){
-            top: -120px;
-        }
-    }
-
-    .sec_title_block{
-        .sec_title{
-            letter-spacing: -3.8px;
-            margin-bottom: 150px;
-            @include md(){
-                margin-bottom: 120px;
-            }
-            @include sm(){
-                margin-bottom: 100px;
-            }
-        }
-    }
-    .works_word{
-        padding-top: 40px;
-        @include lg(){
-            width: 140px;
-        }
-        @include md(){
-            padding-top: 30px;
-            width: 120px;
-        }
-        @include mobile480(){
-            padding-top: 20px;
-            width: 100px;
-        }
-        @include iphone5(){
-            width: 80px;
-            padding-top: 15px;
-        }
-    }
-    .rec{
-        position: relative;
-    }
-    .rec_one{
-        background-color: $blue;
-    }
-    .rec_two{
-        background-color: $naked;
-    }
-    .rec_three{
-        background-color: $bifi;
-    }
-    .rec_four{
-        background-color: #F69B30;
-    }
-    .rec_five{
-        background-color: $ad_rec;
-    }
-    .works_sec{
-        position: relative;
-        margin-bottom: 80px;
-        @include lg(){
-            margin-bottom: 50px; 
-        }
-    }
-    .works_sec5{
-        margin-top: -40px;
-        @include md(){
-            margin-top: -70px;
-        }
-        @include sm(){
-            margin-top: -10px;
-        }
-    }
-
-    .works_computer{
-        padding-bottom: 30px;
-
-        .rec{
-            height: 95%;
-            @include lg(){
-                width: 110%;
-            }
-            @include md(){
-                height: auto;
-            }
-            @include sm(){
-                width: 60%;
-                height: 95%;
-                margin: 0 auto;
-            }
-            .works_block_img_L{
-                position: relative;
-                display: block;
-                left: -250px;
-                top: -50px;
-                z-index: 1;
-                @include xl(){
-                    width: 700px;
-                    left: -200px;
-                }
-                @include lg(){
-                    width: 600px;
-                    left: -180px;
-                }
-                @include md(){
-                    width: 420px;
-                    left: -130px;
-                    top: -20px;
-                }
-                @include sm(){
-                    left: -110px;
-                    width: 80vw;
-                    top: -25px;
-                }
-                @include mobile480(){
-                    width: 100vw;
-                    left: -40vw;
-                    top: -20px;
-                }
-                @include iphone5(){
-                    left: -120px;
-                }
-                
-            } 
-            .works_block_img_R{
-                position: relative;
-                display: block;
-                top: -50px;
-                right: 57px;
-                z-index: 1;
-                @include xl(){
-                    width: 700px;
-                    right: 70px;
-                }
-                @include lg(){
-                    width: 600px;
-                    right: 50px;
-                }
-                @include md(){
-                    width: 420px;
-                    right: 30px;
-                    top: -30px;
-                }
-                @include sm(){
-                    width: 80vw;
-                }
-                @include mobile480(){
-                    width: 100vw;
-                    right: 25px;
-                    top: -25px;
-                }
-            }
-            .works_block_img_cell_R{
-                position: relative;
-                display: block;
-                right: -100px;
-                top: -60px;
-                width: 320px;
-                z-index: 1;
-                @include xl(){
-                    width: 290px;
-                    right:-60px; 
-                }
-                @include lg(){
-                    width: 250px;
-                    right: -45px; 
-                }
-                @include md(){
-                    width: 200px;
-                    right: -22px;
-                    top: -50px;
-                }
-                @include sm(){
-                    width: 37vw;
-                    right: -30px;
-                }
-                @include mobile480(){
-                    top: -50px;
-                    width: 42vw;
-                    right: -7vw;
-                }
-            }
-            .works_block_img_cell_L{
-                position: relative;
-                display: block;
-                left: 100px;
-                top: -60px;
-                width: 320px;
-                z-index: 1;
-                @include xl(){
-                    width: 290px;
-                    left:60px; 
-                }
-                @include lg(){
-                    width: 250px;
-                    left: 40px; 
-                }
-                @include md(){
-                    width: 200px;
-                    left: 20px;
-                    top: -50px;
-                }
-                @include sm(){
-                    width: 37vw;
-                    left: 30px;
-                }
-                @include mobile480(){
-                    width: 42vw;
-                    left: 6vw;
-                    top: -50px;
-                }
-                
-            }
-        }
-        .cellphone_rec{
-            
-            width: 90%;
-            height: 70%;
-            @include lg(){
-                width: 100%;
-            }
-            @include md(){
-                width: 100%;
-                height: 70%;
-            }
-            @include sm(){
-                width: 50%;
-            }
-            @include mobile480(){
-                width: 60%;
-                height: 70%;
-            }
-        }
-    }
-    .works_word_block{
-        position: relative;
-        margin-bottom: 50px;
-        @include iphone5(){
-            margin-left: 65px;
-        }
-        .kind{
-            @include xingFont(26px,normal,$secondary,left);
-            @include xl(){
-                font-size: 22px;
-            }
-            @include lg(){
-                font-size: 20px;
-            }
-        }
-        .works_name{
-            @include xingFont(70px,300,$black,left);
-            margin-bottom: 20px;
-            @include xl(){
-                font-size: 55px;
-            }
-            @include lg(){
-                font-size: 40px;
-            }
-            @include md(){
-                font-size: 30px;
-            }
-            @include sm(){
-                font-size: 35px;
-            }
-        }
-        .works_btn{
-            width: 227px;
-            position: relative;
-            cursor: pointer;
-            @include xl(){
-                width: 200px;
-            }
-            @include lg(){
-                width: 180px;
-            }
-            @include md(){
-                width: 150px;
-            }
-
-            &:after{
-                content: " ";
-                display: block;
-                width: 100%;
-                height: 5px;
-                background-image: linear-gradient(to left, #f6b9c2, #e9838f);
-            }
-
-            .works_btn_words{
-                display: inline-block;
-                @include xingFont(30px,bold,$faded-red,left);
-                @include xl(){
-                    font-size: 26px;
-                }
-                @include lg(){
-                    font-size: 23px;
-                }
-                @include md(){
-                    font-size: 20px;
-                }
-            }
-            .works_btn_arrow{
-                display: inline-block;
-                width: 14px;
-                padding-bottom: 10px;
-                margin-left: 50px;
-                transition: margin-left 0.3s;
-                @include xl(){
-                    margin-left: 40px;
-                }
-                @include lg(){
-                    margin-left: 30px;
-                }
-                @include md(){
-                    width: 10px;
-                }
-            }
-
-            &:hover .works_btn_arrow{
-                margin-left: 70px;
-                @include xl(){
-                    margin-left: 55px;
-                }
-                @include lg(){
-                    margin-left: 40px;
-                }
-            }
-        }
-    }
-    .works_word_cell{
-        left: -35px;
-        top: -30px;
-        @include xl(){
-            left: -30px;
-            min-width: 430px;
-        }
-        @include lg(){
-            left: -20px;
-            min-width: 320px;
-        }
-        @include md(){
-            left: -20px;
-            min-width: 240px;
-        }
-        @include sm(){
-            left: 0;
-            top: 0;
-        }
-        
-    }
-    .works_block_cell{
-        @include sm(){
-            margin-top: -50px;
-        }
-    }
-    .more_btn{
-        background-color: $faded-red;
-        padding: 15px 50px;
-        @include xingFont(26px,500,#fff,center);
-        margin-bottom: 200px;
-        margin-top: -50px;
-        &:hover{
-            background-color: $main;
-        }
-        @include xl(){
-            font-size: 26px;
-        }
-        @include lg(){
-            font-size: 23px;
-        }
-        @include md(){
-            font-size: 20px;
-        }
-        @include sm(){
-            margin-top:-10px;
-            margin-bottom: 100px;
-        }
-    }
-}
-
-
-
-.index_section3{
-    padding-bottom: 400px;
-    position: relative;
-    @include xl(){
-        padding-bottom: 250px;
-    }
-    @include md(){
-        padding-bottom: 200px;
-        margin-top: -50px;
-    }
-
-    @include mobile480(){
-        margin-top: 0;
-    }
-    
-    .bg_grass7{
-        bottom: 0;
-        left: calc(50% - 295px);
-        @include xl(){
-            width: 450px;
-            left: calc(50% - 225px);
-        }
-        @include lg(){
-            width: 400px;
-            left: calc(50% - 200px);
-        }
-        @include md(){
-            width: 320px;
-            left: calc(50% - 160px);
-        }
-        @include mobile480(){
-            width: 260px;
-            left: calc(50% - 130px);
-        }
-    }
-    .sec_title_block{
         margin-bottom: 70px;
+    }
+    @include sm(){
+        // height: 400px;
+    }
+    img{
+        width: 100%;
+        @include sm(){
+            width: 160%;
+        }
+    }
+}
+.index_title{
+    margin-bottom: 50px;
+}
+.pic_btm{
+    margin-bottom: 50px;
+    @include sm(){
+        margin-bottom: 30px;
+    }
+}
+.pic_btm_mobile{
+    @include sm(){
+        margin-bottom: 10px;
+    }
+}
 
-        .sec_title{
-            letter-spacing: -3.8px;
-        }
+.work_block{
+    margin-bottom: 50px;
+    
+    @include sm(){
+        margin-bottom: 30px;
     }
-    .works_email{
-        padding-top: 40px;
-        @include lg(){
-            width: 140px;
-        }
-        @include md(){
-            padding-top: 30px;
-            width: 120px;
-        }
-        @include mobile480(){
-            padding-top: 20px;
-            width: 100px;
-        }
-        @include iphone5(){
-            width: 80px;
-            padding-top: 10px;
-        }
+    cursor: pointer;
+    transition: all 0.9s;
+
+    &:hover img{
+
+        box-shadow: 2px 2px 32px 4px rgba(0,0,0,0.20);
+       
     }
-    .email_block {
-        margin-top: 40px;
-        a{
-            @include xingFont(44px,bold,$black,center);
-            letter-spacing: -1.3px;
-            @include xl(){
-                font-size: 36px;
-            }
-            @include lg(){
-                font-size: 30px;
-            }
-            @include mobile480(){
-                font-size: 26px;
-            }
-            @include iphone5(){
-                font-size: 23px;
-            }
-        } 
-        .line{
-            width: 90%;
-            height: 10px;
-            margin: 0 auto;
-            margin-top: 3px;
-            background-image: linear-gradient(to right, #fcbac2, $faded-red);
-            @include lg(){
-                height: 7px;
-            }
-        }
+
+
+    img{
+        width: 100%;
+        margin-bottom:10px;
+        transition: all 0.9s;
+        border-radius: 13px;
         
     }
-    
+    .word_block{
+        
+        .tag{
+            @include urwFont(21px,200,$faded-red,left);
+            letter-spacing: 0.1px;
+            margin-bottom: 5px;
+            @include md(){
+                margin-bottom:0;
+            }
+        }
+        .name{
+            @include urwFont(24px,300,$greyish-brown,left);
+            transition: border 0.3s;
+            letter-spacing: 1px;
+            
+        }
+    }
+}
 
+.block_nijigen{
+    background: linear-gradient(180deg, rgba(110,244,217,1) 0%, rgba(31,183,246,1) 100%);
 }

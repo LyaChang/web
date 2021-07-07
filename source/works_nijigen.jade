@@ -1,0 +1,162 @@
+extend layout.jade
+
+block popin
+    .nav_mobile.nav_mobile_nijigen
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="javascript:void(0)")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
+                    a.nav_work.nav_work_web(href="./works_nijigen.html") NIJIGEN 官方網頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") Banner Collection
+                    a.nav_work.nav_work_banner(href="./works_graphic.html") 平面印刷品
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    //- .all_works_btn.works_btn_blue.d-none.d-lg-block
+    //-     a(href="./works.html")
+    //-         img(src="./images/btn_Allworks.png", alt="")
+
+block loading
+    -var borderColor = 'nijigen'
+    include ./partials/loading.jade
+
+
+block navbar
+    -var path = 'works.html'
+    -var logoColor = ''
+    -var nav_bg= 'nijigen'
+    -var togglerColor = 'nijigen'
+    include ./partials/navbar.jade
+
+block content
+    .container-fluid.top_sec.top_sec_nijigen
+        .container
+            .row.justify-content-center.top_pic_sec
+                .col-12.col-sm-12.col-lg-9
+                    img(src="./images/nijigen_pic/NIJIGEN_top.png", alt="").top_pic
+    .container-fluid.sec2
+        .container
+            .row
+                .col-12.big_title
+                    .title_works NIJIGEN 官方網頁
+                    .title_kind Responsive Website
+                    .title_line.title_nijigen
+            .row
+                .col-12.col-md-4
+                    .works_subtitle 日期
+                    .works_text January 2021
+                .col-12.col-md-8
+                    .works_subtitle 客戶
+                    .works_text NIJIGEN
+            .row.last_line
+                .col-12.col-md-4
+                    .works_subtitle 參與項目
+                    .works_text 網頁設計
+                                br
+                                | RWD 網頁設計及 HTML5 切版
+                                br
+                                | 網頁動態設計及撰寫
+                .col-12.col-md-8
+                    .works_subtitle 目標
+                    .works_text 不使用任何跟遊戲相關圖案、照片設計出一個 B2B 的遊戲代理商商業網頁，希望能配合理念「乘著幻想的風，駕馭創造力的浪，開拓無邊無際的夢想次元」設計風格。
+                                //- br
+                                //- | 此網站除了主要的報名履歷健診服務外，也涵蓋了一些相關的頁面，如：成功案例、顧問群介紹、求職文章.......等等。
+    .container-fluid.sec3
+        .container
+            .row.sec_title_block
+                .col-12.col-lg-4
+                    h1.sec_title CASE STUDY
+                .col-12.col-lg-8
+                    div.title_divide_line
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_nijigen 01
+                    .sm_title.d-none.d-md-block 用文字、幾何圖形和漸層為
+                            br
+                            |元素營造二次元未來感
+                    .sm_title.d-block.d-md-none 用文字、幾何圖形和漸層為元素營造二次元未來感
+                .col-12.col-lg-8
+                    .sm_text.sm_text_top 由於不能使用照片及遊戲相關的圖案製作視覺，因此決定取理念的關鍵字「夢想」、「二次元」、「創造力」等字作為設計元素，將其圖像化，並使用現代動漫中常看到的漸層元素以及幾何圖形，來豐富畫面，營造主視覺氛圍。
+            .row
+                .col-12
+                    img(src="./images/nijigen_pic/nijigen_pic1.jpg").pic_all
+
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_nijigen 02
+                    .sm_title.d-none.d-md-block 刻意減少顏色，整體白色為
+                            br
+                            | 主，關鍵色為品牌色
+                    .sm_title.d-block.d-md-none 刻意減少顏色，整體白色為主，關鍵色為品牌色
+                .col-12.col-lg-8
+                    
+                    .sm_text 為了達到有 B2B 的商業感，主視覺下面刻意減少顏色，以品牌色的綠色為主，而不是主視覺也有用到的藍色、黃色一起，顯得比較穩重。主視覺下面的區域也延伸主視覺所使用的文字外框元素和幾何圖形，讓頁面更有整體感，也讓頁面保留了主視覺的活潑感，不至於太死板。
+            .row
+                .col-12.col-md-6
+                    img(src="./images/nijigen_pic/nijigen_pic2.jpg").pic_all.pic_btm_mobile
+                .col-12.col-md-6
+                    img(src="./images/nijigen_pic/nijigen_pic2-1.jpg").pic_all
+            .row.work_introduce_block
+                .col-12.col-lg-4
+                    div.pic_num_div.number_color_nijigen 03
+                    .sm_title.d-none.d-md-block 以 LOGO 的設計理念，設計
+                            br
+                            |NIJIGEN 的 loading 動畫
+                    .sm_title.d-block.d-md-none 以 LOGO 的設計理念，設計 NIJIGEN 的 loading 動畫
+                .col-12.col-lg-8
+                    .sm_text LOGO 的設計理念是取 NIJIGEN 這詞的日語詞源：二次元，所以設計成由2個2組成的N，而 loading 動畫則繼續加深的這個理念，設計成寫2個2組成 LOGO 的Ｎ。
+            .row.justify-content-center.last_block
+                .col-12
+                    .div.nijigen_sec.vedio_bg_sec
+                    .row.justify-content-center
+                        .col-8.col-md-4
+                            video(autoplay,loop,muted,playsinline).long_video.long_video_padding
+                                source(src="./images/nijigen_pic/loading_ani_noword.mp4",type="video/mp4")
+            .row.sec_title_block
+                .col-12.col-lg-2
+                    h1.sec_title WEB
+                .col-12.col-lg-10
+                    div.title_divide_line
+            .row.justify-content-center.last_block
+                .col-12
+                    .div.nijigen_sec.vedio_bg_sec
+                    .row.justify-content-center
+                        .col-11.col-sm-8.col-lg-8
+                            video(autoplay,loop,muted,playsinline).long_video.long_video_padding
+                                source(src="./images/nijigen_pic/NIJIGEN_web.mp4",type="video/mp4")
+    .container-fluid.sec4
+        .container 
+            .row
+                .col
+                    div.double_line
+            .row.justify-content-between
+                .col-4
+                    p.page_pre.page_dir PREV/
+                .col-4
+                    p.page_next.page_dir NEXT/
+            .row.justify-content-between
+                .col-6.col-lg-4
+                    a(href="./works_bifi.html")
+                        p.page_pre.page_name.page_name_cv 比菲德氏菌
+                                                br
+                                                | 導購頁
+                .col-6.col-lg-4
+                    a(href="./works_banner.html")
+                        p.page_next.page_name.page_name_cv Banner
+                                                br
+                                                | Collection
+            .row
+                .col
+                    div.double_line
+            .row
+                .col
+                    div.copyright © 2017 — 2021 LyaChang  All right reserved
+                    
+                            

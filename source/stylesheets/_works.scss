@@ -14,11 +14,11 @@
         position: relative;
         margin: 0 auto;
         list-style:none;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         a{
             cursor: pointer;
-            @include hansFont(30px,300,#fff,center);
+            @include urwFont(25px,300,#fff,center);
         }
        
     }
@@ -184,17 +184,25 @@
         //height: 40px;
         //border-bottom: 3px solid $faded-red;
         margin-bottom: 20px;
-        
+        &::before{
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #ddd;
+        }
         &::after{
             content: " ";
             display: block;
             width: 100%;
-            height: 5px;
-            background-image: linear-gradient(to left, #f6b9c2, #e9838f);
+            height: 1px;
+            background-color: #ddd;
         }
         .dropmenu_words{
-            @include hansFont(21px,300,$black,left);
+            @include urwFont(21px,300,$black,left);
             margin-left: 5px;
+            padding-top:6px;
+            padding-bottom:6px;
             .words{
                 position: relative;
                 display: inline-block;
@@ -229,10 +237,10 @@
             
             span{
                 padding-left: 3px;
-                @include hansFont(16px,300,$brown-grey,left);
+                @include urwFont(16px,300,$brown-grey,left);
             }
             a{
-                @include hansFont(16px,normal,$greyish-brown,left);
+                @include urwFont(16px,normal,$greyish-brown,left);
             }
             .active{
                 color: $faded-red;
@@ -256,36 +264,47 @@
         }
     }
     .work_block{
-        padding-bottom: 60px;
+        margin-bottom: 50px;
         
         @include sm(){
-            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
         @include mobile480(){
             
             width: 80%;
         }
         cursor: pointer;
+        transition: all 0.9s;
+
         &:hover img{
-            border-left: 9px solid #fcbac2;
-            border-right: 9px solid $faded-red;
-            border-top: 9px solid #fcbac2;
-            border-bottom: 9px solid $faded-red;
+    
+            box-shadow: 2px 2px 32px 4px rgba(0,0,0,0.20);
+           
         }
+
 
         img{
             width: 100%;
-            margin-bottom:10px; 
-            transition: border 0.3s;
+            margin-bottom:10px;
+            transition: all 0.9s;
+            border-radius: 13px;
             
         }
         .word_block{
             
             .tag{
-                @include hansFont(21px,300,$faded-red,left);
+                @include urwFont(21px,200,$faded-red,left);
+                letter-spacing: 0.1px;
+                margin-bottom: 5px;
+                @include md(){
+                    margin-bottom:0;
+                }
             }
             .name{
-                @include hansFont(24px,300,$greyish-brown,left);
+                @include urwFont(24px,300,$greyish-brown,left);
+                transition: border 0.3s;
+                letter-spacing: 1px;
+                
             }
         }
     }
@@ -294,14 +313,24 @@
 .long_video{
     position: relative;
     width: 100%;
-    top: -50px;
-    margin-bottom: 25px;
+    padding-top: 5px;
+    // top: -50px;
+    // margin-bottom: 25px;
     @include sm(){
         
     }
     @include mobile480(){
-        top: -30px;
-        margin-bottom: 0px;
+        // top: -30px;
+        // margin-bottom: 0px;
     }
     
+}
+
+.long_video_padding{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.dis_title{
+    margin-bottom: 20px;
 }

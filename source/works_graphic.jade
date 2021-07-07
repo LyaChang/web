@@ -1,0 +1,83 @@
+extend layout.jade
+
+block popin
+    .nav_mobile
+        ul
+            li.nav_list
+                a(href="./index.html")  ABOUT
+            li.nav_list
+                a(href="javascript:void(0)")  WORKS:
+                .works_list
+                    a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
+                    a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
+                    a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
+                    a.nav_work.nav_work_web(href="./works_nijigen.html") NIJIGEN 官方網頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") Banner Collection
+                    a.nav_work.nav_work_banner(href="./works_graphic.html") 平面印刷品
+                    a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
+            li.nav_list
+                a(href="./images/resume.pdf")  RESUME
+        .cancel_btn
+            img(src="./images/cancel.png", alt="")
+    //- .all_works_btn.works_btn_pink.d-none.d-lg-block
+    //-     a(href="./works.html")
+    //-         img(src="./images/btn_Allworks.png", alt="")
+
+block loading
+    -var borderColor = 'pink'
+    include ./partials/loading.jade
+
+
+block navbar
+    -var path = 'works.html'
+    -var logoColor = 'pink'
+    -var nav_bg= ''
+    -var togglerColor = ''
+    include ./partials/navbar.jade
+
+block content
+    .works_section1
+        .container
+            .row.justify-content-center
+                .col-11.col-sm-12.dis_title
+                    h1.banner_title Graphic Design
+    .works_banner_section2
+        .container
+            .row
+                .col-12.col-sm-6.col-lg-6.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/graphics/graphic01.jpg").banner.lazyload.pic_all
+                .col-12.col-sm-6.col-lg-6.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/graphics/graphic02.jpg").banner.lazyload.pic_all
+                .col-12.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/graphics/graphic03.jpg").banner.lazyload.pic_all
+                .col-12.col-sm-6.col-lg-6.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/graphics/graphic04.jpg").banner.lazyload.pic_all
+                .col-12.col-sm-6.col-lg-6.item.mb-25
+                    img(src="./images/loading_sq.jpg",data-src="./images/graphics/graphic05.jpg").banner.lazyload.pic_all
+    .container-fluid.sec4
+        .container 
+            .row
+                .col
+                    div.double_line
+            .row.justify-content-between
+                .col-4
+                    p.page_pre.page_dir PREV/
+                .col-4
+                    p.page_next.page_dir NEXT/
+            .row.justify-content-between
+                .col-6.col-lg-4
+                    a(href="./works_banner.html")
+                        p.page_pre.page_name.page_name_main Banner
+                                                br
+                                                | Collection
+                .col-6.col-lg-4
+                    a(href="./works_naked.html")
+                        p.page_next.page_name.page_name_main 裸雀小酒館
+                                                br
+                                                | 活動頁
+            .row
+                .col
+                    div.double_line
+            .row
+                .col
+                    div.copyright © 2017 — 2021 LyaChang  All right reserved

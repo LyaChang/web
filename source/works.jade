@@ -4,13 +4,13 @@ block popin
     .dropmenu_space#menu_content
         ul.kind_lists_work
             li.list.segment-0.selected-0(data-value="all")
-                a(href="#",data-value="all") ALL
+                a(href="javascript:void(0)",data-value="all") ALL
             li.list.segment-1
-                a(href="#",data-value="web") WEB
+                a(href="javascript:void(0)",data-value="web") WEB
             //- li.list.segment-2
-            //-     a(href="#",data-value="app") APP
+            //-     a(href="javascript:void(0)",data-value="app") APP
             li.list.segment-3
-                a(href="#",data-value="banner") BANNER
+                a(href="javascript:void(0)",data-value="banner") BANNER
         .cancel_btn
             img(src="./images/cancel.png", alt="")
     .nav_mobile
@@ -18,14 +18,15 @@ block popin
             li.nav_list
                 a(href="./index.html")  ABOUT
             li.nav_list
-                a(href="./works.html")  WORKS:
+                a(href="javascript:void(0)")  WORKS:
                 .works_list
                     a.nav_work.nav_work_web(href="./works_cv.html") 履歷健診
                     a.nav_work.nav_work_web(href="./works_vitoas.html") 蜜得絲 商品導購頁
                     a.nav_work.nav_work_web(href="./works_bifi.html") 比菲德氏菌 導購頁
-                    a.nav_work.nav_work_web(href="./works_wolf.html") Wolf Blass 活動頁
+                    a.nav_work.nav_work_web(href="./works_nijigen.html") NIJIGEN 官方網頁
+                    a.nav_work.nav_work_banner(href="./works_banner.html") Banner Collection
+                    a.nav_work.nav_work_banner(href="./works_graphic.html") 平面印刷品
                     a.nav_work.nav_work_web(href="./works_naked.html") 裸雀小酒館 活動頁
-                    a.nav_work.nav_work_banner(href="./works_banner.html") FB / IG 廣告
             li.nav_list
                 a(href="./images/resume.pdf")  RESUME
         .cancel_btn
@@ -41,71 +42,77 @@ block navbar
     include ./partials/navbar.jade
 
 block content
-    .works_grass
-        img(src="./images/bg_grass1.png", alt="", srcset="").bg_grass.bg_grass1
-        img(src="./images/bg_grass2.png", alt="", srcset="").bg_grass.bg_grass2
-        img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3.d-none.d-sm-block
-    .works_section1
-        .container
-            .row.justify-content-center
-                .col-11.col-sm-12.d-none.d-md-block
-                    ul.kind_lists.kind_lists_work
-                        li.list_kind.segment-0.selected-0(data-value="all")
-                            a(href="#",data-value="all").active ALL
-                                span (6)
-                        li.list_kind.segment-1
-                            a(href="#",data-value="web") WEB
-                                span (5)
-                        //- li.list_kind.segment-2
-                        //-     a(href="#",data-value="app") APP
-                        //-         span (1)
-                        li.list_kind.segment-3
-                            a(href="#",data-value="banner") BANNER
-                                span (1)
-                .col-11.d-md-none
-                    .dropmenu
-                        .dropmenu_words 
-                            .words ALL
-                            .dropbtn
-                                img(src="./images/arrow_down.png", alt="")
-                            span 6
+    //- .works_grass
+    //-     img(src="./images/bg_grass1.png", alt="", srcset="").bg_grass.bg_grass1
+    //-     img(src="./images/bg_grass2.png", alt="", srcset="").bg_grass.bg_grass2
+    //-     img(src="./images/bg_grass3.png", alt="", srcset="").bg_grass.bg_grass3.d-none.d-sm-block
+    .container-fluid
+        .works_section1
+            .container
+                .row.sec_title_block.dis_title
+                    .col-12.col-lg-4
+                        h1.sec_title WORKS
+                    .col-12.col-lg-8.d-none.d-md-block
+                        div.title_divide_line
+                .row.justify-content-center
+                    .col-11.col-sm-12.d-none.d-md-block
+                        ul.kind_lists.kind_lists_work
+                            li.list_kind.segment-0.selected-0(data-value="all")
+                                a(href="javascript:void(0)",data-value="all").active ALL
+                                    span (6)
+                            li.list_kind.segment-1
+                                a(href="javascript:void(0)",data-value="web") WEB
+                                    span (5)
+                            //- li.list_kind.segment-2
+                            //-     a(href="javascript:void(0)",data-value="app") APP
+                            //-         span (1)
+                            li.list_kind.segment-3
+                                a(href="javascript:void(0)",data-value="banner") BANNER
+                                    span (1)
+                    .col-12.d-md-none
+                        .dropmenu
+                            .dropmenu_words 
+                                .words ALL
+                                .dropbtn
+                                    img(src="./images/arrow_down.png", alt="")
+                                span 6
                             
     .works_section2
         .container
             .row
                 .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-1")
                     a(href="./works_cv.html")
-                        img(src="./images/works_pic_CV.jpg", alt="", srcset="")
+                        img(src="./images/works_pic_CV.jpg")
                         .word_block
                             .tag WEB
                             .name 履歷健診
                 .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-4")
                     a(href="./works_vitoas.html")
-                        img(src="./images/works_pic_vitoas.jpg", alt="", srcset="")
+                        img(src="./images/works_pic_vitoas.jpg")
                         .word_block
-                            .tag WEB
+                            .tag Mobile WEB
                             .name 蜜得絲商品導購頁
                 .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-6")
                     a(href="./works_bifi.html")
-                        img(src="./images/works_pic_bifi.jpg", alt="", srcset="")
+                        img(src="./images/works_pic_bifi.jpg")
                         .word_block
-                            .tag WEB
+                            .tag Mobile WEB
                             .name 比菲德氏菌導購頁
-                .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-2")
-                    a(href="./works_wolf.html")
-                        img(src="./images/works_pic_wolf.jpg", alt="", srcset="")
-                        .word_block
-                            .tag WEB
-                            .name Wolf Blass 活動頁
+                //- .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-2")
+                //-     a(href="./works_wolf.html")
+                //-         img(src="./images/works_pic_wolf.jpg", alt="", srcset="")
+                //-         .word_block
+                //-             .tag WEB
+                //-             .name Wolf Blass 活動頁
                 .col-11.col-sm-6.col-lg-4.work_block.web(data-id="id-3")
                     a(href="./works_naked.html")
-                        img(src="./images/works_pic_nuke.jpg", alt="", srcset="")
+                        img(src="./images/works_pic_nuke.jpg")
                         .word_block
                             .tag WEB
                             .name 裸雀小酒館活動頁
                 .col-11.col-sm-6.col-lg-4.work_block.banner(data-id="id-5")
                     a(href="./works_banner.html")
-                        img(src="./images/works_pic_banner.jpg", alt="", srcset="")
+                        img(src="./images/works_pic_banner.jpg")
                         .word_block
                             .tag BANNER
                             .name Banner Collection

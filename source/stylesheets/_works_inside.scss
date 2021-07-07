@@ -22,6 +22,10 @@
     background-color: $bifi_light;
 }
 
+.navbar_nijigen{
+    background-color: $nijigen_light;
+}
+
 
 .navbar-toggler_orange{
     background-color: $naked;
@@ -47,6 +51,50 @@
     background-color: $bifi;
 }
 
+.navbar-toggler_nijigen{
+    background-color: $nijigen;
+}
+
+
+//case study number color
+.sec3{
+    .work_introduce_block{
+        .number_color_orange{
+            color: $naked;
+        }
+        
+        .number_color_grey{
+            color: $brown-grey-two;
+        }
+        
+        .number_color_gold{
+            color: $wolf;
+        }
+        
+        .number_color_blue{
+            color: $blue;
+        }
+        
+        .number_color_vitoas{
+            color: $vitoas;
+        }
+        
+        .number_color_bifi{
+            color: $bifi;
+        }
+        .number_color_nijigen{
+            color: $nijigen;
+        }
+    }
+   
+}
+
+
+
+.nijigen_sec{
+    background-color: $nijigen_light;
+}
+
 .orange_sec{
     background-color: $light-naked;
 }
@@ -61,6 +109,18 @@
     background-color:$light-blue;
 }
 
+.vedio_bg_sec{
+    width: calc(100% - 30px);
+    height: 100%;
+    position: absolute;
+    border-radius: 13px;
+
+    // transition: all 0.9s;
+    // &:hover{
+    //     box-shadow: 2px 2px 32px 4px rgba(0,0,0,0.10);
+    // }
+}
+
 .vitoas_sec{
     background-color: $vitoas_light;
 }
@@ -73,10 +133,22 @@
 
 .top_sec_blue{
     background-color:$light-blue;
+    background-image: url("../images/cv_pic/CV_pic.png");
+    background-position: bottom -10px center;
+    background-repeat: no-repeat;
+    @include xl(){
+        background-size: 100%;
+    }
 }
 
 .top_sec_orange{
     background-color:$light-naked;
+    background-image: url("../images/NAKED_pic.png");
+    background-position: bottom -10px center;
+    background-repeat: no-repeat;
+    @include xl(){
+        background-size: 100%;
+    }
 }
 
 .top_sec_gold{
@@ -85,10 +157,35 @@
 
 .top_sec_vitoas{
     background-color: $vitoas_light;
+    background-image: url("../images/vitoas_pic/VITOAS_pic.png");
+    background-position: bottom -10px center;
+    background-repeat: no-repeat;
+    @include xl(){
+        background-size: 100%;
+    }
 }
 .top_sec_bifi{
     background-color: $bifi_light;
+    background-image: url("../images/bifi_pic/BIFIDUS_pic.png");
+    background-position: bottom -10px center;
+    background-repeat: no-repeat;
+    @include xl(){
+        background-size: 100%;
+    }
 }
+
+.top_sec_nijigen{
+    background-color: $nijigen_light;
+    background-image: url("../images/nijigen_pic/NIJIGEN_pic.png");
+    background-position: bottom -10px center;
+    background-repeat: no-repeat;
+    @include xl(){
+        background-size: 100%;
+    }
+}
+
+
+
 .top_sec{
     //background-color: $top_bg;
     height: 350px;
@@ -101,7 +198,7 @@
         height: 240px;
     }
     @include sm(){
-        margin-bottom: 15vw;
+        margin-bottom: 20vw;
         height: 45vw;
     }
 
@@ -117,18 +214,15 @@
 //手機作品固定樣式
 
 .top_sec_mobile{
-    //background-color: $top_bg;
+    
     height: 350px;
     margin-bottom: 230px;
-    @include xl(){
-        margin-bottom: 130px;
-    }
-    @include md(){
-        margin-bottom: 130px;
-        height: 240px;
+   
+    @include lg(){
+        margin-bottom: 250px;
     }
     @include sm(){
-        margin-bottom: 5vw;
+        margin-bottom: 10vw;
         height: 90vw;
         overflow: hidden;
     }
@@ -136,8 +230,15 @@
     .top_pic_sec_mobile{
         position: relative;
         top: 40px;
+        z-index: 2;
+        .col-12{
+            text-align: center;
+        }
         .top_pic{
             width: 100%;
+            @include md(){
+                width: 52%;
+            }
         }
         @include sm(){
             top: 10px;
@@ -149,34 +250,43 @@
 //其他樣式
 
 .sec2{
+    margin-bottom: 165px;
+    @include md(){
+        margin-bottom: 65px;
+    }
+
     .big_title{
-        margin-bottom: 60px;
+        margin-bottom: 83px;
         @include md(){
             margin-bottom: 40px;
         }
         @include sm(){
-            padding-left: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
         }
 
         .title_works{
             @include hansFont(57px,500,$greyish-brown,left);
-            letter-spacing: -1px;
+            letter-spacing: 1px;
+            @include lg(){
+                font-size: 50px;
+            }
             @include sm(){
                 font-size: 40px;
             }
             @include mobile480(){
-                font-size: 38px;
+                font-size: 32px;
+                margin-bottom: 10px;
             }
             @include iphone5(){
-                font-size: 33px;
+                font-size: 30px;
             }
         }
         .title_kind{
-            @include hansFont(48px,200,$greyish-brown,left);
-            letter-spacing: -1px;
+            @include urwFont(48px,100,$greyish-brown,left);
+            letter-spacing: 1px;
             top: -10px;
             position: relative;
+            margin-bottom: 10px;
             @include sm(){
                 font-size: 30px;
             }
@@ -189,7 +299,7 @@
         }
         .title_line{
             width: 20%;
-            height: 8px;
+            height: 4px;
             
         }
         .title_naked{
@@ -201,36 +311,41 @@
         .title_cv{
             background-color: $blue;
         }
-        .title_reminder{
-            
-        }
+
         .title_vitoas{
             background-color: $vitoas;
         }
         .title_bifi{
             background-color: $bifi;
         }
+        .title_nijigen{
+            background-color: $nijigen;
+        }
     }
    
     .works_subtitle{
-        @include hansFont(48px,500,$greyish-brown,left);
-        letter-spacing: -1px;
+        @include hansFont(36px,500,$greyish-brown,left);
+        letter-spacing: 1px;
+        margin-bottom: 14px;
         @include lg(){
-            font-size: 40px;
+            font-size: 36px;
         }
         @include sm(){
-            padding-left: 10px;
+            margin-bottom: 0px;
         }
         @include mobile480(){
-            font-size: 35px;
+            font-size: 25px;
         }
         @include iphone5(){
-            font-size: 30px;
+            font-size: 21px;
         }
 
     }
     .works_text{
-        @include hansFont(21px,300,$warm-grey,left);
+        @include urwFont(21px,300,$warm-grey,left);
+        letter-spacing: 1px;
+        line-height: 2.2rem;
+        margin-bottom: 20px;
         @include lg(){
             font-size: 16px;
         }
@@ -238,7 +353,6 @@
             margin-bottom: 20px;
         }
         @include sm(){
-            padding-left: 10px;
             padding-right: 10px;
         }
         @include iphone5(){
@@ -246,34 +360,20 @@
         }
         
     }
-    .last_line{
-        margin-top: 30px;
-        margin-bottom: 136px;
-        @include md(){
-            margin-top: 0px;
-            margin-bottom: 100px;
-        }
-        @include mobile480(){
-            margin-bottom: 60px;
-        }
-    }
 }
 
 .sec3{
     .pic_num_div{
-        text-align: center;
+        @include urwCFont(68px,500,#fff,left);
+        letter-spacing: 2.81px;
+        line-height: 65px;
+        margin-bottom: 10px;
         @include lg(){
-            text-align: left;
             margin-bottom: 20px;
         }
-        @include sm(){
-            margin-bottom: 20px;
-        }
-        @include mobile480(){
-            margin-bottom: 15px;
-        }
-        @include iphone5(){
-            margin-bottom: 15px;
+        @include md(){
+            font-size: 55px;
+            margin-bottom: 10px;
         }
         .pic_num{
             @include lg(){
@@ -294,13 +394,25 @@
         }
 
     }
+    .work_introduce_block{
+        margin-top: 120px;
+        margin-bottom: 120px;
+        @include md{
+            margin-top: 80px;
+            margin-bottom: 10px;
+        }
+    }
     .sm_title{
-        @include hansFont(21px,600,#3e3e3e,left);
+        @include urwFont(21px,500,#3e3e3e,left);
         margin-bottom: 15px;
+        letter-spacing: 1px;
+        line-height: 2.2rem;
     }
     .sm_text{
-        @include hansFont(21px,300,$warm-grey,left);
-        margin-bottom: 40px;
+        @include urwFont(21px,300,$warm-grey,left);
+        letter-spacing: 1px;
+        line-height: 2.2rem;
+        
         @include lg(){
             font-size: 16px;
         }
@@ -309,61 +421,17 @@
         }
     }
     .sm_text_top{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .sm_middle{
         text-align: center;
     }
   
     .sec_title_block{
+        margin-bottom: 30px;
         position: relative;
-        top: -70px;
-        letter-spacing: -2px;
-        margin-bottom: 40px;
         @include lg(){
             margin-bottom: 30px;
-        }
-        @include md(){
-            top: -50px;
-        }
-        @include sm(){
-            top: -40px;
-        }
-        @include mobile480(){
-            top: -30px;
-        }
-        @include iphone5(){
-            top: -25px;
-        }
-    }
-    .detail_word{
-        position: absolute;
-        top: 70px;
-        left: calc(50% - 86px);
-        @include lg(){
-            top: 60px;
-            width: 150px;
-            left: calc(50% - 75px);
-        }
-        @include md(){
-            top: 40px;
-            width: 120px;
-            left: calc(50% - 60px);
-        }
-        @include sm(){
-            top: 30px;
-            width: 100px;
-            left: calc(50% - 50px);
-        }
-        @include mobile480(){
-            top: 25px;
-            width: 80px;
-            left: calc(50% - 40px);
-        }
-        @include iphone5(){
-            top: 25px;
-            width: 70px;
-            left: calc(50% - 35px);
         }
     }
     .pic_all_mb{
@@ -372,16 +440,16 @@
             margin-bottom: 25px;
         }
     }
-    .pic_all{
-        width: 100%;
-       
-        vertical-align: inherit;
-       
-    }
+   
     .pic_btm{
-        margin-bottom: 70px;
+        margin-bottom: 30px;
         @include md(){
-            margin-bottom: 45px;
+            margin-bottom: 10px;
+        }
+    }
+    .pic_btm_mobile{
+        @include md(){
+            margin-bottom: 10px;
         }
     }
     .pic_last_btm{
@@ -390,13 +458,46 @@
             margin-bottom: 80px;
         }
     }
+    .last_block{
+        margin-bottom: 120px;
+        @include md(){
+            margin-bottom: 65px;
+        }
+    }
 }
 
+.pic_all{
+    width: 100%;
+   
+    vertical-align: inherit;
+    transition: all 0.9s;
+    border-radius: 13px;
+
+    &:hover{
+        box-shadow: 2px 2px 32px 4px rgba(0,0,0,0.10);
+    }
+}
+.pic_dark_all{
+    &:hover{
+        box-shadow: 2px 2px 32px 4px rgba(0,0,0,0.30);
+    }
+}
+
+
+
 .sec4{
+    margin-bottom: 60px;
+    .double_line{
+        width: 100%;
+        height: 4px;
+        border-top: 1px solid #D8D8D8;
+        border-bottom: 1px solid #D8D8D8;
+    }
     .page_dir{
-        @include hansFont(28px,800,$very-light-pink,left);
-        margin-top: 40px;
-        margin-bottom: 40px;
+        @include urwCFont(28px,500,#9B9B9B,left);
+        letter-spacing: 2.15px;
+        margin-top: 45px;
+        margin-bottom: 45px;
         @include lg(){
             font-size: 21px;
         }
@@ -406,17 +507,32 @@
     }
 
     .page_name{
-        @include hansFont(28px,600,$black,left);
-        margin-bottom: 60px;
+        @include urwFont(28px,500,#444444,left);
+        letter-spacing: 1px;
+        margin-bottom: 45px;
         
         @include lg(){
             font-size: 16px;
+        }
+    }
+    .copyright{
+        @include urwCFont(18px,500,#9B9B9B,left);
+        margin-top: 20px;
+        letter-spacing: 2px;
+        @include md(){
+            font-size: 14px;
         }
     }
     .page_name_cv{
         transition:color 0.3s;
         &:hover{
             color: $blue; 
+        }
+    }
+    .page_name_main{
+        transition:color 0.3s;
+        &:hover{
+            color: $main; 
         }
     }
     .page_name_wolf{

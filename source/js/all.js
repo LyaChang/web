@@ -84,88 +84,101 @@ $(document).ready(function(){
             // console.log(name)
     
             if(name == "work"){
+                $(".banner_block").css("display","none");
+                $(".banner_block").hide();
                 $(".work").css("display","block");
-                $(".act,.test,.travel,.pd").css("display","none");
-                $(".act,.test,.travel,.pd").hide();
                 $(".work").show();
                
                 masonry_fn();
+                TweenMax.to(".banner_block",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".work",1,{opacity:"1",ease: Power2.easeOut});
-                TweenMax.to(".test",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".act",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".travel",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".pd",1,{opacity:"0",ease: Power2.easeOut});
+
                 $(".kind_lists_banner a").removeClass("active");
                 $(".segment-1 a").addClass("active");
             }
             else if(name == "test"){
-                $(".work,.act,.travel,.pd").css("display","none");
+                $(".banner_block").css("display","none");
+                $(".banner_block").hide();
                 $(".test").css("display","block");
-                $(".work,.act,.travel,.pd").hide();
                 $(".test").show();
               
                 masonry_fn();
+                TweenMax.to(".banner_block",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".test",1,{opacity:"1",ease: Power2.easeOut});
-                TweenMax.to(".work",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".act",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".travel",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".pd",1,{opacity:"0",ease: Power2.easeOut});
+               
                 $(".kind_lists_banner a").removeClass("active");
                 $(".segment-2 a").addClass("active");
             }
             else if(name == "act"){
-                $(".work,.test,.travel,.pd").css("display","none");
+                $(".banner_block").css("display","none");
+                $(".banner_block").hide();
                 $(".act").css("display","block");
-                $(".work,.test,.travel,.pd").hide();
                 $(".act").show();
                
                 masonry_fn();
-                TweenMax.to(".test",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".work",1,{opacity:"0",ease: Power2.easeOut});
+                TweenMax.to(".banner_block",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".act",1,{opacity:"1",ease: Power2.easeOut});
-                TweenMax.to(".travel",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".pd",1,{opacity:"0",ease: Power2.easeOut});
                 
                 $(".kind_lists_banner a").removeClass("active");
                 $(".segment-3 a").addClass("active");
             }
             else if(name == "travel"){
-                $(".work,.test,.act,.pd").css("display","none");
+                $(".banner_block").css("display","none");
+                $(".banner_block").hide();
                 $(".travel").css("display","block");
-                $(".work,.test,.act,.pd").hide();
                 $(".travel").show;
                
                 masonry_fn();
-                TweenMax.to(".test",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".work",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".act",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".pd",1,{opacity:"0",ease: Power2.easeOut});
+                TweenMax.to(".banner_block",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".travel",1,{opacity:"1",ease: Power2.easeOut});
                 
                 $(".kind_lists_banner a").removeClass("active");
                 $(".segment-4 a").addClass("active");
             }
             else if(name == "pd"){
-                $(".work,.test,.act,.travel").css("display","none");
+                $(".banner_block").css("display","none");
+                $(".banner_block").hide();
                 $(".pd").css("display","block");
-                $(".work,.test,.act,.travel").hide();
                 $(".pd").show;
                
                 masonry_fn();
-                TweenMax.to(".test",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".work",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".act",1,{opacity:"0",ease: Power2.easeOut});
-                TweenMax.to(".travel",1,{opacity:"0",ease: Power2.easeOut});
+                TweenMax.to(".banner_block",1,{opacity:"0",ease: Power2.easeOut});
                 TweenMax.to(".pd",1,{opacity:"1",ease: Power2.easeOut});
                 
                 $(".kind_lists_banner a").removeClass("active");
                 $(".segment-5 a").addClass("active");
             }
-            else{
-                $(".work,.test,.act,.travel,.pd").css("display","block");
-                $(".work,.test,.act,.travel,.pd").show();
+            else if(name == "game"){
+                $(".banner_block").css("display","none");
+                $(".banner_block").hide();
+                $(".game").css("display","block");
+                $(".game").show;
+               
                 masonry_fn();
-                TweenMax.to(".work,.test,.act,.travel,.pd",1,{opacity:"1",ease: Power2.easeOut});
+                TweenMax.to(".banner_block",1,{opacity:"0",ease: Power2.easeOut});
+                TweenMax.to(".game",1,{opacity:"1",ease: Power2.easeOut});
+                
+                $(".kind_lists_banner a").removeClass("active");
+                $(".segment-6 a").addClass("active");
+            }
+            else if(name == "holiday"){
+                $(".banner_block").css("display","none");
+                $(".banner_block").hide();
+                $(".holiday").css("display","block");
+                $(".holiday").show;
+               
+                masonry_fn();
+                TweenMax.to(".banner_block",1,{opacity:"0",ease: Power2.easeOut});
+                TweenMax.to(".holiday",1,{opacity:"1",ease: Power2.easeOut});
+                
+                $(".kind_lists_banner a").removeClass("active");
+                $(".segment-7 a").addClass("active");
+            }
+            else{
+                $(".banner_block").css("display","block");
+                $(".banner_block").show();
+                masonry_fn();
+                TweenMax.to(".banner_block",1,{opacity:"1",ease: Power2.easeOut});
                 
                 $(".kind_lists_banner a").removeClass("active");
                 $(".segment-0 a").addClass("active");
@@ -199,28 +212,36 @@ $(document).ready(function(){
         TweenMax.to(".dropmenu_space",.6,{opacity:"0",ease: Power2.easeOut,"display":"none"});
         var name = $(this).data("value")
         if(name == "work"){
-            $(".dropmenu .words").html("工作轉職");
+            $(".dropmenu .words").html("RECRUIT");
             $(".dropmenu span").html("4");
         }
         else if(name == "all"){
             $(".dropmenu .words").html("ALL");
-            $(".dropmenu span").html("43");
+            $(".dropmenu span").html("59");
         }
         else if(name == "test"){
-            $(".dropmenu .words").html("測驗分析");
+            $(".dropmenu .words").html("TEST-AD");
             $(".dropmenu span").html("5");
         }
         else if(name == "act"){
-            $(".dropmenu .words").html("活動");
+            $(".dropmenu .words").html("ACTIVITY");
             $(".dropmenu span").html("3");
         }
         else if(name == "travel"){
-            $(".dropmenu .words").html("旅遊");
+            $(".dropmenu .words").html("TRAVEL");
             $(".dropmenu span").html("1");
         }
         else if(name == "pd"){
-            $(".dropmenu .words").html("商品");
+            $(".dropmenu .words").html("PRODUCT");
             $(".dropmenu span").html("30");
+        }
+        else if(name == "game"){
+            $(".dropmenu .words").html("GAME");
+            $(".dropmenu span").html("10");
+        }
+        else if(name == "holiday"){
+            $(".dropmenu .words").html("HOLIDAY");
+            $(".dropmenu span").html("7");
         }
     }));
     $('.dropmenu_space .cancel_btn').on('click',(function(){
@@ -230,11 +251,9 @@ $(document).ready(function(){
     //nav
 
     $('#nav').on('click',(function(){
-        // console.log("nav");
-        TweenMax.to(".nav_mobile",.6,{opacity:"0.94",ease: Power2.easeOut,"display":"block"});        
+        TweenMax.to(".nav_mobile",.6,{opacity:"0.98",ease: Power2.easeOut,"display":"block"});        
     }));
     $('.nav_mobile .cancel_btn').on('click',(function(){
-        // console.log("nav");
         TweenMax.to(".nav_mobile",.6,{opacity:"0",ease: Power2.easeOut,"display":"none"});        
     }));
 
