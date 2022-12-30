@@ -9,7 +9,7 @@
   "author": "lya",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.1.0",
     "autoprefixer": "^9.3.1",
     "bootstrap": "^4.1.3",
